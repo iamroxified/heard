@@ -5,22 +5,25 @@
 @section('content')
 <!-- Hero Section -->
 <section class="relative bg-[#0a0f1d] pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[85vh]">
-    <!-- Background Image -->
+    <!-- Video Background -->
     <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Event Audience" class="w-full h-full object-cover opacity-30 mix-blend-overlay">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-40 mix-blend-overlay">
+            <source src="https://cdn.pixabay.com/video/2020/05/21/40003-424177579_large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <div class="absolute inset-0 bg-gradient-to-b from-[#020617]/90 via-[#0a0f1d]/80 to-[#020617]/90"></div>
     </div>
     
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center w-full">
         <div class="max-w-4xl mx-auto">
-            <span class="inline-block text-primary text-sm font-bold tracking-wider mb-4">Welcome to Heard In Africa</span>
-            <h1 class="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white tracking-tight leading-tight mb-6">
+            <span data-aos="fade-down" data-aos-duration="1000" class="inline-block text-primary text-sm font-bold tracking-wider mb-4">Welcome to Heard In Africa</span>
+            <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" class="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white tracking-tight leading-tight mb-6">
                 Africa's Speaker Management & Conference Programming Partner
             </h1>
-            <p class="text-sm md:text-base text-gray-300 font-light max-w-3xl mx-auto mb-10 leading-relaxed">
+            <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400" class="text-sm md:text-base text-gray-300 font-light max-w-3xl mx-auto mb-10 leading-relaxed">
                 We help event organizers, businesses, and organizations source, manage, and program Africa's most prominent thought leaders for their events.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
                 <a href="{{ route('events') }}" class="inline-flex justify-center items-center rounded-none bg-primary text-[#0a0f1d] px-8 py-3 text-sm font-bold tracking-wider hover:bg-white hover:text-[#0a0f1d] transition-all duration-300">
                     Meet Our Speakers
                 </a>
@@ -33,15 +36,15 @@
 </section>
 
 <!-- Behind Powerful Conversations Section -->
-<section class="py-24 bg-white">
+<section class="py-24 bg-white overflow-hidden">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <!-- Left Image -->
-            <div>
+            <div data-aos="fade-right">
                 <img src="https://images.unsplash.com/photo-1515169067868-5387ec356754?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Speakers on stage" class="w-full h-auto object-cover shadow-lg border border-slate-100">
             </div>
             <!-- Right Text -->
-            <div class="pl-0 md:pl-8">
+            <div class="pl-0 md:pl-8" data-aos="fade-left" data-aos-delay="200">
                 <h2 class="text-3xl md:text-4xl font-heading font-bold text-[#0a0f1d] mb-6 leading-tight">
                     Behind Powerful<br>Conversations on<br>Global Stages
                 </h2>
@@ -65,7 +68,7 @@
     
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-4">
+            <div class="lg:col-span-4" data-aos="fade-right">
                 <h2 class="text-primary text-xl font-bold font-heading mb-4">What Heard In Africa Does</h2>
                 <p class="text-white text-sm leading-relaxed opacity-80">
                     We provide end-to-end speaker management and event programming solutions to guarantee the success of your engagements.
@@ -75,7 +78,7 @@
             <div class="lg:col-span-8">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <!-- Service Card 1 -->
-                    <div class="bg-white/20 backdrop-blur-md border border-white/10 p-8 flex flex-col items-center justify-center text-center hover:bg-white/30 transition-colors cursor-pointer min-h-[180px]">
+                    <div data-aos="zoom-in" data-aos-delay="100" class="bg-white/20 backdrop-blur-md border border-white/10 p-8 flex flex-col items-center justify-center text-center hover:bg-white/30 transition-colors cursor-pointer min-h-[180px]">
                         <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-4 text-white">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         </div>
@@ -83,7 +86,7 @@
                     </div>
                     
                     <!-- Service Card 2 -->
-                    <div class="bg-white/20 backdrop-blur-md border border-white/10 p-8 flex flex-col items-center justify-center text-center hover:bg-white/30 transition-colors cursor-pointer min-h-[180px]">
+                    <div data-aos="zoom-in" data-aos-delay="200" class="bg-white/20 backdrop-blur-md border border-white/10 p-8 flex flex-col items-center justify-center text-center hover:bg-white/30 transition-colors cursor-pointer min-h-[180px]">
                         <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-4 text-white">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                         </div>
@@ -91,7 +94,7 @@
                     </div>
                     
                     <!-- Service Card 3 -->
-                    <div class="bg-white/20 backdrop-blur-md border border-white/10 p-8 flex flex-col items-center justify-center text-center hover:bg-white/30 transition-colors cursor-pointer min-h-[180px]">
+                    <div data-aos="zoom-in" data-aos-delay="300" class="bg-white/20 backdrop-blur-md border border-white/10 p-8 flex flex-col items-center justify-center text-center hover:bg-white/30 transition-colors cursor-pointer min-h-[180px]">
                         <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-4 text-white">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
                         </div>
@@ -99,7 +102,7 @@
                     </div>
                     
                     <!-- Service Card 4 -->
-                    <div class="bg-white/20 backdrop-blur-md border border-white/10 p-8 flex flex-col items-center justify-center text-center hover:bg-white/30 transition-colors cursor-pointer min-h-[180px]">
+                    <div data-aos="zoom-in" data-aos-delay="400" class="bg-white/20 backdrop-blur-md border border-white/10 p-8 flex flex-col items-center justify-center text-center hover:bg-white/30 transition-colors cursor-pointer min-h-[180px]">
                         <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-4 text-white">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                         </div>
@@ -112,56 +115,56 @@
 </section>
 
 <!-- Our Speakers Categories -->
-<section class="py-24 bg-white">
+<section class="py-24 bg-white overflow-hidden">
     <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <!-- Left Image -->
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000">
                 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Speaker Category" class="w-full h-[600px] object-cover shadow-sm">
             </div>
             <!-- Right List -->
             <div>
-                <h2 class="text-3xl md:text-4xl font-heading font-bold text-[#0a0f1d] mb-10">
+                <h2 data-aos="fade-left" class="text-3xl md:text-4xl font-heading font-bold text-[#0a0f1d] mb-10">
                     Our Speakers<br>Categories
                 </h2>
                 <ul class="space-y-6">
-                    <li class="flex items-center gap-3 border-b border-slate-100 pb-4">
+                    <li data-aos="fade-left" data-aos-delay="100" class="flex items-center gap-3 border-b border-slate-100 pb-4 hover:translate-x-2 transition-transform cursor-pointer">
                         <span class="text-primary">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                         </span>
                         <span class="text-slate-700 text-sm font-medium">Business Leaders</span>
                     </li>
-                    <li class="flex items-center gap-3 border-b border-slate-100 pb-4">
+                    <li data-aos="fade-left" data-aos-delay="150" class="flex items-center gap-3 border-b border-slate-100 pb-4 hover:translate-x-2 transition-transform cursor-pointer">
                         <span class="text-primary">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                         </span>
                         <span class="text-slate-700 text-sm font-medium">Motivational Speakers</span>
                     </li>
-                    <li class="flex items-center gap-3 border-b border-slate-100 pb-4">
+                    <li data-aos="fade-left" data-aos-delay="200" class="flex items-center gap-3 border-b border-slate-100 pb-4 hover:translate-x-2 transition-transform cursor-pointer">
                         <span class="text-primary">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                         </span>
                         <span class="text-slate-700 text-sm font-medium">Technology Experts</span>
                     </li>
-                    <li class="flex items-center gap-3 border-b border-slate-100 pb-4">
+                    <li data-aos="fade-left" data-aos-delay="250" class="flex items-center gap-3 border-b border-slate-100 pb-4 hover:translate-x-2 transition-transform cursor-pointer">
                         <span class="text-primary">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                         </span>
                         <span class="text-slate-700 text-sm font-medium">Global Thought Leaders</span>
                     </li>
-                    <li class="flex items-center gap-3 border-b border-slate-100 pb-4">
+                    <li data-aos="fade-left" data-aos-delay="300" class="flex items-center gap-3 border-b border-slate-100 pb-4 hover:translate-x-2 transition-transform cursor-pointer">
                         <span class="text-primary">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                         </span>
                         <span class="text-slate-700 text-sm font-medium">Political Analysts</span>
                     </li>
-                    <li class="flex items-center gap-3 border-b border-slate-100 pb-4">
+                    <li data-aos="fade-left" data-aos-delay="350" class="flex items-center gap-3 border-b border-slate-100 pb-4 hover:translate-x-2 transition-transform cursor-pointer">
                         <span class="text-primary">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                         </span>
                         <span class="text-slate-700 text-sm font-medium">Financial Experts</span>
                     </li>
-                    <li class="flex items-center gap-3 border-b border-slate-100 pb-4">
+                    <li data-aos="fade-left" data-aos-delay="400" class="flex items-center gap-3 border-b border-slate-100 pb-4 hover:translate-x-2 transition-transform cursor-pointer">
                         <span class="text-primary">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                         </span>
@@ -174,29 +177,29 @@
 </section>
 
 <!-- Let's Connect Section -->
-<section class="py-24 bg-white border-t border-slate-100">
+<section class="py-24 bg-white border-t border-slate-100 overflow-hidden">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <!-- Left Stats -->
             <div>
-                <h2 class="text-3xl md:text-4xl font-heading font-bold text-[#0a0f1d] mb-10">Let's Connect</h2>
+                <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-heading font-bold text-[#0a0f1d] mb-10">Let's Connect</h2>
                 <div class="grid grid-cols-2 gap-y-12">
-                    <div>
+                    <div data-aos="fade-up" data-aos-delay="100">
                         <p class="text-4xl font-bold font-heading text-[#0a0f1d] mb-1">8+</p>
                         <p class="text-sm text-slate-500">Speakers</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-delay="200">
                         <p class="text-4xl font-bold font-heading text-[#0a0f1d] mb-1">11+</p>
                         <p class="text-sm text-slate-500">Sessions Delivered</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-delay="300">
                         <p class="text-4xl font-bold font-heading text-[#0a0f1d] mb-1">5+</p>
                         <p class="text-sm text-slate-500">Global Partners</p>
                     </div>
                 </div>
             </div>
             <!-- Right Image -->
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="1000">
                 <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Networking Event" class="w-full h-64 md:h-80 object-cover shadow-sm">
             </div>
         </div>
@@ -206,7 +209,7 @@
 <!-- Take Your Event to the Next Level CTA -->
 <section class="py-24 bg-slate-200">
     <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative">
-        <div class="bg-white p-12 md:p-16 shadow-xl relative z-10 max-w-2xl mx-auto">
+        <div data-aos="flip-up" class="bg-white p-12 md:p-16 shadow-xl relative z-10 max-w-2xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-heading font-bold text-[#0a0f1d] mb-4">
                 Take your Event to the Next Level
             </h2>
@@ -219,18 +222,18 @@
 </section>
 
 <!-- Testimonials / Stories of Satisfied Clients -->
-<section class="py-24 bg-white">
+<section class="py-24 bg-white overflow-hidden">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-            <div class="md:col-span-4">
+            <div class="md:col-span-4" data-aos="fade-right">
                 <span class="text-primary text-sm font-bold tracking-wider mb-2 block uppercase">Reviews</span>
                 <h2 class="text-3xl md:text-4xl font-heading font-bold text-[#0a0f1d]">
                     Stories of Satisfied<br>Clients
                 </h2>
             </div>
             
-            <div class="md:col-span-8">
-                <div class="bg-white border border-slate-100 p-10 shadow-sm text-center">
+            <div class="md:col-span-8" data-aos="fade-left" data-aos-delay="200">
+                <div class="bg-white border border-slate-100 p-10 shadow-sm text-center hover:shadow-md transition-shadow">
                     <div class="flex justify-center text-primary mb-6">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -245,9 +248,9 @@
                     
                     <!-- Slider Dots -->
                     <div class="flex justify-center gap-2 mt-8">
-                        <div class="w-2 h-2 rounded-full bg-slate-900"></div>
-                        <div class="w-2 h-2 rounded-full bg-slate-300"></div>
-                        <div class="w-2 h-2 rounded-full bg-slate-300"></div>
+                        <div class="w-2 h-2 rounded-full bg-slate-900 cursor-pointer"></div>
+                        <div class="w-2 h-2 rounded-full bg-slate-300 cursor-pointer"></div>
+                        <div class="w-2 h-2 rounded-full bg-slate-300 cursor-pointer"></div>
                     </div>
                 </div>
             </div>
