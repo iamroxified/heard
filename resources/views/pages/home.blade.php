@@ -5,7 +5,7 @@
 @section('content')
 @php($clientLogos = $siteSettings['homepage_client_logos'] ?? [])
 @php($homepageVideoUrl = $siteSettings['homepage_video_url'] ?? 'https://cdn.pixabay.com/video/2020/05/21/40003-424177579_large.mp4')
-@php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('contact'))
+@php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-call'))
 <!-- Hero Section -->
 <section class="relative bg-dark pt-28 pb-20 sm:pt-32 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[78vh] md:min-h-[85vh]">
     <!-- Video Background -->

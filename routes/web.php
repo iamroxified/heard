@@ -38,7 +38,15 @@ Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
 
+Route::get('/discovery-call', function () {
+    return view('pages.discovery-call');
+})->name('discovery-call');
+
 Route::post('/enquiries', [PublicEnquiryController::class, 'store'])->name('enquiries.store');
+
+Route::get('/login', function () {
+    return redirect()->route('admin.login');
+})->name('login');
 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::middleware('guest')->group(function () {

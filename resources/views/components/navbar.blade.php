@@ -1,4 +1,4 @@
-@php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('contact'))
+@php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-call'))
 <header x-data="{ mobileMenuOpen: false, scrolled: false }"
         @scroll.window="scrolled = (window.pageYOffset > 20) ? true : false"
         :class="{'bg-dark shadow-lg': scrolled, 'bg-dark md:bg-transparent': !scrolled}"

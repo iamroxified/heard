@@ -3,7 +3,7 @@
 @section('title', 'About Heard In Africa')
 
 @section('content')
-@php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('contact'))
+@php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-call'))
 <!-- Hero Section -->
 <section class="bg-dark pt-28 pb-20 sm:pt-32 lg:pt-40 lg:pb-32 relative overflow-hidden flex items-center justify-center min-h-[36vh] sm:min-h-[40vh]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center w-full">
