@@ -1,8 +1,9 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Services - Heard In Africa')
 
 @section('content')
+@php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('contact'))
 <!-- Hero Section -->
 <section class="bg-dark pt-28 pb-20 sm:pt-32 lg:pt-48 lg:pb-32 border-b border-white/10 relative overflow-hidden">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -136,9 +137,10 @@
         <p class="text-lg text-slate-600 mb-10">
             Contact us today to discuss your requirements and discover how our services can add value to your next engagement.
         </p>
-        <a href="{{ route('contact') }}" class="inline-flex justify-center items-center bg-dark text-white px-8 py-4 text-sm font-bold uppercase tracking-wider hover:bg-gold hover:text-dark transition-colors">
+        <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-dark text-white px-8 py-4 text-sm font-bold uppercase tracking-wider hover:bg-gold hover:text-dark transition-colors">
             Book a Discovery Call
         </a>
     </div>
 </section>
 @endsection
+

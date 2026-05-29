@@ -1,8 +1,9 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'How We Work - Heard In Africa')
 
 @section('content')
+@php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('contact'))
 <!-- Hero Section -->
 <section class="bg-dark pt-28 pb-20 sm:pt-32 lg:pt-48 lg:pb-32 border-b border-white/10 relative overflow-hidden">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -120,7 +121,7 @@
             </div>
             
             <div class="flex gap-4">
-                <a href="{{ route('contact') }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors">
+                <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors">
                     Book a Discovery Call
                 </a>
                 <a href="{{ route('about') }}" class="inline-flex justify-center items-center border border-slate-300 bg-white text-slate-900 px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-slate-50 transition-colors">
@@ -141,7 +142,7 @@
             Share your goals and we&apos;ll schedule a consultation call to explore how we can design the right experience for your team.
         </p>
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a href="{{ route('contact') }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors">
+            <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors">
                 Book a Discovery Call <span class="ml-2">&rarr;</span>
             </a>
             <a href="{{ route('about') }}" class="inline-flex justify-center items-center border border-slate-300 text-slate-900 px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors">
@@ -151,3 +152,4 @@
     </div>
 </section>
 @endsection
+

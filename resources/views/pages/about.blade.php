@@ -1,8 +1,9 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'About Heard In Africa')
 
 @section('content')
+@php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('contact'))
 <!-- Hero Section -->
 <section class="bg-dark pt-28 pb-20 sm:pt-32 lg:pt-40 lg:pb-32 relative overflow-hidden flex items-center justify-center min-h-[36vh] sm:min-h-[40vh]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center w-full">
@@ -213,7 +214,7 @@
                 <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-8">Your Most Powerful Stage.</h2>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="{{ route('contact') }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors">
+                    <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors">
                         Book a Discovery Call
                     </a>
                     <a href="{{ route('about') }}" class="inline-flex justify-center items-center border border-white/30 text-white px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-dark transition-colors">
@@ -263,3 +264,4 @@
 </section>
 
 @endsection
+

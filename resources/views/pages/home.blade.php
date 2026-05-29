@@ -1,14 +1,17 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Heard In Africa | Africa\'s Finest Voices. Your Most Powerful Stage.')
 
 @section('content')
+@php($clientLogos = $siteSettings['homepage_client_logos'] ?? [])
+@php($homepageVideoUrl = $siteSettings['homepage_video_url'] ?? 'https://cdn.pixabay.com/video/2020/05/21/40003-424177579_large.mp4')
+@php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('contact'))
 <!-- Hero Section -->
 <section class="relative bg-dark pt-28 pb-20 sm:pt-32 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[78vh] md:min-h-[85vh]">
     <!-- Video Background -->
     <div class="absolute inset-0 z-0">
         <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-40 mix-blend-overlay">
-            <source src="https://cdn.pixabay.com/video/2020/05/21/40003-424177579_large.mp4" type="video/mp4">
+            <source src="{{ $homepageVideoUrl }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="absolute inset-0 bg-gradient-to-b from-darker/90 via-dark/80 to-darker/90"></div>
@@ -24,13 +27,22 @@
                 We connect global organisations with Africa&apos;s leading speakers and design conference programmes that move audiences and shape conversations.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-                <a href="{{ route('contact') }}" class="inline-flex justify-center items-center rounded-none bg-gold text-dark px-8 py-3 text-sm font-bold tracking-wider hover:bg-white hover:text-dark transition-all duration-300">
+                <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center rounded-none bg-gold text-dark px-8 py-3 text-sm font-bold tracking-wider hover:bg-white hover:text-dark transition-all duration-300">
                     Book a Discovery Call
                 </a>
                 <a href="{{ route('about') }}" class="inline-flex justify-center items-center rounded-none border border-white text-white px-8 py-3 text-sm font-medium tracking-wider hover:bg-white hover:text-dark transition-all duration-300">
                     Learn More
                 </a>
             </div>
+            @if(!empty($clientLogos))
+                <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800" class="mt-10 flex flex-wrap justify-center gap-3">
+                    @foreach($clientLogos as $clientLogo)
+                        <span class="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-medium tracking-wide text-gray-200 backdrop-blur-sm">
+                            {{ $clientLogo }}
+                        </span>
+                    @endforeach
+                </div>
+            @endif
         </div>
     </div>
 </section>
@@ -184,7 +196,7 @@
                 Africa&apos;s Finest Voices. Your Most Powerful Stage.
             </h2>
             <p class="text-slate-600 mb-8 text-sm">We connect speakers, shape programmes, and support the stages that matter.</p>
-            <a href="{{ route('contact') }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold tracking-wider hover:bg-dark hover:text-white transition-colors">
+            <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold tracking-wider hover:bg-dark hover:text-white transition-colors">
                 Book a Discovery Call
             </a>
         </div>
@@ -229,3 +241,4 @@
 </section>
 
 @endsection
+
