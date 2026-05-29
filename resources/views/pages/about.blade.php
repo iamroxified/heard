@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'About Us - Heard In Africa')
+@section('title', 'About Heard In Africa')
 
 @section('content')
 <!-- Hero Section -->
-<section class="bg-[#0a0f1d] pt-32 pb-20 lg:pt-40 lg:pb-32 relative overflow-hidden flex items-center justify-center min-h-[40vh]">
+<section class="bg-dark pt-28 pb-20 sm:pt-32 lg:pt-40 lg:pb-32 relative overflow-hidden flex items-center justify-center min-h-[36vh] sm:min-h-[40vh]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center w-full">
-        <h1 data-aos="fade-up" data-aos-duration="1000" class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white tracking-tight">
-            Heard in Africa
+        <h1 data-aos="fade-up" data-aos-duration="1000" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white tracking-tight">
+            About Heard In Africa
         </h1>
     </div>
 </section>
@@ -22,21 +22,27 @@
             </div>
             <!-- Right Text -->
             <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" class="pl-0 md:pl-4">
-                <h2 class="text-3xl md:text-4xl font-heading font-bold text-[#0a0f1d] mb-6 leading-tight">
-                    Empowering African<br>Voices on Global<br>Stages
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-6 leading-tight">
+                    About the Company
                 </h2>
                 <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                    Growing up in Nigeria, I witnessed the remarkable achievements of Africans across the globe. From founding companies and pioneering ideas to setting records and achieving firsts, Africans have consistently demonstrated excellence. However, there was a glaring absence of a dedicated platform to showcase these exceptional speakers and brilliant minds to the world.
+                    Africa has always produced world-class thinkers, leaders, innovators, and storytellers. The gap was never the talent. The gap was the infrastructure to connect that talent with the audiences that needed to hear it.
+                </p>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Heard In Africa was founded to close that gap.
+                </p>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Growing up witnessing the remarkable achievements of Africans across the globe — founding companies, pioneering ideas, setting records — our founder Chimfumnanya Nwandu saw something missing: a dedicated, professional home for African speakers on the world stage. After five years managing corporate events and watching organisations struggle to find, vet, and prepare the right voices, she built the platform she wished had existed.
+                </p>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Heard In Africa is now Africa&apos;s speaker management and conference programming partner of choice — working with pan-African summits, global institutions, and forward-looking organisations who understand that the right voice at the right moment can change what a room believes is possible.
                 </p>
                 <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                    This gap inspired the creation of Heard in Africa, an all-in-one platform that connects phenomenal African speakers with global stages. With over five years of experience in managing corporate events, I understand the challenges event organizers face in selecting, vetting, and preparing speakers.
-                </p>
-                <p class="text-slate-600 text-sm leading-relaxed italic border-l-4 border-primary pl-4 mb-6">
-                    "Heard in Africa was born to simplify this process, ensuring that the right voices are heard at the right events."
+                    We manage speakers end-to-end. We design conference programmes from the ground up. We position African experts to be heard at the level their expertise deserves. And we do all of it with the rigour, relationships, and care that Africa&apos;s excellence warrants.
                 </p>
                 <div class="text-right">
-                    <p class="text-xs font-bold text-slate-900 uppercase tracking-wider">-<i> Chimfumnaya Nwandu </i></p>
-                    <p class="text-xs text-slate-500">Executive Director</p>
+                    <p class="text-xs font-bold text-slate-900 uppercase tracking-wider">Chimfumnanya Nwandu</p>
+                    <p class="text-xs text-slate-500">Founder &amp; Executive Director</p>
                 </div>
             </div>
         </div>
@@ -44,7 +50,7 @@
 </section>
 
 <!-- Mission & Vision Section -->
-<section class="py-24 relative overflow-hidden bg-[#0a0f1d]">
+<section class="py-24 relative overflow-hidden bg-dark">
     <!-- Abstract wavy background -->
     <div class="absolute inset-0 z-0 opacity-20">
         <svg viewBox="0 0 1440 320" class="absolute bottom-0 w-full" preserveAspectRatio="none">
@@ -56,24 +62,24 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
             <!-- Our Mission -->
             <div data-aos="fade-up" data-aos-duration="1000">
-                <h3 class="text-3xl font-heading font-bold text-white mb-4 flex items-center gap-3">
-                    Our Mission
+                <h3 class="text-3xl font-heading font-bold text-accent mb-4 flex items-center gap-3">
+                    Vision
                 </h3>
                 <p class="text-gray-300 text-sm leading-relaxed pl-1 max-w-md">
-                    To amplify Africa's narrative by connecting its most influential voices and thought leaders with global stages, driving meaningful conversations that shape the future.
+                    To be the foremost globally recognised platform connecting African voices with world-class stages — making Africa&apos;s expertise impossible to ignore.
                 </p>
             </div>
 
             <!-- Our Vision -->
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="border border-primary p-8 md:p-10 relative">
-                <div class="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-primary"></div>
-                <div class="absolute -bottom-3 -right-3 w-6 h-6 border-b-2 border-r-2 border-primary"></div>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="border border-gold p-8 md:p-10 relative">
+                <div class="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-accent"></div>
+                <div class="absolute -bottom-3 -right-3 w-6 h-6 border-b-2 border-r-2 border-accent"></div>
 
-                <h3 class="text-3xl font-heading font-bold text-white mb-4">
-                    Our Vision
+                <h3 class="text-3xl font-heading font-bold text-accent mb-4">
+                    Mission
                 </h3>
                 <p class="text-gray-300 text-sm leading-relaxed">
-                    To be the premier platform that elevates African voices, empowering organizations globally through authentic, world-class programming and unparalleled thought leadership.
+                    To connect and showcase Africa&apos;s leading speakers and thinkers to the world by providing end-to-end speaker management, strategic positioning, and conference programming that creates meaningful, lasting impact for events and audiences everywhere.
                 </p>
             </div>
         </div>
@@ -86,43 +92,14 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <!-- Values List -->
             <div data-aos="fade-right" data-aos-duration="1000">
-                <h2 class="text-3xl md:text-4xl font-heading font-bold text-[#0a0f1d] mb-10">
-                    Our Core Values
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-10">
+                    Why Heard In Africa Exists
                 </h2>
 
-                <div class="space-y-8">
-                    <!-- Value 1 -->
-                    <div>
-                        <div class="flex justify-between text-sm font-bold text-slate-900 mb-2">
-                            <span>Excellence</span>
-                            <span>100%</span>
-                        </div>
-                        <div class="w-full bg-slate-100 h-1">
-                            <div class="bg-primary h-1" style="width: 100%" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1500"></div>
-                        </div>
-                    </div>
-
-                    <!-- Value 2 -->
-                    <div>
-                        <div class="flex justify-between text-sm font-bold text-slate-900 mb-2">
-                            <span>Integrity</span>
-                            <span>100%</span>
-                        </div>
-                        <div class="w-full bg-slate-100 h-1">
-                            <div class="bg-primary h-1" style="width: 100%" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1500"></div>
-                        </div>
-                    </div>
-
-                    <!-- Value 3 -->
-                    <div>
-                        <div class="flex justify-between text-sm font-bold text-slate-900 mb-2">
-                            <span>Impact</span>
-                            <span>100%</span>
-                        </div>
-                        <div class="w-full bg-slate-100 h-1">
-                            <div class="bg-primary h-1" style="width: 100%" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1500"></div>
-                        </div>
-                    </div>
+                <div class="space-y-6 text-sm leading-8 text-slate-600">
+                    <p>African expertise is consistently underrepresented on global stages — not because of a shortage of knowledge, but because of a shortage of professional infrastructure.</p>
+                    <p>There has been no dedicated agency doing for African speakers what the world&apos;s best speaker management firms do for their rosters.</p>
+                    <p>Heard In Africa exists to change that. We are not a marketplace. We are a management company, and there is a meaningful difference.</p>
                 </div>
             </div>
 
@@ -137,45 +114,17 @@
 <!-- What We Do -->
 <section class="py-24 bg-slate-50 overflow-hidden">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-        <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-heading font-bold text-[#0a0f1d] mb-16">
-            What We Do
+        <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-heading font-bold text-dark mb-16">
+            Founder
         </h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <!-- Box 1 -->
-            <div data-aos="zoom-in" data-aos-delay="100" class="bg-white border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow">
-                <h3 class="text-lg font-heading font-bold text-[#0a0f1d] mb-3">Speaker Agency</h3>
-                <p class="text-xs text-slate-500 leading-relaxed">Providing exclusive access to a premium roster of African thought leaders for global stages.</p>
-            </div>
-
-            <!-- Box 2 -->
-            <div data-aos="zoom-in" data-aos-delay="200" class="bg-white border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow">
-                <h3 class="text-lg font-heading font-bold text-[#0a0f1d] mb-3">Content Curation</h3>
-                <p class="text-xs text-slate-500 leading-relaxed">Aligning the narrative of your event with the strategic outcomes of your organization.</p>
-            </div>
-
-            <!-- Box 3 -->
-            <div data-aos="zoom-in" data-aos-delay="300" class="bg-white border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow">
-                <h3 class="text-lg font-heading font-bold text-[#0a0f1d] mb-3">Event Management</h3>
-                <p class="text-xs text-slate-500 leading-relaxed">End-to-end management from concept to execution for high-stakes corporate summits.</p>
-            </div>
-
-            <!-- Box 4 -->
-            <div data-aos="zoom-in" data-aos-delay="400" class="bg-white border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow">
-                <h3 class="text-lg font-heading font-bold text-[#0a0f1d] mb-3">Strategic Consulting</h3>
-                <p class="text-xs text-slate-500 leading-relaxed">Advising organizations on how to build impactful programs and design transformational agendas.</p>
-            </div>
-
-            <!-- Box 5 -->
-            <div data-aos="zoom-in" data-aos-delay="500" class="bg-white border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow">
-                <h3 class="text-lg font-heading font-bold text-[#0a0f1d] mb-3">Speaker Development</h3>
-                <p class="text-xs text-slate-500 leading-relaxed">Working with emerging experts to refine their core message and position them globally.</p>
-            </div>
-
-            <!-- Box 6 -->
-            <div data-aos="zoom-in" data-aos-delay="600" class="bg-white border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow">
-                <h3 class="text-lg font-heading font-bold text-[#0a0f1d] mb-3">Event Programming</h3>
-                <p class="text-xs text-slate-500 leading-relaxed">Designing the flow of experience and formatting sessions to keep audiences engaged.</p>
+            <div data-aos="zoom-in" data-aos-delay="100" class="bg-white border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow md:col-span-3">
+                <h3 class="text-lg font-heading font-bold text-dark mb-3">Chimfumnanya Nwandu — Executive Director</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Chimfumnanya Nwandu is the founder and Executive Director of Heard In Africa. With over five years of experience managing corporate events across Nigeria and beyond, she has sat on both sides of the stage — as the person responsible for finding the right speaker, and as the person who understands what it takes to prepare them. She founded Heard In Africa from a conviction that Africa&apos;s most compelling voices deserved a professional home that matched their calibre. She holds the relationships, the programme design expertise, and the speaker management infrastructure that makes Heard In Africa the agency it is.
+                </p>
             </div>
         </div>
     </div>
@@ -193,60 +142,60 @@
 
             <!-- Right Content -->
             <div data-aos="fade-left" data-aos-delay="200">
-                <h2 class="text-3xl md:text-4xl font-heading font-bold text-[#0a0f1d] mb-10">
-                    Why Choose Us
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-10">
+                    Our Approach
                 </h2>
 
                 <div class="space-y-8">
                     <!-- Feature 1 -->
                     <div class="flex gap-4">
-                        <div class="shrink-0 w-12 h-12 bg-primary flex items-center justify-center text-[#0a0f1d]">
+                        <div class="shrink-0 w-12 h-12 bg-accent flex items-center justify-center text-white">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
                         <div>
-                            <h4 class="text-lg font-bold text-[#0a0f1d] mb-1">Proven Expertise</h4>
-                            <p class="text-sm text-slate-500">We have consistently managed and programmed high-level global events with excellent outcomes.</p>
+                            <h4 class="text-lg font-bold text-dark mb-1">Speaker Management</h4>
+                            <p class="text-sm text-slate-500">Finding, vetting, briefing, and supporting speakers from first conversation to final applause.</p>
                         </div>
                     </div>
 
                     <!-- Feature 2 -->
                     <div class="flex gap-4">
-                        <div class="shrink-0 w-12 h-12 bg-primary flex items-center justify-center text-[#0a0f1d]">
+                        <div class="shrink-0 w-12 h-12 bg-accent flex items-center justify-center text-white">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
                             </svg>
                         </div>
                         <div>
-                            <h4 class="text-lg font-bold text-[#0a0f1d] mb-1">Diverse Speaker Pool</h4>
-                            <p class="text-sm text-slate-500">Access an exclusive bench of the continent's most profound and diverse intellectual property.</p>
+                            <h4 class="text-lg font-bold text-dark mb-1">Speaker Agency</h4>
+                            <p class="text-sm text-slate-500">Positioning African speakers for the global stages their expertise deserves.</p>
                         </div>
                     </div>
 
                     <!-- Feature 3 -->
                     <div class="flex gap-4">
-                        <div class="shrink-0 w-12 h-12 bg-primary flex items-center justify-center text-[#0a0f1d]">
+                        <div class="shrink-0 w-12 h-12 bg-accent flex items-center justify-center text-white">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
                             </svg>
                         </div>
                         <div>
-                            <h4 class="text-lg font-bold text-[#0a0f1d] mb-1">Tailored Solutions</h4>
-                            <p class="text-sm text-slate-500">We don't offer off-the-shelf packages. Every event and agenda is customized to your exact objectives.</p>
+                            <h4 class="text-lg font-bold text-dark mb-1">Conference Programming</h4>
+                            <p class="text-sm text-slate-500">Designing agendas with intellectual coherence, deliberate flow, and purposeful session design.</p>
                         </div>
                     </div>
 
                     <!-- Feature 4 -->
                     <div class="flex gap-4">
-                        <div class="shrink-0 w-12 h-12 bg-primary flex items-center justify-center text-[#0a0f1d]">
+                        <div class="shrink-0 w-12 h-12 bg-accent flex items-center justify-center text-white">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
                             </svg>
                         </div>
                         <div>
-                            <h4 class="text-lg font-bold text-[#0a0f1d] mb-1">Global Reach</h4>
-                            <p class="text-sm text-slate-500">While our roots are in Africa, our speakers and our impact are consistently global.</p>
+                            <h4 class="text-lg font-bold text-dark mb-1">Speaker Visibility</h4>
+                            <p class="text-sm text-slate-500">Helping experts build a stronger profile, clearer narrative, and stronger stage presence.</p>
                         </div>
                     </div>
                 </div>
@@ -256,19 +205,19 @@
 </section>
 
 <!-- Call to Action Block -->
-<section class="py-20 bg-[#0a0f1d] overflow-hidden">
+<section class="py-20 bg-dark overflow-hidden">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row gap-12 items-center">
             <div class="w-full md:w-1/2 text-center md:text-left" data-aos="fade-right">
-                <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-2">Looking for Speaker?</h2>
-                <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-8">or <span class="text-primary">Do You Want to Speak?</span></h2>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-2">Africa&apos;s Finest Voices.</h2>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-8">Your Most Powerful Stage.</h2>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="{{ route('events') }}" class="inline-flex justify-center items-center bg-primary text-[#0a0f1d] px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors">
-                        Find Speaker
+                    <a href="{{ route('contact') }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors">
+                        Book a Discovery Call
                     </a>
-                    <a href="{{ route('contact') }}" class="inline-flex justify-center items-center bg-primary text-[#0a0f1d] px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors">
-                        Apply to Speak
+                    <a href="{{ route('about') }}" class="inline-flex justify-center items-center border border-white/30 text-white px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-dark transition-colors">
+                        Learn More
                     </a>
                 </div>
             </div>
@@ -283,8 +232,8 @@
 <!-- Events We Provide Speakers For -->
 <section class="py-24 bg-white overflow-hidden">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-        <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-heading font-bold text-[#0a0f1d] mb-12">
-            Events We Provide Speakers For
+        <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-heading font-bold text-dark mb-12">
+            Trusted by Organisations That Take Their Stages Seriously
         </h2>
 
         <div class="flex flex-col md:flex-row gap-6 justify-center items-center" data-aos="zoom-in" data-aos-delay="200">
@@ -292,14 +241,14 @@
             <div class="w-full md:w-1/2 relative overflow-hidden group">
                 <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Large Conference" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span class="text-white font-bold text-xl tracking-wider uppercase">Global Summits</span>
+                    <span class="text-white font-bold text-xl tracking-wider uppercase">Pan-African Summits</span>
                 </div>
             </div>
             <!-- Image 2 -->
             <div class="w-full md:w-1/2 relative overflow-hidden group">
                 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Boardroom Meeting" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span class="text-white font-bold text-xl tracking-wider uppercase">Executive Sessions</span>
+                    <span class="text-white font-bold text-xl tracking-wider uppercase">Leadership Forums</span>
                 </div>
             </div>
         </div>

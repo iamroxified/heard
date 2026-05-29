@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title', 'Heard In Africa - Premium Event Speaker Management')</title>
+    <title>@yield('title', 'Heard In Africa')</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700|outfit:300,400,500,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700,800" rel="stylesheet" />
 
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -20,25 +20,28 @@
         <style type="text/tailwindcss">
             @theme {
                 --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
-                --font-heading: 'Outfit', ui-sans-serif, system-ui, sans-serif;
-                --color-primary: #F59E0B; /* Amber/Gold */
-                --color-primary-dark: #D97706;
-                --color-dark: #0F172A; /* Slate 900 */
-                --color-darker: #020617; /* Slate 950 */
-                --color-light: #F8FAFC;
+                --font-heading: 'Inter', ui-sans-serif, system-ui, sans-serif;
+                --color-primary: #1A1A2E;
+                --color-primary-dark: #10101c;
+                --color-accent: #1B6B3A;
+                --color-gold: #C8933A;
+                --color-dark: #1A1A2E;
+                --color-darker: #0f1020;
+                --color-light: #F4F4F4;
             }
             body {
                 font-family: var(--font-sans);
                 background-color: var(--color-light);
-                color: #334155;
+                color: #1f2937;
             }
             h1, h2, h3, h4, h5, h6, .font-heading {
                 font-family: var(--font-heading);
+                font-weight: 700;
             }
         </style>
     @endif
 </head>
-<body class="antialiased flex flex-col min-h-screen bg-[#F9FAFB] text-slate-800">
+<body class="antialiased flex flex-col min-h-screen bg-light text-slate-800">
 
     <x-navbar />
 

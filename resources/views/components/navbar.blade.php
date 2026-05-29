@@ -1,28 +1,28 @@
 <header x-data="{ mobileMenuOpen: false, scrolled: false }" 
         @scroll.window="scrolled = (window.pageYOffset > 20) ? true : false"
-        :class="{'bg-[#0a0f1d] shadow-lg': scrolled, 'bg-[#0a0f1d] md:bg-transparent': !scrolled}"
+        :class="{'bg-dark shadow-lg': scrolled, 'bg-dark md:bg-transparent': !scrolled}"
         class="fixed w-full top-0 z-50 transition-all duration-300 text-white border-b border-white/10">
     <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div class="flex w-full items-center justify-between py-5 lg:py-6">
             <div class="flex items-center">
                 <a href="{{ route('home') }}" class="text-2xl font-heading font-bold tracking-tight text-white flex items-center gap-2">
-                    <span class="text-primary text-3xl leading-none">&bull;</span> Heard In Africa
+                    <span class="text-gold text-3xl leading-none">&bull;</span> Heard In Africa
                 </a>
             </div>
             
             <!-- Desktop Navigation -->
             <div class="hidden lg:flex items-center space-x-8">
-                <a href="{{ route('home') }}" class="text-sm font-medium hover:text-primary transition-colors {{ request()->routeIs('home') ? 'text-primary' : 'text-gray-300' }}">Home</a>
-                <a href="{{ route('about') }}" class="text-sm font-medium hover:text-primary transition-colors {{ request()->routeIs('about') ? 'text-primary' : 'text-gray-300' }}">About</a>
-                <a href="{{ route('how-we-work') }}" class="text-sm font-medium hover:text-primary transition-colors {{ request()->routeIs('how-we-work') ? 'text-primary' : 'text-gray-300' }}">How We Work</a>
-                <a href="{{ route('services') }}" class="text-sm font-medium hover:text-primary transition-colors {{ request()->routeIs('services') ? 'text-primary' : 'text-gray-300' }}">Services</a>
-                <a href="{{ route('events') }}" class="text-sm font-medium hover:text-primary transition-colors {{ request()->routeIs('events') ? 'text-primary' : 'text-gray-300' }}">Events</a>
-                <a href="{{ route('blog') }}" class="text-sm font-medium hover:text-primary transition-colors {{ request()->routeIs('blog') ? 'text-primary' : 'text-gray-300' }}">Blog</a>
+                <a href="{{ route('home') }}" class="text-sm font-medium hover:text-gold transition-colors {{ request()->routeIs('home') ? 'text-gold' : 'text-gray-300' }}">Home</a>
+                <a href="{{ route('about') }}" class="text-sm font-medium hover:text-gold transition-colors {{ request()->routeIs('about') ? 'text-gold' : 'text-gray-300' }}">About</a>
+                <a href="{{ route('how-we-work') }}" class="text-sm font-medium hover:text-gold transition-colors {{ request()->routeIs('how-we-work') ? 'text-gold' : 'text-gray-300' }}">How We Work</a>
+                <a href="{{ route('services') }}" class="text-sm font-medium hover:text-gold transition-colors {{ request()->routeIs('services') ? 'text-gold' : 'text-gray-300' }}">Services</a>
+                <a href="{{ route('events') }}" class="text-sm font-medium hover:text-gold transition-colors {{ request()->routeIs('events') ? 'text-gold' : 'text-gray-300' }}">Events</a>
+                <a href="{{ route('blog') }}" class="text-sm font-medium hover:text-gold transition-colors {{ request()->routeIs('blog') ? 'text-gold' : 'text-gray-300' }}">Blog</a>
             </div>
             
             <div class="hidden lg:flex items-center space-x-4">
-                <a href="{{ route('contact') }}" class="inline-block rounded-none border border-primary text-primary px-6 py-2.5 text-sm font-medium hover:bg-primary hover:text-[#0a0f1d] transition-all duration-300 uppercase tracking-wider">
-                    Request Support
+                <a href="{{ route('contact') }}" class="inline-block rounded-none border border-gold text-gold px-6 py-2.5 text-sm font-medium hover:bg-gold hover:text-dark transition-all duration-300 uppercase tracking-wider">
+                    Book a Discovery Call
                 </a>
             </div>
 
@@ -49,18 +49,18 @@
          x-transition:leave="transition ease-in duration-150"
          x-transition:leave-start="opacity-100 translate-y-0"
          x-transition:leave-end="opacity-0 -translate-y-2"
-         class="lg:hidden bg-[#0a0f1d] border-t border-white/10 shadow-xl absolute w-full">
+         class="lg:hidden bg-dark border-t border-white/10 shadow-xl absolute w-full">
         <div class="space-y-1 px-4 pb-6 pt-2">
-            <a href="{{ route('home') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-primary transition-colors {{ request()->routeIs('home') ? 'text-primary' : 'text-gray-300' }}">Home</a>
-            <a href="{{ route('about') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-primary transition-colors {{ request()->routeIs('about') ? 'text-primary' : 'text-gray-300' }}">About</a>
-            <a href="{{ route('how-we-work') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-primary transition-colors {{ request()->routeIs('how-we-work') ? 'text-primary' : 'text-gray-300' }}">How We Work</a>
-            <a href="{{ route('services') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-primary transition-colors {{ request()->routeIs('services') ? 'text-primary' : 'text-gray-300' }}">Services</a>
-            <a href="{{ route('events') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-primary transition-colors {{ request()->routeIs('events') ? 'text-primary' : 'text-gray-300' }}">Events</a>
-            <a href="{{ route('blog') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-primary transition-colors {{ request()->routeIs('blog') ? 'text-primary' : 'text-gray-300' }}">Blog</a>
+            <a href="{{ route('home') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-gold transition-colors {{ request()->routeIs('home') ? 'text-gold' : 'text-gray-300' }}">Home</a>
+            <a href="{{ route('about') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-gold transition-colors {{ request()->routeIs('about') ? 'text-gold' : 'text-gray-300' }}">About</a>
+            <a href="{{ route('how-we-work') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-gold transition-colors {{ request()->routeIs('how-we-work') ? 'text-gold' : 'text-gray-300' }}">How We Work</a>
+            <a href="{{ route('services') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-gold transition-colors {{ request()->routeIs('services') ? 'text-gold' : 'text-gray-300' }}">Services</a>
+            <a href="{{ route('events') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-gold transition-colors {{ request()->routeIs('events') ? 'text-gold' : 'text-gray-300' }}">Events</a>
+            <a href="{{ route('blog') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-gold transition-colors {{ request()->routeIs('blog') ? 'text-gold' : 'text-gray-300' }}">Blog</a>
             
             <div class="mt-6 pt-6 border-t border-white/10">
-                <a href="{{ route('contact') }}" class="block w-full text-center rounded-none bg-primary text-[#0a0f1d] px-6 py-3 text-base font-bold uppercase tracking-wider hover:bg-primary-dark transition-colors">
-                    Request Support
+                <a href="{{ route('contact') }}" class="block w-full text-center rounded-none bg-gold text-dark px-6 py-3 text-base font-bold uppercase tracking-wider hover:bg-white transition-colors">
+                    Book a Discovery Call
                 </a>
             </div>
         </div>

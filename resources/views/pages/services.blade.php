@@ -4,15 +4,15 @@
 
 @section('content')
 <!-- Hero Section -->
-<section class="bg-[#0a0f1d] pt-32 pb-20 lg:pt-48 lg:pb-32 border-b border-white/10 relative overflow-hidden">
+<section class="bg-dark pt-28 pb-20 sm:pt-32 lg:pt-48 lg:pb-32 border-b border-white/10 relative overflow-hidden">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="max-w-3xl">
-            <h2 class="text-sm font-bold text-primary uppercase tracking-widest mb-3">Our Services</h2>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white tracking-tight mb-6">
-                Expertise designed for impact.
+            <h2 class="text-sm font-bold text-gold uppercase tracking-widest mb-3">Our Services</h2>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white tracking-tight mb-6">
+                Speaker management and conference programming, built for serious stages.
             </h1>
             <p class="text-xl text-gray-300 font-light mb-10 leading-relaxed">
-                Whether you are an event organizer looking for the perfect voice to elevate your stage, or an expert looking to position yourself globally, our services are designed to maximize impact.
+                We keep the structure familiar, but the brand, copy, and service offerings now match the new Heard In Africa positioning.
             </p>
         </div>
     </div>
@@ -25,51 +25,51 @@
         <!-- Service 1 -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div class="order-2 lg:order-1">
-                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Event Speaker Management</h3>
+                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Speaker Management</h3>
                 <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                    Finding a speaker is easy. Finding the *right* speaker who aligns with your corporate narrative, understands your audience, and delivers an unforgettable experience is hard. 
+                    End-to-end management of your speakers from sourcing through to the stage. We handle everything so you can focus on your event.
                 </p>
                 <p class="text-slate-600 mb-8">
-                    We manage the entire lifecycle of speaker engagement. From curating our exclusive bench of facilitators to rigorous pre-event briefings, logistics management, and on-site support, we ensure your speakers are an asset, not a risk.
+                    Finding the right speaker is only the beginning. Heard In Africa manages every step of the speaker journey — sourcing and vetting candidates, handling contracts and negotiations, coordinating travel and logistics, delivering pre-event preparation, and providing on-site support on the day.
                 </p>
                 
-                <div class="bg-slate-50 p-6 border-l-4 border-primary mb-8">
-                    <h4 class="font-bold text-slate-900 mb-2">Who is this for?</h4>
-                    <p class="text-sm text-slate-600">Corporate event planners, HR directors, and conference organizers looking for reliable, high-impact keynote speakers and workshop facilitators.</p>
+                <div class="bg-slate-50 p-6 border-l-4 border-gold mb-8">
+                    <h4 class="font-bold text-slate-900 mb-2">CTA</h4>
+                    <p class="text-sm text-slate-600">Book a Consultation</p>
                 </div>
                 
-                <a href="{{ route('contact') }}" class="inline-flex items-center text-sm font-bold text-primary uppercase tracking-wider group hover:text-primary-dark">
-                    Book a consultation <span class="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
+                <a href="{{ route('contact') }}" class="inline-flex items-center text-sm font-bold text-gold uppercase tracking-wider group hover:text-dark">
+                    Book a Consultation <span class="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
                 </a>
             </div>
             <div class="order-1 lg:order-2 bg-slate-100 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden">
                 <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Event Speaker" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#0a0f1d]/80 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
             </div>
         </div>
 
         <!-- Service 2 -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div class="bg-slate-100 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Event Programming" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#0a0f1d]/80 to-transparent"></div>
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Speaker Agency" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
+                <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
             </div>
             <div>
-                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Event Programming</h3>
+                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Speaker Agency</h3>
                 <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                    A great event is more than a sequence of talks. It is a carefully designed narrative arc that takes the audience on a journey from problem to paradigm shift.
+                    We represent and manage Africa&apos;s most compelling voices — positioning them for the global stages their expertise deserves.
                 </p>
                 <p class="text-slate-600 mb-8">
-                    We partner with your team to design the structure of your event. We determine the optimal mix of keynotes, panels, workshops, and disruptions to maintain energy, deepen understanding, and ensure the core message of the event is delivered effectively.
+                    Africa produces world-class thinkers, leaders, and innovators. Heard In Africa is the agency that represents them properly. We work with African speakers to develop their positioning, refine their narrative, and connect them with the right events, globally.
                 </p>
                 
-                <div class="bg-slate-50 p-6 border-l-4 border-primary mb-8">
-                    <h4 class="font-bold text-slate-900 mb-2">Who is this for?</h4>
-                    <p class="text-sm text-slate-600">Event organizers managing multi-day summits, leadership offsites, or complex events requiring a cohesive content strategy.</p>
+                <div class="bg-slate-50 p-6 border-l-4 border-gold mb-8">
+                    <h4 class="font-bold text-slate-900 mb-2">CTA</h4>
+                    <p class="text-sm text-slate-600">Join Our Speaker Roster</p>
                 </div>
                 
-                <a href="{{ route('contact') }}" class="inline-flex items-center text-sm font-bold text-primary uppercase tracking-wider group hover:text-primary-dark">
-                    Request Agenda Support <span class="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
+                <a href="{{ route('contact') }}" class="inline-flex items-center text-sm font-bold text-gold uppercase tracking-wider group hover:text-dark">
+                    Join Our Speaker Roster <span class="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
                 </a>
             </div>
         </div>
@@ -77,26 +77,52 @@
         <!-- Service 3 -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div class="order-2 lg:order-1">
-                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Speaker Positioning</h3>
+                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Conference Programming &amp; Agenda Design</h3>
                 <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                    Subject matter expertise is not enough. To be booked on global stages, you need a distinct point of view, intellectual property that solves a specific problem, and a compelling personal brand.
+                    We design keynotes, panels, fireside chats, and session formats that create experiences audiences remember — and organisers are proud of.
                 </p>
                 <p class="text-slate-600 mb-8">
-                    We work with emerging and established experts to extract their core methodology, package their insights into bookable keynotes and workshops, and position them as the definitive authority in their niche.
+                    A great conference is not a list of speakers — it is a carefully designed argument. Heard In Africa works with event producers, institutions, and organisations to build programmes with intellectual coherence, deliberate flow, and the right balance of energy, depth, and tension.
                 </p>
                 
-                <div class="bg-slate-50 p-6 border-l-4 border-primary mb-8">
-                    <h4 class="font-bold text-slate-900 mb-2">Who is this for?</h4>
-                    <p class="text-sm text-slate-600">Academics, C-suite executives, and industry practitioners looking to build a speaking career and monetize their expertise.</p>
+                <div class="bg-slate-50 p-6 border-l-4 border-gold mb-8">
+                    <h4 class="font-bold text-slate-900 mb-2">CTA</h4>
+                    <p class="text-sm text-slate-600">Plan Your Programme</p>
                 </div>
                 
-                <a href="{{ route('contact') }}" class="inline-flex items-center text-sm font-bold text-primary uppercase tracking-wider group hover:text-primary-dark">
-                    Apply for positioning <span class="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
+                <a href="{{ route('contact') }}" class="inline-flex items-center text-sm font-bold text-gold uppercase tracking-wider group hover:text-dark">
+                    Plan Your Programme <span class="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
                 </a>
             </div>
             <div class="order-1 lg:order-2 bg-slate-100 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1475721025871-8848135cb17c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Speaker Positioning" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#0a0f1d]/80 to-transparent"></div>
+                <img src="https://images.unsplash.com/photo-1475721025871-8848135cb17c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Conference Programming" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
+                <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+            </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="bg-slate-100 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1551836022-b06985bceb24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Speaker Visibility" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
+                <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+            </div>
+            <div>
+                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Speaker Visibility &amp; Positioning</h3>
+                <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                    Helping African experts build the profile, narrative, and stage presence that global audiences respond to.
+                </p>
+                <p class="text-slate-600 mb-8">
+                    Great expertise does not always come with great visibility. Our Speaker Visibility &amp; Positioning service helps African thought leaders translate their depth of knowledge into compelling speaker profiles, clear messaging, and a consistent public presence.
+                </p>
+                
+                <div class="bg-slate-50 p-6 border-l-4 border-gold mb-8">
+                    <h4 class="font-bold text-slate-900 mb-2">CTA</h4>
+                    <p class="text-sm text-slate-600">Apply for the Programme</p>
+                </div>
+                
+                <a href="{{ route('contact') }}" class="inline-flex items-center text-sm font-bold text-gold uppercase tracking-wider group hover:text-dark">
+                    Apply for the Programme <span class="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
+                </a>
             </div>
         </div>
 
@@ -106,12 +132,12 @@
 <!-- Final CTA Section -->
 <section class="py-24 bg-slate-100 relative text-center border-t border-slate-200">
     <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl md:text-4xl font-heading font-light text-slate-900 mb-6">Ready to elevate your event?</h2>
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-6">Ready to elevate your event?</h2>
         <p class="text-lg text-slate-600 mb-10">
             Contact us today to discuss your requirements and discover how our services can add value to your next engagement.
         </p>
-        <a href="{{ route('contact') }}" class="inline-flex justify-center items-center bg-[#0a0f1d] text-white px-8 py-4 text-sm font-bold uppercase tracking-wider hover:bg-slate-800 transition-colors">
-            Get In Touch
+        <a href="{{ route('contact') }}" class="inline-flex justify-center items-center bg-dark text-white px-8 py-4 text-sm font-bold uppercase tracking-wider hover:bg-gold hover:text-dark transition-colors">
+            Book a Discovery Call
         </a>
     </div>
 </section>
