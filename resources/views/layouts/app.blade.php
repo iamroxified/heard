@@ -8,7 +8,7 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.bunny.net/css?family=sora:300,400,500,600,700,800" rel="stylesheet" />
 
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -20,8 +20,8 @@
         <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
         <style type="text/tailwindcss">
             @theme {
-                --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
-                --font-heading: 'Inter', ui-sans-serif, system-ui, sans-serif;
+                --font-sans: 'sora', ui-sans-serif, system-ui, sans-serif;
+                --font-heading: 'sora', ui-sans-serif, system-ui, sans-serif;
                 --color-primary: #1A1A2E;
                 --color-primary-dark: #10101c;
                 --color-accent: #1B6B3A;
