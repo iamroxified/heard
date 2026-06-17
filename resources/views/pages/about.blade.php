@@ -1,11 +1,18 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'About Heard In Africa')
 
 @section('content')
 @php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-call'))
 <!-- Hero Section -->
-<section class="bg-dark pt-28 pb-20 sm:pt-32 lg:pt-40 lg:pb-32 relative overflow-hidden flex items-center justify-center min-h-[36vh] sm:min-h-[40vh]">
+<section class="relative bg-dark pt-28 pb-20 sm:pt-32 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[78vh] md:min-h-[85vh]">
+    <!-- Video Background -->
+    <div class="absolute inset-0 z-0">
+
+        <img src="{{ asset('img/Nana TEDxNzaStreet.jpg') }}" class="absolute inset-0 w-full h-full object-contain opacity-50">
+        <div class="absolute inset-0 bg-gradient-to-b from-darker/90 via-dark/80 to-darker/90"></div>
+    </div>
+
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center w-full">
         <h1 data-aos="fade-up" data-aos-duration="1000" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white tracking-tight">
             About Heard In Africa
@@ -19,15 +26,22 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <!-- Left Image -->
             <div data-aos="fade-right" data-aos-duration="1000">
-                <img src="{{ asset('img/1.png') }}" alt="Speaker on stage" class="w-full h-auto object-cover shadow-lg border border-slate-100">
+                <img src="{{ asset('img/nana.jpg') }}" alt="Speaker on stage" class="w-full h-auto object-cover shadow-lg border border-slate-100">
             </div>
             <!-- Right Text -->
             <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" class="pl-0 md:pl-4">
                 <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-6 leading-tight">
                     About the Company
                 </h2>
-                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                <p>
                     Africa has always produced world-class thinkers, leaders, innovators, and storytellers. The gap was never the talent. The gap was the infrastructure to connect that talent with the audiences that needed to hear it.
+
+
+
+
+
+
+
                 </p>
                 <p class="text-slate-600 text-sm leading-relaxed mb-4">
                     Heard In Africa was founded to close that gap.
@@ -36,14 +50,15 @@
                     Growing up witnessing the remarkable achievements of Africans across the globe — founding companies, pioneering ideas, setting records — our founder Chimfumnanya Nwandu saw something missing: a dedicated, professional home for African speakers on the world stage. After five years managing corporate events and watching organisations struggle to find, vet, and prepare the right voices, she built the platform she wished had existed.
                 </p>
                 <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                    Heard In Africa is now Africa&apos;s speaker management and conference programming partner of choice — working with pan-African summits, global institutions, and forward-looking organisations who understand that the right voice at the right moment can change what a room believes is possible.
+
+                    Heard In Africa is now Africa's speaker management and conference programming partner of choice — working with pan-African summits, global institutions, and forward-looking organisations who understand that the right voice at the right moment can change what a room believes is possible.
                 </p>
                 <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                    We manage speakers end-to-end. We design conference programmes from the ground up. We position African experts to be heard at the level their expertise deserves. And we do all of it with the rigour, relationships, and care that Africa&apos;s excellence warrants.
+                    We manage speakers end-to-end. We design conference programmes from the ground up. We position African experts to be heard at the level their expertise deserves. And we do all of it with the rigour, relationships, and care that Africa's excellence warrants.
                 </p>
                 <div class="text-right">
-                    <p class="text-xs font-bold text-slate-900 uppercase tracking-wider">Chimfumnanya Nwandu</p>
-                    <p class="text-xs text-slate-500">Founder &amp; Executive Director</p>
+                    <p class="text-xs font-bold text-slate-900 uppercase tracking-wider">Chimfumnanya "Nana" Nwandu</p>
+                    <p class="text-xs text-slate-500">Founder, Heard In Africa</p>
                 </div>
             </div>
         </div>
@@ -122,9 +137,9 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <!-- Box 1 -->
             <div data-aos="zoom-in" data-aos-delay="100" class="bg-white border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow md:col-span-3">
-                <h3 class="text-lg font-heading font-bold text-dark mb-3">Chimfumnanya Nwandu — Executive Director</h3>
+                <h3 class="text-lg font-heading font-bold text-dark mb-3">Chimfumnanya "Nana" Nwandu — Founder, Heard In Africa</h3>
                 <p class="text-sm text-slate-600 leading-relaxed">
-                    Chimfumnanya Nwandu is the founder and Executive Director of Heard In Africa. With over five years of experience managing corporate events across Nigeria and beyond, she has sat on both sides of the stage — as the person responsible for finding the right speaker, and as the person who understands what it takes to prepare them. She founded Heard In Africa from a conviction that Africa&apos;s most compelling voices deserved a professional home that matched their calibre. She holds the relationships, the programme design expertise, and the speaker management infrastructure that makes Heard In Africa the agency it is.
+                    Nana Nwandu is a lawyer, TEDx licensee, and development sector programme manager who has spent over seven years at the intersection of events, speakers, and the African stage. Her path into speaker management was not accidental — it was shaped by years of watching exceptional African voices go under-resourced, under-briefed, and under-placed, across corporate events, development programming, and the live stage. As the licensee of TEDxNzaStreet since 2018, she has not only managed speakers from the outside but curated and produced the kind of platform where ideas earn their moment. She founded Heard In Africa out of a conviction that African expertise deserves the same infrastructure, rigour, and strategic investment that the global speaking industry has long extended elsewhere — and she built it with the precision of someone who knows what that gap costs
                 </p>
             </div>
         </div>
@@ -264,4 +279,3 @@
 </section>
 
 @endsection
-

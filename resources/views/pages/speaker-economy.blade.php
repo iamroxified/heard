@@ -1,13 +1,13 @@
 ﻿@extends('layouts.app')
 
-@section('title', 'How We Work - Heard In Africa')
+@section('title', 'Speaker Economy - Heard In Africa')
 
 @section('content')
 @php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-call'))
 <!-- Hero Section -->
 <section class="bg-dark pt-28 pb-20 sm:pt-32 lg:pt-48 lg:pb-32 border-b border-white/10 relative overflow-hidden">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        <h2 class="text-sm font-bold text-gold uppercase tracking-widest mb-3">How We Work</h2>
+        <h2 class="text-sm font-bold text-gold uppercase tracking-widest mb-3">Speaker Economy</h2>
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white tracking-tight mb-6 max-w-4xl mx-auto">
             A clear process for speaker management and conference programme design.
         </h1>
@@ -17,7 +17,7 @@
 <!-- How It Works Steps -->
 <section class="py-24 bg-white relative">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center mb-16">
             <h2 class="text-3xl font-heading font-bold text-dark mb-4">Framework for Managing Speakers</h2>
         </div>
@@ -119,7 +119,7 @@
                     <p class="text-sm text-slate-600 leading-relaxed">We manage briefs, rehearsals, AV coordination, and on-site delivery so the event runs with precision.</p>
                 </div>
             </div>
-            
+
             <div class="flex gap-4">
                 <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors">
                     Book a Discovery Call
@@ -152,4 +152,3 @@
     </div>
 </section>
 @endsection
-

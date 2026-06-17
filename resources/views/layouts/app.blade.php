@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,32 +9,32 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=sora:300,400,500,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.bunny.net/css?family=sora:300,400,500,600,700,800|montserrat:300,400,500,600,700,800" rel="stylesheet" />
 
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Styles / Scripts -->
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
-        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-        <style type="text/tailwindcss">
-            @theme {
-                --font-sans: 'sora', ui-sans-serif, system-ui, sans-serif;
-                --font-heading: 'sora', ui-sans-serif, system-ui, sans-serif;
-                --color-primary: #1A1A2E;
-                --color-primary-dark: #10101c;
-                --color-accent: #1B6B3A;
-                --color-gold: #C8933A;
-                --color-dark: #1A1A2E;
-                --color-darker: #0f1020;
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme{
+                --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+                --font-heading: 'Sora', ui-sans-serif, system-ui, sans-serif;
+                --color-primary: #01161E;
+                --color-primary-dark: #031D2E;
+                --color-accent: #0056B3;
+                --color-gold: #FFC300;
+                --color-dark: #01161E;
+                --color-darker: #031D2E;
                 --color-light: #F4F4F4;
             }
             body {
                 font-family: var(--font-sans);
                 background-color: var(--color-light);
-                color: #1f2937;
+                color: #01161E;
             }
             h1, h2, h3, h4, h5, h6, .font-heading {
                 font-family: var(--font-heading);
@@ -42,6 +43,7 @@
         </style>
     @endif
 </head>
+
 <body class="antialiased flex flex-col min-h-screen bg-light text-slate-800">
 
     <x-navbar />
@@ -66,4 +68,5 @@
         });
     </script>
 </body>
+
 </html>

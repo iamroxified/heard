@@ -1,8 +1,8 @@
 @php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-call'))
 <header x-data="{ mobileMenuOpen: false, scrolled: false }"
-        @scroll.window="scrolled = (window.pageYOffset > 20) ? true : false"
-        :class="{'bg-dark shadow-lg': scrolled, 'bg-dark md:bg-transparent': !scrolled}"
-        class="fixed w-full top-0 z-50 transition-all duration-300 text-white border-b border-white/10">
+    @scroll.window="scrolled = (window.pageYOffset > 20) ? true : false"
+    :class="{'bg-dark shadow-lg': scrolled, 'bg-dark md:bg-transparent': !scrolled}"
+    class="fixed w-full top-0 z-50 transition-all duration-300 text-white border-b border-white/10">
     <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div class="flex w-full items-center justify-between py-5 lg:py-6">
             <div class="flex items-center">
@@ -15,7 +15,7 @@
             <div class="hidden lg:flex items-center space-x-8">
                 <a href="{{ route('home') }}" class="text-sm font-medium hover:text-gold transition-colors {{ request()->routeIs('home') ? 'text-gold' : 'text-gray-300' }}">Home</a>
                 <a href="{{ route('about') }}" class="text-sm font-medium hover:text-gold transition-colors {{ request()->routeIs('about') ? 'text-gold' : 'text-gray-300' }}">About</a>
-                <a href="{{ route('how-we-work') }}" class="text-sm font-medium hover:text-gold transition-colors {{ request()->routeIs('how-we-work') ? 'text-gold' : 'text-gray-300' }}">How We Work</a>
+                <a href="{{ route('speaker-economy') }}" class="text-sm font-medium hover:text-gold transition-colors {{ request()->routeIs('speaker-economy') ? 'text-gold' : 'text-gray-300' }}">Speaker Economy</a>
                 <a href="{{ route('services') }}" class="text-sm font-medium hover:text-gold transition-colors {{ request()->routeIs('services') ? 'text-gold' : 'text-gray-300' }}">Services</a>
                 <a href="{{ route('events') }}" class="text-sm font-medium hover:text-gold transition-colors {{ request()->routeIs('events') ? 'text-gold' : 'text-gray-300' }}">Events</a>
                 <a href="{{ route('blog') }}" class="text-sm font-medium hover:text-gold transition-colors {{ request()->routeIs('blog') ? 'text-gold' : 'text-gray-300' }}">Blog</a>
@@ -45,17 +45,17 @@
 
     <!-- Mobile menu -->
     <div x-cloak x-show="mobileMenuOpen"
-         x-transition:enter="transition ease-out duration-200"
-         x-transition:enter-start="opacity-0 -translate-y-2"
-         x-transition:enter-end="opacity-100 translate-y-0"
-         x-transition:leave="transition ease-in duration-150"
-         x-transition:leave-start="opacity-100 translate-y-0"
-         x-transition:leave-end="opacity-0 -translate-y-2"
-         class="lg:hidden bg-dark border-t border-white/10 shadow-xl absolute w-full">
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="opacity-0 -translate-y-2"
+        x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 -translate-y-2"
+        class="lg:hidden bg-dark border-t border-white/10 shadow-xl absolute w-full">
         <div class="space-y-1 px-4 pb-6 pt-2">
             <a href="{{ route('home') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-gold transition-colors {{ request()->routeIs('home') ? 'text-gold' : 'text-gray-300' }}">Home</a>
             <a href="{{ route('about') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-gold transition-colors {{ request()->routeIs('about') ? 'text-gold' : 'text-gray-300' }}">About</a>
-            <a href="{{ route('how-we-work') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-gold transition-colors {{ request()->routeIs('how-we-work') ? 'text-gold' : 'text-gray-300' }}">How We Work</a>
+            <a href="{{ route('speaker-economy') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-gold transition-colors {{ request()->routeIs('speaker-economy') ? 'text-gold' : 'text-gray-300' }}">Speaker Economy</a>
             <a href="{{ route('services') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-gold transition-colors {{ request()->routeIs('services') ? 'text-gold' : 'text-gray-300' }}">Services</a>
             <a href="{{ route('events') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-gold transition-colors {{ request()->routeIs('events') ? 'text-gold' : 'text-gray-300' }}">Events</a>
             <a href="{{ route('blog') }}" class="block rounded-md px-3 py-3 text-base font-medium hover:bg-white/5 hover:text-gold transition-colors {{ request()->routeIs('blog') ? 'text-gold' : 'text-gray-300' }}">Blog</a>

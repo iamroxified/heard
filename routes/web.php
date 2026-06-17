@@ -18,9 +18,9 @@ Route::get('/about', function () {
     return view('pages.about');
 })->name('about');
 
-Route::get('/how-we-work', function () {
-    return view('pages.how-we-work');
-})->name('how-we-work');
+Route::get('/speaker-economy', function () {
+    return view('pages.speaker-economy');
+})->name('speaker-economy');
 
 Route::get('/services', function () {
     return view('pages.services');
