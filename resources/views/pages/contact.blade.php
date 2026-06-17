@@ -1,12 +1,12 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Contact Us - Heard In Africa')
 
 @section('content')
 @php
-    $contactEmail = $siteSettings['contact_email'] ?? 'Info@heardinafrica.com';
-    $contactPhone = $siteSettings['contact_phone'] ?? '+234-815-851-2911';
-    $bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-call');
+$contactEmail = $siteSettings['contact_email'] ?? 'Info@heardinafrica.com';
+$contactPhone = $siteSettings['contact_phone'] ?? '+234-815-851-2911';
+$bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-call');
 @endphp
 <section class="bg-dark pt-28 pb-20 sm:pt-32 lg:pt-48 lg:pb-32 border-b border-white/10 relative overflow-hidden">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -27,6 +27,25 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <div class="lg:col-span-7">
+                @if(session('success'))
+                <div x-data="{ show: true }" x-show="show" x-transition class="mb-8 p-5 bg-emerald-50 border border-emerald-200 text-emerald-900 flex items-start gap-4 relative" role="alert">
+                    <div class="shrink-0 text-emerald-600 mt-0.5">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="pr-8">
+                        <h4 class="font-heading font-bold text-sm mb-1 text-emerald-950">Thank you!</h4>
+                        <p class="text-xs text-emerald-800/80 leading-relaxed font-medium">You have successfully submitted your enquiry and you will be contacted shortly.</p>
+                    </div>
+                    <button @click="show = false" class="absolute top-4 right-4 text-emerald-400 hover:text-emerald-700 transition-colors" aria-label="Close Alert">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                @endif
+
                 <div x-data="{ tab: 'agenda' }">
                     <div class="flex border-b border-slate-200 mb-8">
                         <button @click="tab = 'agenda'" :class="{ 'border-gold text-gold': tab === 'agenda', 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300': tab !== 'agenda' }" class="pb-4 px-1 border-b-2 font-medium text-sm mr-8 uppercase tracking-wider transition-colors">
@@ -96,37 +115,37 @@
                                     </select>
                                 </div>
                             </div>
-                            <div>
-                                <label class="block text-sm font-bold text-slate-700 mb-2">Location / city *</label>
-                                <input type="text" name="location" class="w-full bg-slate-50 border border-slate-300 px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold" required>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold text-slate-700 mb-2">Location / city *</label>
+                                    <input type="text" name="location" class="w-full bg-slate-50 border border-slate-300 px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold" required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-slate-700 mb-2">Event Timing (duration) *</label>
+                                    <input type="text" name="event_duration" placeholder="e.g. 2 hours, Half day, 3 days" class="w-full bg-slate-50 border border-slate-300 px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold" required>
+                                </div>
                             </div>
                             <div>
                                 <label class="block text-sm font-bold text-slate-700 mb-2">What kind of speaker are you looking for? *</label>
                                 <textarea rows="4" name="speaker_request" class="w-full bg-slate-50 border border-slate-300 px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold" required></textarea>
                             </div>
-                            <div>
-                                <label class="block text-sm font-bold text-slate-700 mb-2">Do you need programme / agenda design support?</label>
-                                <select name="programme_support" class="w-full bg-slate-50 border border-slate-300 px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold text-slate-700">
-                                    <option>Yes</option>
-                                    <option>No</option>
-                                    <option>Not sure</option>
-                                </select>
-                            </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
-                                    <label class="block text-sm font-bold text-slate-700 mb-2">Estimated budget for speaker fees (optional)</label>
-                                    <select name="budget" class="w-full bg-slate-50 border border-slate-300 px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold text-slate-700">
-                                        <option>Under $2,000</option>
-                                        <option>$2,000–$5,000</option>
-                                        <option>$5,000–$10,000</option>
-                                        <option>$10,000+</option>
-                                        <option>Prefer not to say</option>
+                                    <label class="block text-sm font-bold text-slate-700 mb-2">Do you need programme / agenda design support?</label>
+                                    <select name="programme_support" class="w-full bg-slate-50 border border-slate-300 px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold text-slate-700">
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                        <option>Not sure</option>
                                     </select>
                                 </div>
                                 <div>
                                     <label class="block text-sm font-bold text-slate-700 mb-2">How did you hear about us? (optional)</label>
                                     <input type="text" name="message" class="w-full bg-slate-50 border border-slate-300 px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold">
                                 </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Additional notes (optional)</label>
+                                <textarea rows="4" name="additional_notes" placeholder="Any other details or specific requests you would like to share..." class="w-full bg-slate-50 border border-slate-300 px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold"></textarea>
                             </div>
                             <button type="submit" class="bg-dark text-white px-8 py-4 font-bold uppercase tracking-wider hover:bg-gold hover:text-dark transition-colors">
                                 Submit Enquiry
@@ -220,4 +239,3 @@
     </div>
 </section>
 @endsection
-

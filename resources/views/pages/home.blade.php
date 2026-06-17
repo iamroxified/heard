@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Heard In Africa | Africa\'s Finest Voices. Your Most Powerful Stage.')
 
@@ -108,7 +108,7 @@
             </div>
             <h3 class="text-white font-bold text-sm">Speaker Agency</h3>
             <p class="text-gray-300 text-xs leading-relaxed mt-3">We represent and manage Africa&apos;s most compelling voices.</p>
-            <a href="{{ route('contact') }}" class="mt-4 text-gold text-xs font-bold uppercase tracking-wider">Join Our Speaker Roster</a>
+            <a href="https://forms.gle/niSFqGLFYn8g27Ev8" class="mt-4 text-gold text-xs font-bold uppercase tracking-wider">Join Our Speaker Roster</a>
           </div>
 
           <!-- Service Card 3 -->
@@ -209,8 +209,46 @@
   </div>
 </section>
 
+<?php
+if ($testimonials->isEmpty()) {
+  $testimonials = collect([
+    (object)[
+      'quote' => "What truly stood out was their unwavering commitment to aligning speaker satisfaction with Omniverse Africa's broader goals. Their ability to anticipate speaker needs, address concerns promptly, and create a seamless engagement process has not only strengthened our relationships with partners but also inspired confidence and enthusiasm for future collaborations with Omniverse Africa. We look forward to continued opportunities to work with Heard in Africa, confident that their expertise will consistently enhance our events and elevate our partnerships.",
+      'author_name' => "Duduyemi Obia",
+      'author_title' => "Director of Partnerships, Omniverse Africa Summit",
+      'rating' => 5
+    ]
+  ]);
+}
+?>
+
+<?php
+if ($faqs->isEmpty()) {
+  $faqs = collect([
+    (object)[
+      'question' => "What is the process for booking a speaker?",
+      'answer' => "The process starts with a Discovery & Brief session to understand your event goals. We then source and curate a shortlist of suitable speakers from our roster and manage all contracts, logistics, and pre-event briefing.",
+      'status' => 'active',
+      'sort_order' => 1
+    ],
+    (object)[
+      'question' => "Do you provide on-site speaker management?",
+      'answer' => "Yes, we handle end-to-end speaker support on the day of the event, including arrival logistics, stage briefing, AV coordinates, and schedule compliance.",
+      'status' => 'active',
+      'sort_order' => 2
+    ],
+    (object)[
+      'question' => "Can you help design our entire conference agenda?",
+      'answer' => "Absolutely. Our Conference Programming & Agenda Design service is built to structure keynotes, panels, and breakout sessions with intellectual flow and thematic coherence.",
+      'status' => 'active',
+      'sort_order' => 3
+    ]
+  ]);
+}
+?>
+
 <!-- Testimonials / Stories of Satisfied Clients -->
-<section class="py-24 bg-white overflow-hidden">
+<section class="py-24 bg-white overflow-hidden border-t border-slate-100">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
       <div class="md:col-span-4" data-aos="fade-right">
@@ -220,38 +258,119 @@
         </h2>
       </div>
 
-      <div class="md:col-span-8" data-aos="fade-left" data-aos-delay="200">
-        <div class="bg-white border border-slate-100 p-10 shadow-sm text-center hover:shadow-md transition-shadow">
-          <div class="flex justify-center text-gold mb-6">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-            </svg>
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-            </svg>
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-            </svg>
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-            </svg>
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-            </svg>
+      <div x-data="{ 
+          activeSlide: 0, 
+          slides: {{ $testimonials->values()->toJson() }},
+          autoPlayInterval: null,
+          startAutoPlay() {
+              this.autoPlayInterval = setInterval(() => {
+                  this.activeSlide = (this.activeSlide + 1) % this.slides.length;
+              }, 6000);
+          },
+          stopAutoPlay() {
+              if (this.autoPlayInterval) clearInterval(this.autoPlayInterval);
+          }
+      }"
+        x-init="startAutoPlay()"
+        @mouseenter="stopAutoPlay()"
+        @mouseleave="startAutoPlay()"
+        class="md:col-span-8" data-aos="fade-left" data-aos-delay="200">
+        <div class="bg-white border border-slate-100 p-10 shadow-sm text-center hover:shadow-md transition-shadow relative min-h-[350px] flex flex-col justify-between">
+
+          <!-- Testimonial Content -->
+          <div class="relative overflow-hidden flex-1 flex flex-col justify-center">
+            <template x-for="(slide, index) in slides" :key="index">
+              <div x-show="activeSlide === index"
+                x-transition:enter="transition ease-out duration-500"
+                x-transition:enter-start="opacity-0 transform translate-x-8"
+                x-transition:enter-end="opacity-100 transform translate-x-0"
+                x-transition:leave="transition ease-in duration-300"
+                x-transition:leave-start="opacity-100 transform translate-x-0"
+                x-transition:leave-end="opacity-0 transform -translate-x-8"
+                class="space-y-6">
+                <!-- Stars -->
+                <div class="flex justify-center text-gold gap-1">
+                  <template x-for="star in Array.from({ length: slide.rating || 5 })">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                    </svg>
+                  </template>
+                </div>
+                <!-- Quote -->
+                <p class="text-slate-600 text-sm leading-relaxed italic" x-text="'“' + slide.quote + '”'"></p>
+                <!-- Author -->
+                <div>
+                  <p class="text-xs font-bold text-slate-900 uppercase tracking-wider" x-text="slide.author_name"></p>
+                  <p class="text-xs text-slate-500 mt-1" x-text="slide.author_title"></p>
+                </div>
+              </div>
+            </template>
           </div>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
-            "Heard In Africa has fundamentally changed how we program our annual summit. Their speakers don't just motivate; they deliver actionable insights that align perfectly with our corporate strategy. The entire process from sourcing to on-the-day execution was flawless."
-          </p>
-          <p class="text-xs font-bold text-slate-900 uppercase tracking-wider">Event Planner, Global Tech Conference</p>
+
+          <!-- Navigation Arrow Controls -->
+          <div class="absolute inset-y-0 left-2 right-2 flex items-center justify-between pointer-events-none">
+            <button @click="activeSlide = (activeSlide - 1 + slides.length) % slides.length" class="pointer-events-auto w-10 h-10 rounded-full bg-slate-50 hover:bg-slate-100 flex items-center justify-center text-slate-400 hover:text-slate-700 transition-colors shadow-sm focus:outline-none">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+            </button>
+            <button @click="activeSlide = (activeSlide + 1) % slides.length" class="pointer-events-auto w-10 h-10 rounded-full bg-slate-50 hover:bg-slate-100 flex items-center justify-center text-slate-400 hover:text-slate-700 transition-colors shadow-sm focus:outline-none">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
 
           <!-- Slider Dots -->
           <div class="flex justify-center gap-2 mt-8">
-            <div class="w-2 h-2 rounded-full bg-slate-900 cursor-pointer"></div>
-            <div class="w-2 h-2 rounded-full bg-slate-300 cursor-pointer"></div>
-            <div class="w-2 h-2 rounded-full bg-slate-300 cursor-pointer"></div>
+            <template x-for="(slide, index) in slides" :key="index">
+              <div @click="activeSlide = index"
+                :class="activeSlide === index ? 'bg-slate-900 w-4' : 'bg-slate-300 w-2'"
+                class="h-2 rounded-full cursor-pointer transition-all duration-300"></div>
+            </template>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-24 bg-slate-50 border-t border-slate-200 overflow-hidden">
+  <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <span class="text-gold text-sm font-bold tracking-wider mb-2 block uppercase">Questions</span>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark">
+        Frequently Asked Questions
+      </h2>
+      <p class="text-slate-500 text-sm mt-3">Find quick answers to common questions about speaker management and agenda programming.</p>
+    </div>
+
+    <div x-data="{ activeFaq: null }" class="space-y-4" data-aos="fade-up" data-aos-delay="200">
+      @foreach($faqs as $index => $faq)
+      <div class="bg-white border border-slate-200 transition-all duration-300 hover:border-slate-300">
+        <button @click="activeFaq = activeFaq === {{ $index }} ? null : {{ $index }}"
+          class="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+          <span class="font-heading font-bold text-dark text-sm md:text-base">{{ $faq->question }}</span>
+          <span class="shrink-0 ml-4 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-dark transition-all"
+            :class="activeFaq === {{ $index }} ? 'rotate-180 border-gold text-gold bg-gold/5' : ''">
+            <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </span>
+        </button>
+
+        <div x-show="activeFaq === {{ $index }}"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 transform -translate-y-2"
+          x-transition:enter-end="opacity-100 transform translate-y-0"
+          class="border-t border-slate-100 bg-slate-50/50">
+          <div class="px-6 py-5 text-slate-600 text-sm leading-relaxed">
+            {{ $faq->answer }}
+          </div>
+        </div>
+      </div>
+      @endforeach
     </div>
   </div>
 </section>

@@ -19,12 +19,14 @@ class EnquiryController extends Controller
             'event_name' => ['nullable', 'string', 'max:255'],
             'event_date' => ['nullable', 'date'],
             'event_type' => ['nullable', 'string', 'max:255'],
+            'event_duration' => ['nullable', 'string', 'max:255'],
             'audience_size' => ['nullable', 'string', 'max:255'],
             'location' => ['nullable', 'string', 'max:255'],
             'speaker_request' => ['nullable', 'string'],
             'programme_support' => ['nullable', 'string', 'max:50'],
             'budget' => ['nullable', 'string', 'max:255'],
             'message' => ['nullable', 'string'],
+            'additional_notes' => ['nullable', 'string'],
         ]);
 
         Enquiry::create($data);

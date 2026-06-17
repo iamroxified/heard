@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
 <head>
     <meta charset="utf-8">
@@ -22,6 +22,8 @@
                 <a href="{{ route('admin.speakers.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.speakers.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Speakers</a>
                 <a href="{{ route('admin.events.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.events.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Events</a>
                 <a href="{{ route('admin.blog.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.blog.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Blog Posts</a>
+                <a href="{{ route('admin.testimonials.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.testimonials.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Testimonials</a>
+                <a href="{{ route('admin.faqs.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.faqs.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">FAQs</a>
                 <a href="{{ route('admin.enquiries.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.enquiries.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Enquiries</a>
                 <a href="{{ route('admin.settings.edit') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.settings.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Settings</a>
                 <form method="POST" action="{{ route('admin.logout') }}" class="pt-4">

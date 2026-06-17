@@ -7,15 +7,22 @@ use App\Http\Controllers\Admin\EnquiryController;
 use App\Http\Controllers\Admin\EventController as AdminEventController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\SpeakerController as AdminSpeakerController;
+use App\Http\Controllers\Admin\FaqController as AdminFaqController;
+use App\Http\Controllers\Admin\TestimonialController as AdminTestimonialController;
 use App\Http\Controllers\EnquiryController as PublicEnquiryController;
+use App\Models\Faq;
+use App\Models\Testimonial;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('pages.home');
+    $testimonials = Testimonial::where('status', 'active')->orderBy('sort_order', 'asc')->get();
+    $faqs = Faq::where('status', 'active')->orderBy('sort_order', 'asc')->get();
+    return view('pages.home', compact('testimonials', 'faqs'));
 })->name('home');
 
 Route::get('/about', function () {
-    return view('pages.about');
+    $faqs = Faq::where('status', 'active')->orderBy('sort_order', 'asc')->get();
+    return view('pages.about', compact('faqs'));
 })->name('about');
 
 Route::get('/speaker-economy', function () {
@@ -27,7 +34,10 @@ Route::get('/services', function () {
 })->name('services');
 
 Route::get('/events', function () {
-    return view('pages.events');
+    $featuredEvent = \App\Models\Event::where('is_featured', true)->first();
+    $upcomingEvents = \App\Models\Event::where('type', 'upcoming')->orderBy('event_date', 'asc')->get();
+    $pastEvents = \App\Models\Event::where('type', 'past')->orderBy('event_date', 'desc')->get();
+    return view('pages.events', compact('featuredEvent', 'upcomingEvents', 'pastEvents'));
 })->name('events');
 
 Route::get('/blog', function () {
@@ -73,6 +83,16 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('/blog', [AdminBlogPostController::class, 'store'])->name('blog.store');
         Route::put('/blog/{post}', [AdminBlogPostController::class, 'update'])->name('blog.update');
         Route::delete('/blog/{post}', [AdminBlogPostController::class, 'destroy'])->name('blog.destroy');
+
+        Route::get('/faqs', [AdminFaqController::class, 'index'])->name('faqs.index');
+        Route::post('/faqs', [AdminFaqController::class, 'store'])->name('faqs.store');
+        Route::put('/faqs/{faq}', [AdminFaqController::class, 'update'])->name('faqs.update');
+        Route::delete('/faqs/{faq}', [AdminFaqController::class, 'destroy'])->name('faqs.destroy');
+
+        Route::get('/testimonials', [AdminTestimonialController::class, 'index'])->name('testimonials.index');
+        Route::post('/testimonials', [AdminTestimonialController::class, 'store'])->name('testimonials.store');
+        Route::put('/testimonials/{testimonial}', [AdminTestimonialController::class, 'update'])->name('testimonials.update');
+        Route::delete('/testimonials/{testimonial}', [AdminTestimonialController::class, 'destroy'])->name('testimonials.destroy');
 
         Route::get('/enquiries', [EnquiryController::class, 'index'])->name('enquiries.index');
         Route::patch('/enquiries/{enquiry}', [EnquiryController::class, 'update'])->name('enquiries.update');

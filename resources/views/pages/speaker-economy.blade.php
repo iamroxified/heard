@@ -1,154 +1,489 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
-@section('title', 'Speaker Economy - Heard In Africa')
+@section('title', 'Speaker Economy & Resources - Heard In Africa')
 
 @section('content')
 @php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-call'))
-<!-- Hero Section -->
-<section class="bg-dark pt-28 pb-20 sm:pt-32 lg:pt-48 lg:pb-32 border-b border-white/10 relative overflow-hidden">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        <h2 class="text-sm font-bold text-gold uppercase tracking-widest mb-3">Speaker Economy</h2>
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white tracking-tight mb-6 max-w-4xl mx-auto">
-            A clear process for speaker management and conference programme design.
-        </h1>
-    </div>
-</section>
 
-<!-- How It Works Steps -->
-<section class="py-24 bg-white relative">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div x-data="{ 
+    newsletterModalOpen: false, 
+    ebookModalOpen: false, 
+    videoModalOpen: false,
+    selectedEbook: '', 
+    ebookTitle: '',
+    ebookCoverUrl: '',
+    emailSubmitted: false, 
+    ebookSubmitted: false,
+    newsletterEmail: '',
+    ebookName: '',
+    ebookEmail: '',
+    ebookOrg: '',
+    selectedVideoUrl: '',
+    
+    openEbookModal(title, cover) {
+        this.selectedEbook = title;
+        this.ebookTitle = title;
+        this.ebookCoverUrl = cover;
+        this.ebookSubmitted = false;
+        this.ebookName = '';
+        this.ebookEmail = '';
+        this.ebookOrg = '';
+        this.ebookModalOpen = true;
+    },
+    
+    submitNewsletter() {
+        if (!this.newsletterEmail) return;
+        this.emailSubmitted = true;
+    },
+    
+    submitEbook() {
+        if (!this.ebookName || !this.ebookEmail) return;
+        this.ebookSubmitted = true;
+    },
+    
+    openVideo(url) {
+        this.selectedVideoUrl = url;
+        this.videoModalOpen = true;
+    }
+}" 
+x-init="
+    // Auto-popup newsletter modal after 10 seconds (if not popped before)
+    setTimeout(() => {
+        if (!localStorage.getItem('newsletter_popped')) {
+            newsletterModalOpen = true;
+            localStorage.setItem('newsletter_popped', 'true');
+        }
+    }, 10000);
+">
 
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-heading font-bold text-dark mb-4">Framework for Managing Speakers</h2>
+    <!-- Hero Section -->
+    <section class="relative bg-dark pt-28 pb-20 sm:pt-32 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[50vh]">
+        <!-- Background Overlay -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-darker/90 via-dark/80 to-darker/90"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
-            <!-- Connecting Line (Desktop) -->
-            <div class="hidden md:block absolute top-6 left-1/6 right-1/6 h-0.5 bg-slate-200 z-0"></div>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center w-full">
+            <span class="text-gold text-sm font-bold tracking-wider mb-3 block uppercase" data-aos="fade-up">Speaker Economy</span>
+            <h1 data-aos="fade-up" data-aos-duration="1000" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white tracking-tight mb-6 max-w-4xl mx-auto">
+                Free Resource & Insights Library
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="200" class="text-lg text-gray-300 font-light max-w-2xl mx-auto leading-relaxed">
+                Explore our curated library of research, playbooks, masterclasses, and insights designed to help you build, program, and master the African stage.
+            </p>
+        </div>
+    </section>
 
-            <!-- Step 1 -->
-            <div class="relative z-10 text-center" data-aos="fade-up">
-                <div class="w-12 h-12 bg-gold text-dark font-bold flex items-center justify-center mx-auto mb-6">
-                    01
-                </div>
-                <h3 class="text-xl font-heading font-bold text-slate-900 mb-4">Discovery &amp; Brief</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    We begin with a detailed conversation about your event, your audience, your objectives, and the kind of speaker experience you want to create. We ask the questions most clients don&apos;t think to ask, so the brief is complete before we begin sourcing.
+    <!-- Free Resources Grid Section -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-gold text-sm font-bold tracking-wider mb-2 block uppercase" data-aos="fade-up">Instant Access</span>
+                <h2 data-aos="fade-up" data-aos-delay="100" class="text-3xl md:text-4xl font-heading font-bold text-dark">
+                    Featured Ebooks & Reports
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="200" class="text-slate-500 text-sm mt-3 max-w-md mx-auto">
+                    Download our premium industry guides to elevate your staging and speaker management.
                 </p>
             </div>
 
-            <!-- Step 2 -->
-            <div class="relative z-10 text-center" data-aos="fade-up" data-aos-delay="100">
-                <div class="w-12 h-12 bg-gold text-dark font-bold flex items-center justify-center mx-auto mb-6">
-                    02
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Resource 1 -->
+                <div data-aos="fade-up" data-aos-delay="100" class="group bg-slate-50 border border-slate-200 overflow-hidden hover:shadow-xl hover:border-gold/30 transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="aspect-[4/5] bg-slate-200 mb-6 overflow-hidden shadow-md relative group-hover:scale-[1.02] transition-transform duration-500">
+                            <img src="{{ asset('img/ebook_cover.png') }}" alt="The African Speaker Playbook" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-dark/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="bg-gold text-dark px-4 py-2 text-xs font-bold uppercase tracking-wider">Preview Ebook</span>
+                            </div>
+                        </div>
+                        <span class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Free Ebook</span>
+                        <h3 class="text-lg font-heading font-bold text-dark mb-3 group-hover:text-accent transition-colors duration-300">The African Speaker Playbook</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                            Learn the frameworks, storytelling structures, and positioning strategies used by Africa’s most successful voices to win global stages.
+                        </p>
+                    </div>
+                    <div class="p-6 border-t border-slate-200/60 bg-white">
+                        <button @click="openEbookModal('The African Speaker Playbook', '{{ asset('img/ebook_cover.png') }}')" class="w-full inline-flex justify-center items-center bg-dark text-white hover:bg-gold hover:text-dark px-4 py-3 text-xs font-bold uppercase tracking-wider transition-colors">
+                            Download Free Ebook
+                        </button>
+                    </div>
                 </div>
-                <h3 class="text-xl font-heading font-bold text-slate-900 mb-4">Sourcing &amp; Shortlist</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    Drawing on our curated roster and wider network, we present a shortlisted selection of speakers matched to your brief. Each recommendation comes with a rationale — not just a bio and a fee.
-                </p>
-            </div>
 
-            <!-- Step 3 -->
-            <div class="relative z-10 text-center" data-aos="fade-up" data-aos-delay="200">
-                <div class="w-12 h-12 bg-gold text-dark font-bold flex items-center justify-center mx-auto mb-6">
-                    03
+                <!-- Resource 2 -->
+                <div data-aos="fade-up" data-aos-delay="200" class="group bg-slate-50 border border-slate-200 overflow-hidden hover:shadow-xl hover:border-gold/30 transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="aspect-[4/5] bg-slate-200 mb-6 overflow-hidden shadow-md relative group-hover:scale-[1.02] transition-transform duration-500">
+                            <img src="{{ asset('img/report_cover.png') }}" alt="African Speaker Economy Impact Report" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-dark/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="bg-gold text-dark px-4 py-2 text-xs font-bold uppercase tracking-wider">Preview Report</span>
+                            </div>
+                        </div>
+                        <span class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Impact Report</span>
+                        <h3 class="text-lg font-heading font-bold text-dark mb-3 group-hover:text-accent transition-colors duration-300">Speaker Economy Impact Report</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                            Our comprehensive annual analysis of trends, speaker compensation benchmarks, gender representation, and event logistics on the continent.
+                        </p>
+                    </div>
+                    <div class="p-6 border-t border-slate-200/60 bg-white">
+                        <button @click="openEbookModal('Speaker Economy Impact Report', '{{ asset('img/report_cover.png') }}')" class="w-full inline-flex justify-center items-center bg-dark text-white hover:bg-gold hover:text-dark px-4 py-3 text-xs font-bold uppercase tracking-wider transition-colors">
+                            Download Free Report
+                        </button>
+                    </div>
                 </div>
-                <h3 class="text-xl font-heading font-bold text-slate-900 mb-4">Vetting &amp; Confirmation</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    We handle reference checks, availability confirmation, and initial fee negotiations, ensuring you only move forward with speakers who are the right fit in every dimension.
-                </p>
+
+                <!-- Resource 3 -->
+                <div data-aos="fade-up" data-aos-delay="300" class="group bg-slate-50 border border-slate-200 overflow-hidden hover:shadow-xl hover:border-gold/30 transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="aspect-[4/5] bg-slate-200 mb-6 overflow-hidden shadow-md relative group-hover:scale-[1.02] transition-transform duration-500">
+                            <img src="{{ asset('img/brief_guide_cover.png') }}" alt="Mastering the Brief: The Event Producer's Guide" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-dark/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="bg-gold text-dark px-4 py-2 text-xs font-bold uppercase tracking-wider">Preview Guide</span>
+                            </div>
+                        </div>
+                        <span class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Free Ebook</span>
+                        <h3 class="text-lg font-heading font-bold text-dark mb-3 group-hover:text-accent transition-colors duration-300">Mastering the Brief</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                            A step-by-step framework for event curators and organizers to design agendas, draft briefs, and align keynotes with business objectives.
+                        </p>
+                    </div>
+                    <div class="p-6 border-t border-slate-200/60 bg-white">
+                        <button @click="openEbookModal('Mastering the Brief', '{{ asset('img/brief_guide_cover.png') }}')" class="w-full inline-flex justify-center items-center bg-dark text-white hover:bg-gold hover:text-dark px-4 py-3 text-xs font-bold uppercase tracking-wider transition-colors">
+                            Download Free Guide
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative mt-12">
-            <div class="relative z-10 text-center" data-aos="fade-up">
-                <div class="w-12 h-12 bg-gold text-dark font-bold flex items-center justify-center mx-auto mb-6">
-                    04
-                </div>
-                <h3 class="text-xl font-heading font-bold text-slate-900 mb-4">Contract &amp; Logistics</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    We manage all contracting, travel arrangements, accommodation coordination, and logistics — so your team is free to focus on the event itself.
+    <!-- YouTube & Video Masterclass Section -->
+    <section class="py-24 bg-slate-50 overflow-hidden border-t border-slate-200">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-gold text-sm font-bold tracking-wider mb-2 block uppercase" data-aos="fade-up">Video Resources</span>
+                <h2 data-aos="fade-up" data-aos-delay="100" class="text-3xl md:text-4xl font-heading font-bold text-dark">
+                    Heard In Africa Masterclasses
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="200" class="text-slate-500 text-sm mt-3 max-w-md mx-auto">
+                    Watch our latest video discussions, staging guides, and expert interviews on our YouTube channel.
                 </p>
             </div>
-            <div class="relative z-10 text-center" data-aos="fade-up" data-aos-delay="100">
-                <div class="w-12 h-12 bg-gold text-dark font-bold flex items-center justify-center mx-auto mb-6">
-                    05
+
+            <!-- Featured Video Player Card -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white border border-slate-200 shadow-sm p-6 md:p-8 mb-12" data-aos="fade-up">
+                <!-- Video Thumbnail Left -->
+                <div class="lg:col-span-7 relative group cursor-pointer aspect-video bg-slate-900 border border-slate-200 overflow-hidden flex items-center justify-center" @click="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                    <img src="{{ asset('img/DSC_5074.jpg') }}" alt="YouTube Masterclass" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80">
+                    <div class="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300"></div>
+                    
+                    <!-- Pulse Play Button -->
+                    <div class="relative z-10 w-20 h-20 rounded-full bg-gold/90 flex items-center justify-center text-dark shadow-xl hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 fill-current ml-1" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                        <div class="absolute inset-0 rounded-full bg-gold/30 animate-ping"></div>
+                    </div>
                 </div>
-                <h3 class="text-xl font-heading font-bold text-slate-900 mb-4">Speaker Preparation</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    Every speaker receives a bespoke pre-event brief from our team, covering audience profile, session objectives, programme context, and any specific requirements. Where needed, we provide coaching and rehearsal support.
-                </p>
+
+                <!-- Video Description Right -->
+                <div class="lg:col-span-5 flex flex-col justify-center lg:pl-6">
+                    <span class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Featured Video</span>
+                    <h3 class="text-2xl font-heading font-bold text-dark mb-4">How to Pitch and Build a World-Class African Speaker Roster</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        In this masterclass, Chimfumnanya "Nana" Nwandu breaks down the key vetting metrics, contract considerations, and speaker development programs required to connect African talent with world-class stages.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button @click="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')" class="inline-flex justify-center items-center bg-gold text-dark px-6 py-3 text-xs font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors">
+                            Play Video
+                        </button>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center border border-slate-300 text-slate-700 px-6 py-3 text-xs font-bold uppercase tracking-wider hover:bg-slate-100 transition-colors">
+                            Subscribe on YouTube
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="relative z-10 text-center" data-aos="fade-up" data-aos-delay="200">
-                <div class="w-12 h-12 bg-gold text-dark font-bold flex items-center justify-center mx-auto mb-6">
-                    06
+
+            <!-- YouTube Video Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Video 1 -->
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-white border border-slate-200 group cursor-pointer hover:shadow-md transition-shadow" @click="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                    <div class="h-44 relative bg-slate-900 overflow-hidden flex items-center justify-center">
+                        <img src="{{ asset('img/DSC_0279.jpg') }}" alt="Video 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80">
+                        <div class="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300"></div>
+                        <div class="relative z-10 w-12 h-12 rounded-full bg-white/95 flex items-center justify-center text-dark shadow-md group-hover:bg-gold group-hover:text-dark transition-colors">
+                            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 block">Curation</span>
+                        <h4 class="font-heading font-bold text-dark text-sm group-hover:text-accent transition-colors duration-300 line-clamp-2">Designing Panels That Don't Bore: The Secrets of Program Strategy</h4>
+                    </div>
                 </div>
-                <h3 class="text-xl font-heading font-bold text-slate-900 mb-4">On-Site Management</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    On the day, our team provides on-site speaker coordination — from arrival to green room to stage — ensuring timing, technical, and AV requirements are all managed without the event team carrying the load.
-                </p>
+
+                <!-- Video 2 -->
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-white border border-slate-200 group cursor-pointer hover:shadow-md transition-shadow" @click="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                    <div class="h-44 relative bg-slate-900 overflow-hidden flex items-center justify-center">
+                        <img src="{{ asset('img/nana.jpg') }}" alt="Video 2" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80">
+                        <div class="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300"></div>
+                        <div class="relative z-10 w-12 h-12 rounded-full bg-white/95 flex items-center justify-center text-dark shadow-md group-hover:bg-gold group-hover:text-dark transition-colors">
+                            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 block">Coaching</span>
+                        <h4 class="font-heading font-bold text-dark text-sm group-hover:text-accent transition-colors duration-300 line-clamp-2">Overcoming Stage Anxiety: Public Speaking Mastery for Leaders</h4>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div data-aos="fade-up" data-aos-delay="300" class="bg-white border border-slate-200 group cursor-pointer hover:shadow-md transition-shadow" @click="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                    <div class="h-44 relative bg-slate-900 overflow-hidden flex items-center justify-center">
+                        <img src="{{ asset('img/AccounTech.jpg') }}" alt="Video 3" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80">
+                        <div class="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300"></div>
+                        <div class="relative z-10 w-12 h-12 rounded-full bg-white/95 flex items-center justify-center text-dark shadow-md group-hover:bg-gold group-hover:text-dark transition-colors">
+                            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 block">Logistics</span>
+                        <h4 class="font-heading font-bold text-dark text-sm group-hover:text-accent transition-colors duration-300 line-clamp-2">On-Site Speaker Management: Minimizing Event Day Operations Chaos</h4>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div class="relative z-10 text-center md:col-span-2 max-w-3xl mx-auto" data-aos="fade-up">
-                <div class="w-12 h-12 bg-gold text-dark font-bold flex items-center justify-center mx-auto mb-6">
-                    07
-                </div>
-                <h3 class="text-xl font-heading font-bold text-slate-900 mb-4">Post-Event Follow-Through</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    We collect speaker and audience feedback, manage any outstanding contractual requirements, and provide a post-event debrief to inform future programming.
-                </p>
-            </div>
+    <!-- Newsletter Subscription Callout Card Section -->
+    <section class="py-24 bg-dark text-white relative overflow-hidden text-center">
+        <!-- Abstract wavy background -->
+        <div class="absolute inset-0 z-0 opacity-15">
+            <svg viewBox="0 0 1440 320" class="absolute bottom-0 w-full" preserveAspectRatio="none">
+                <path fill="#ffffff" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,165.3C384,149,480,107,576,106.7C672,107,768,149,864,170.7C960,192,1056,192,1152,176C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
         </div>
-
-        <!-- Programs Tags Preview -->
-        <div class="mt-24 pt-16 border-t border-slate-200">
-            <p class="text-sm text-slate-500 mb-6 font-medium">Conference Programme Design is built in 3 steps:</p>
-            <div class="grid gap-6 md:grid-cols-3 mb-10">
-                <div class="border border-slate-200 bg-slate-50 p-6">
-                    <h4 class="font-bold text-dark mb-2">Step 1: Programme Strategy</h4>
-                    <p class="text-sm text-slate-600 leading-relaxed">We work backwards from the audience outcome to design the programme architecture, themes, sequence, and session formats.</p>
-                </div>
-                <div class="border border-slate-200 bg-slate-50 p-6">
-                    <h4 class="font-bold text-dark mb-2">Step 2: Session Design &amp; Speaker Matching</h4>
-                    <p class="text-sm text-slate-600 leading-relaxed">We design each session individually and match the right speakers to the right moment in the programme.</p>
-                </div>
-                <div class="border border-slate-200 bg-slate-50 p-6">
-                    <h4 class="font-bold text-dark mb-2">Step 3: Execution &amp; On-Site Delivery</h4>
-                    <p class="text-sm text-slate-600 leading-relaxed">We manage briefs, rehearsals, AV coordination, and on-site delivery so the event runs with precision.</p>
-                </div>
-            </div>
-
-            <div class="flex gap-4">
-                <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors">
+        
+        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
+            <span class="text-gold text-sm font-bold tracking-widest mb-4 block uppercase" data-aos="fade-up">Get Monthly Insights</span>
+            <h2 data-aos="fade-up" data-aos-delay="100" class="text-3xl md:text-5xl font-heading font-bold text-white mb-6">
+                Stay Ahead of Africa&apos;s Conversation
+            </h2>
+            <p data-aos="fade-up" data-aos-delay="200" class="text-lg text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Join thousands of event professionals, curators, and speakers receiving our monthly insights on African speaking economies, conference programming strategies, and speaker roster updates.
+            </p>
+            <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button @click="newsletterModalOpen = true" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-4 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors">
+                    Subscribe to Newsletter
+                </button>
+                <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center border border-white/30 text-white px-8 py-4 text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-dark transition-colors">
                     Book a Discovery Call
                 </a>
-                <a href="{{ route('about') }}" class="inline-flex justify-center items-center border border-slate-300 bg-white text-slate-900 px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-slate-50 transition-colors">
-                    About the Company
-                </a>
             </div>
-            <p class="text-xs text-slate-400 mt-4 italic">Speaker categories include business leadership, technology, finance, sustainability, governance, culture, health, and global affairs.</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Consult CTA Section -->
-<section class="py-24 bg-slate-50 relative text-center">
-    <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <h2 class="text-xs font-bold text-gold uppercase tracking-widest mb-4">Ready To Get Started</h2>
-        <h3 class="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6">Let&apos;s Talk About Your Event</h3>
-        <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
-            Share your goals and we&apos;ll schedule a consultation call to explore how we can design the right experience for your team.
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors">
-                Book a Discovery Call <span class="ml-2">&rarr;</span>
-            </a>
-            <a href="{{ route('about') }}" class="inline-flex justify-center items-center border border-slate-300 text-slate-900 px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors">
-                Learn More
-            </a>
+    <!-- Latest Insights / Blog Section -->
+    <section class="py-24 bg-white overflow-hidden border-t border-slate-100">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-16">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <span class="text-gold text-sm font-bold tracking-wider mb-2 block uppercase" data-aos="fade-up">Our Thoughts</span>
+                    <h2 data-aos="fade-up" data-aos-delay="100" class="text-3xl md:text-4xl font-heading font-bold text-dark">
+                        From the Blog
+                    </h2>
+                </div>
+                <div data-aos="fade-left">
+                    <a href="{{ route('blog') }}" class="inline-flex justify-center items-center border border-slate-300 text-slate-900 px-6 py-3 text-xs font-bold uppercase tracking-wider hover:bg-slate-50 transition-colors">
+                        View All Articles &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Blog Card 1 -->
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-50 border border-slate-200 group cursor-pointer hover:shadow-lg transition-shadow flex flex-col justify-between" @click="window.location.href='{{ route('blog') }}'">
+                    <div>
+                        <div class="h-48 relative overflow-hidden bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Blog 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 block">Thought Leadership</span>
+                            <h3 class="text-lg font-heading font-bold text-slate-900 mb-3 group-hover:text-gold transition-colors line-clamp-2">Why Africa's Speaker Economy Is the Most Underserved Opportunity</h3>
+                            <p class="text-slate-600 text-sm mb-4 line-clamp-3">A foundational piece establishing Heard In Africa's point of view on why speaker management infrastructure matters for the continent.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <span class="text-xs font-bold text-gold uppercase tracking-wider border-b border-gold pb-0.5 group-hover:text-dark">Read Article</span>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-50 border border-slate-200 group cursor-pointer hover:shadow-lg transition-shadow flex flex-col justify-between" @click="window.location.href='{{ route('blog') }}'">
+                    <div>
+                        <div class="h-48 relative overflow-hidden bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog 2" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 block">Event Production</span>
+                            <h3 class="text-lg font-heading font-bold text-slate-900 mb-3 group-hover:text-gold transition-colors line-clamp-2">How to Brief a Speaker Properly: The 7 Things Most Producers Forget</h3>
+                            <p class="text-slate-600 text-sm mb-4 line-clamp-3">A practical, shareable guide for event producers and programme designers who want smoother, stronger speaker sessions.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <span class="text-xs font-bold text-gold uppercase tracking-wider border-b border-gold pb-0.5 group-hover:text-dark">Read Article</span>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div data-aos="fade-up" data-aos-delay="300" class="bg-slate-50 border border-slate-200 group cursor-pointer hover:shadow-lg transition-shadow flex flex-col justify-between" @click="window.location.href='{{ route('blog') }}'">
+                    <div>
+                        <div class="h-48 relative overflow-hidden bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1475721025871-8848135cb17c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog 3" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 block">Speaker Spotlight</span>
+                            <h3 class="text-lg font-heading font-bold text-slate-900 mb-3 group-hover:text-gold transition-colors line-clamp-2">What Makes a Conference Programme Great? The Real Agenda</h3>
+                            <p class="text-slate-600 text-sm mb-4 line-clamp-3">A programme design piece for organisers who want every session to move the room toward a clear, lasting business outcome.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <span class="text-xs font-bold text-gold uppercase tracking-wider border-b border-gold pb-0.5 group-hover:text-dark">Read Article</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODALS -->
+
+    <!-- Ebook Download Modal -->
+    <div x-cloak x-show="ebookModalOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark/85 backdrop-blur-sm" x-transition>
+        <div @click.away="ebookModalOpen = false" class="bg-white border border-slate-200 p-8 md:p-10 max-w-2xl w-full relative shadow-2xl flex flex-col md:flex-row gap-8 text-left">
+            <button @click="ebookModalOpen = false" class="absolute top-4 right-4 text-slate-400 hover:text-dark transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            
+            <!-- Book Cover Left -->
+            <div class="w-full md:w-1/3 shrink-0 flex items-center justify-center bg-slate-50 p-4 border border-slate-100 shadow-sm">
+                <img :src="ebookCoverUrl" :alt="ebookTitle" class="max-w-[120px] md:max-w-full h-auto shadow-md">
+            </div>
+            
+            <!-- Form Content Right -->
+            <div class="flex-grow flex flex-col justify-center">
+                <div x-show="!ebookSubmitted">
+                    <h3 class="text-xl md:text-2xl font-heading font-bold text-dark mb-2">Get Free Access</h3>
+                    <p class="text-sm text-slate-500 mb-6">Enter your details below to instantly download <span class="font-bold text-dark" x-text="ebookTitle"></span>.</p>
+                    
+                    <form @submit.prevent="submitEbook()">
+                        <div class="mb-4">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Full Name</label>
+                            <input type="text" x-model="ebookName" required placeholder="Nana Nwandu" class="w-full bg-slate-50 border border-slate-200 px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Email Address</label>
+                            <input type="email" x-model="ebookEmail" required placeholder="nana@heardinafrica.com" class="w-full bg-slate-50 border border-slate-200 px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Organization (Optional)</label>
+                            <input type="text" x-model="ebookOrg" placeholder="Heard In Africa" class="w-full bg-slate-50 border border-slate-200 px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-dark text-white hover:bg-gold hover:text-dark px-6 py-3.5 text-sm font-bold uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2">
+                            <span>Get Download Link</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Success Screen -->
+                <div x-show="ebookSubmitted" class="text-center md:text-left">
+                    <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mb-4 mx-auto md:mx-0">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-heading font-bold text-dark mb-2">Thank you!</h3>
+                    <p class="text-sm text-slate-600 mb-6">
+                        Your request for <span class="font-bold text-dark" x-text="ebookTitle"></span> has been received. Your download should start automatically in a few seconds. If not, click the button below.
+                    </p>
+                    <button @click="ebookModalOpen = false" class="inline-flex justify-center items-center bg-gold text-dark px-6 py-3 text-sm font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors gap-2">
+                        <span>Download PDF Now</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
-</section>
+
+    <!-- Newsletter Pop-up Modal -->
+    <div x-cloak x-show="newsletterModalOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark/85 backdrop-blur-sm" x-transition>
+        <div @click.away="newsletterModalOpen = false" class="bg-white border border-slate-200 p-8 md:p-10 max-w-lg w-full relative shadow-2xl text-left">
+            <button @click="newsletterModalOpen = false" class="absolute top-4 right-4 text-slate-400 hover:text-dark transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            
+            <div x-show="!emailSubmitted" class="text-center">
+                <span class="text-gold text-xs font-bold uppercase tracking-widest mb-2 block">Monthly Insights</span>
+                <h3 class="text-2xl font-heading font-bold text-dark mb-4">Stay Ahead of Africa's Conversation</h3>
+                <p class="text-sm text-slate-500 mb-8 max-w-md mx-auto">
+                    Join 5,000+ planners and speakers who receive our monthly digest on speaker benchmarks, curation strategies, and staging opportunities.
+                </p>
+                
+                <form @submit.prevent="submitNewsletter()">
+                    <div class="mb-4">
+                        <input type="email" x-model="newsletterEmail" required placeholder="Enter your email address" class="w-full bg-slate-50 border border-slate-200 px-4 py-3.5 text-sm text-slate-900 focus:outline-none focus:border-gold transition-colors text-center">
+                    </div>
+                    <button type="submit" class="w-full bg-dark text-white hover:bg-gold hover:text-dark px-6 py-3.5 text-sm font-bold uppercase tracking-wider transition-all duration-300">
+                        Subscribe Now
+                    </button>
+                </form>
+                <p class="text-[10px] text-slate-400 mt-4">No spam. Unsubscribe at any time.</p>
+            </div>
+            
+            <!-- Success Screen -->
+            <div x-show="emailSubmitted" class="text-center py-6">
+                <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mb-4 mx-auto">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-heading font-bold text-dark mb-2">Welcome to the Conversation!</h3>
+                <p class="text-sm text-slate-600 mb-8 max-w-xs mx-auto">
+                    You have successfully subscribed to the Heard In Africa newsletter. We'll send our latest resources straight to your inbox.
+                </p>
+                <button @click="newsletterModalOpen = false" class="bg-dark text-white hover:bg-gold hover:text-dark px-6 py-2.5 text-xs font-bold uppercase tracking-wider transition-all duration-300">
+                    Close Window
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- YouTube Video Lightbox Modal -->
+    <div x-cloak x-show="videoModalOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark/95 backdrop-blur-sm" x-transition>
+        <div @click.away="videoModalOpen = false" class="relative w-full max-w-4xl aspect-video bg-black shadow-2xl">
+            <button @click="videoModalOpen = false" class="absolute -top-10 right-0 text-white hover:text-gold transition-colors text-sm font-bold flex items-center gap-1">
+                <span>Close Player</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <iframe class="w-full h-full" :src="videoModalOpen ? selectedVideoUrl + '?autoplay=1' : ''" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</div>
 @endsection

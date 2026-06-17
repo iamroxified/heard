@@ -33,27 +33,20 @@
                 <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-6 leading-tight">
                     About the Company
                 </h2>
-                <p>
+                <p class="text-slate-600  leading-relaxed mb-4 " style="text-align: justify;">
                     Africa has always produced world-class thinkers, leaders, innovators, and storytellers. The gap was never the talent. The gap was the infrastructure to connect that talent with the audiences that needed to hear it.
-
-
-
-
-
-
-
                 </p>
-                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                <p class="text-slate-600  leading-relaxed mb-4" style="text-align: justify;">
                     Heard In Africa was founded to close that gap.
                 </p>
-                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                <p class="text-slate-600  leading-relaxed mb-4" style="text-align: justify;">
                     Growing up witnessing the remarkable achievements of Africans across the globe — founding companies, pioneering ideas, setting records — our founder Chimfumnanya Nwandu saw something missing: a dedicated, professional home for African speakers on the world stage. After five years managing corporate events and watching organisations struggle to find, vet, and prepare the right voices, she built the platform she wished had existed.
                 </p>
-                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                <p class="text-slate-600  leading-relaxed mb-4" style="text-align: justify;">
 
                     Heard In Africa is now Africa's speaker management and conference programming partner of choice — working with pan-African summits, global institutions, and forward-looking organisations who understand that the right voice at the right moment can change what a room believes is possible.
                 </p>
-                <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                <p class="text-slate-600  leading-relaxed mb-6" style="text-align: justify;">
                     We manage speakers end-to-end. We design conference programmes from the ground up. We position African experts to be heard at the level their expertise deserves. And we do all of it with the rigour, relationships, and care that Africa's excellence warrants.
                 </p>
                 <div class="text-right">
@@ -81,7 +74,7 @@
                 <h3 class="text-3xl font-heading font-bold text-accent mb-4 flex items-center gap-3">
                     Vision
                 </h3>
-                <p class="text-gray-300 text-sm leading-relaxed pl-1 max-w-md">
+                <p class="text-gray-300  leading-relaxed pl-1 max-w-md">
                     To be the foremost globally recognised platform connecting African voices with world-class stages — making Africa&apos;s expertise impossible to ignore.
                 </p>
             </div>
@@ -94,7 +87,7 @@
                 <h3 class="text-3xl font-heading font-bold text-accent mb-4">
                     Mission
                 </h3>
-                <p class="text-gray-300 text-sm leading-relaxed">
+                <p class="text-gray-300  leading-relaxed">
                     To connect and showcase Africa&apos;s leading speakers and thinkers to the world by providing end-to-end speaker management, strategic positioning, and conference programming that creates meaningful, lasting impact for events and audiences everywhere.
                 </p>
             </div>
@@ -112,7 +105,7 @@
                     Why Heard In Africa Exists
                 </h2>
 
-                <div class="space-y-6 text-sm leading-8 text-slate-600">
+                <div class="space-y-6  leading-8 text-slate-600">
                     <p>African expertise is consistently underrepresented on global stages — not because of a shortage of knowledge, but because of a shortage of professional infrastructure.</p>
                     <p>There has been no dedicated agency doing for African speakers what the world&apos;s best speaker management firms do for their rosters.</p>
                     <p>Heard In Africa exists to change that. We are not a marketplace. We are a management company, and there is a meaningful difference.</p>
@@ -121,7 +114,7 @@
 
             <!-- Right Image -->
             <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                <img src="{{ asset('img/2.jpeg') }}" alt="Core Values" class="w-full h-auto object-cover shadow-lg border border-slate-100">
+                <img src="{{ asset('img/DSC_5074.jpg') }}" alt="Core Values" class="w-full h-auto object-cover shadow-lg border border-slate-100">
             </div>
         </div>
     </div>
@@ -138,7 +131,7 @@
             <!-- Box 1 -->
             <div data-aos="zoom-in" data-aos-delay="100" class="bg-white border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow md:col-span-3">
                 <h3 class="text-lg font-heading font-bold text-dark mb-3">Chimfumnanya "Nana" Nwandu — Founder, Heard In Africa</h3>
-                <p class="text-sm text-slate-600 leading-relaxed">
+                <p class=" text-slate-600 leading-relaxed">
                     Nana Nwandu is a lawyer, TEDx licensee, and development sector programme manager who has spent over seven years at the intersection of events, speakers, and the African stage. Her path into speaker management was not accidental — it was shaped by years of watching exceptional African voices go under-resourced, under-briefed, and under-placed, across corporate events, development programming, and the live stage. As the licensee of TEDxNzaStreet since 2018, she has not only managed speakers from the outside but curated and produced the kind of platform where ideas earn their moment. She founded Heard In Africa out of a conviction that African expertise deserves the same infrastructure, rigour, and strategic investment that the global speaking industry has long extended elsewhere — and she built it with the precision of someone who knows what that gap costs
                 </p>
             </div>
@@ -146,76 +139,188 @@
     </div>
 </section>
 
-<!-- Why Choose Us -->
-<section class="py-24 bg-white overflow-hidden">
+<!-- About Team Section -->
+<section class="py-24 bg-white overflow-hidden border-t border-slate-100">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <!-- Left Images Grid -->
-            <div class="relative h-[500px]" data-aos="fade-right">
-                <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Speaker" class="absolute top-0 left-0 w-2/3 h-64 object-cover shadow-xl border-4 border-white z-10">
-                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Professional" class="absolute bottom-0 right-0 w-2/3 h-80 object-cover shadow-xl border-4 border-white z-20">
-            </div>
+        <div class="text-center mb-16">
+            <span class="text-gold text-sm font-bold tracking-wider mb-2 block uppercase" data-aos="fade-up">Passionate Experts</span>
+            <h2 data-aos="fade-up" data-aos-delay="100" class="text-3xl md:text-4xl font-heading font-bold text-dark">
+                About Team
+            </h2>
+            <p data-aos="fade-up" data-aos-delay="200" class="text-slate-500 text-sm mt-3 max-w-md mx-auto">
+                The strategic curators and event operators behind Africa's premier speaker management partner.
+            </p>
+        </div>
 
-            <!-- Right Content -->
-            <div data-aos="fade-left" data-aos-delay="200">
-                <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-10">
-                    Our Approach
-                </h2>
-
-                <div class="space-y-8">
-                    <!-- Feature 1 -->
-                    <div class="flex gap-4">
-                        <div class="shrink-0 w-12 h-12 bg-accent flex items-center justify-center text-white">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold text-dark mb-1">Speaker Management</h4>
-                            <p class="text-sm text-slate-500">Finding, vetting, briefing, and supporting speakers from first conversation to final applause.</p>
-                        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Team Member 1 -->
+            <div data-aos="fade-up" data-aos-delay="100" class="group bg-slate-50 border border-slate-200 overflow-hidden hover:shadow-xl hover:border-gold/30 transition-all duration-300 flex flex-col">
+                <div class="relative aspect-[4/5] overflow-hidden bg-slate-100">
+                    <img src="{{ asset('img/team_member_1.png') }}" alt="Kelechi Okoro" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-heading font-bold text-dark group-hover:text-accent transition-colors duration-300">Kelechi Okoro</h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-3">Head of Speaker Relations</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Kelechi oversees our curated speaker roster and coordinates booking contracts, ensuring a seamless experience for both our speakers and our global event clients.
+                        </p>
                     </div>
-
-                    <!-- Feature 2 -->
-                    <div class="flex gap-4">
-                        <div class="shrink-0 w-12 h-12 bg-accent flex items-center justify-center text-white">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    <div class="flex items-center gap-3 border-t border-slate-200/60 pt-4">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="LinkedIn">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                             </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold text-dark mb-1">Speaker Agency</h4>
-                            <p class="text-sm text-slate-500">Positioning African speakers for the global stages their expertise deserves.</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 3 -->
-                    <div class="flex gap-4">
-                        <div class="shrink-0 w-12 h-12 bg-accent flex items-center justify-center text-white">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Twitter">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                             </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold text-dark mb-1">Conference Programming</h4>
-                            <p class="text-sm text-slate-500">Designing agendas with intellectual coherence, deliberate flow, and purposeful session design.</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 4 -->
-                    <div class="flex gap-4">
-                        <div class="shrink-0 w-12 h-12 bg-accent flex items-center justify-center text-white">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </a>
+                        <a href="mailto:kelechi@heardinafrica.com" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Email">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                             </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold text-dark mb-1">Speaker Visibility</h4>
-                            <p class="text-sm text-slate-500">Helping experts build a stronger profile, clearer narrative, and stronger stage presence.</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
+
+            <!-- Team Member 2 -->
+            <div data-aos="fade-up" data-aos-delay="200" class="group bg-slate-50 border border-slate-200 overflow-hidden hover:shadow-xl hover:border-gold/30 transition-all duration-300 flex flex-col">
+                <div class="relative aspect-[4/5] overflow-hidden bg-slate-100">
+                    <img src="{{ asset('img/team_member_2.png') }}" alt="Amara Eke" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-heading font-bold text-dark group-hover:text-accent transition-colors duration-300">Amara Eke</h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-3">Director of Conference Programming</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Amara is a veteran curator who designs high-impact conference agendas, ensuring intellectual coherence, thematic alignment, and engaging session flows.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-200/60 pt-4">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="LinkedIn">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Twitter">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:amara@heardinafrica.com" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Email">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div data-aos="fade-up" data-aos-delay="300" class="group bg-slate-50 border border-slate-200 overflow-hidden hover:shadow-xl hover:border-gold/30 transition-all duration-300 flex flex-col">
+                <div class="relative aspect-[4/5] overflow-hidden bg-slate-100">
+                    <img src="{{ asset('img/team_member_3.png') }}" alt="Tunde Balogun" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-heading font-bold text-dark group-hover:text-accent transition-colors duration-300">Tunde Balogun</h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-3">Head of Operations & Logistics</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Tunde manages the complex logistics of speaker schedules, travel coordination, and on-site event execution across pan-African summits.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-200/60 pt-4">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="LinkedIn">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Twitter">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:tunde@heardinafrica.com" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Email">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php
+if ($faqs->isEmpty()) {
+    $faqs = collect([
+        (object)[
+            'question' => "What is the process for booking a speaker?",
+            'answer' => "The process starts with a Discovery & Brief session to understand your event goals. We then source and curate a shortlist of suitable speakers from our roster and manage all contracts, logistics, and pre-event briefing.",
+            'status' => 'active',
+            'sort_order' => 1
+        ],
+        (object)[
+            'question' => "Do you provide on-site speaker management?",
+            'answer' => "Yes, we handle end-to-end speaker support on the day of the event, including arrival logistics, stage briefing, AV coordinates, and schedule compliance.",
+            'status' => 'active',
+            'sort_order' => 2
+        ],
+        (object)[
+            'question' => "Can you help design our entire conference agenda?",
+            'answer' => "Absolutely. Our Conference Programming & Agenda Design service is built to structure keynotes, panels, and breakout sessions with intellectual flow and thematic coherence.",
+            'status' => 'active',
+            'sort_order' => 3
+        ]
+    ]);
+}
+?>
+
+
+
+<!-- FAQ Section -->
+<section class="py-24 bg-slate-50 border-t border-slate-200 overflow-hidden">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="text-gold text-sm font-bold tracking-wider mb-2 block uppercase">Questions</span>
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark">
+                Frequently Asked Questions
+            </h2>
+            <p class="text-slate-500 text-sm mt-3">Find quick answers to common questions about speaker management and agenda programming.</p>
+        </div>
+
+        <div x-data="{ activeFaq: null }" class="space-y-4" data-aos="fade-up" data-aos-delay="200">
+            @foreach($faqs as $index => $faq)
+            <div class="bg-white border border-slate-200 transition-all duration-300 hover:border-slate-300">
+                <button @click="activeFaq = activeFaq === {{ $index }} ? null : {{ $index }}"
+                    class="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                    <span class="font-heading font-bold text-dark text-sm md:text-base">{{ $faq->question }}</span>
+                    <span class="shrink-0 ml-4 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-dark transition-all"
+                        :class="activeFaq === {{ $index }} ? 'rotate-180 border-gold text-gold bg-gold/5' : ''">
+                        <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </span>
+                </button>
+
+                <div x-show="activeFaq === {{ $index }}"
+                    x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-2"
+                    x-transition:enter-end="opacity-100 transform translate-y-0"
+                    class="border-t border-slate-100 bg-slate-50/50">
+                    <div class="px-6 py-5 text-slate-600 text-sm leading-relaxed">
+                        {{ $faq->answer }}
+                    </div>
+                </div>
+            </div>
+            @endforeach
         </div>
     </div>
 </section>
@@ -229,17 +334,17 @@
                 <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-8">Your Most Powerful Stage.</h2>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors">
+                    <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3  font-bold uppercase tracking-wider hover:bg-white transition-colors">
                         Book a Discovery Call
                     </a>
-                    <a href="{{ route('about') }}" class="inline-flex justify-center items-center border border-white/30 text-white px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-dark transition-colors">
+                    <a href="{{ route('about') }}" class="inline-flex justify-center items-center border border-white/30 text-white px-8 py-3  font-bold uppercase tracking-wider hover:bg-white hover:text-dark transition-colors">
                         Learn More
                     </a>
                 </div>
             </div>
 
             <div class="w-full md:w-1/2" data-aos="fade-left" data-aos-delay="200">
-                <img src="https://images.unsplash.com/photo-1551836022-b06985bceb24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Speaker interacting" class="w-full h-64 object-cover shadow-lg border border-white/10">
+                <img src="{{ asset('img/DSC_0279.jpg') }}" alt="Speaker interacting" class="w-full h-64 object-cover shadow-lg border border-white/10">
             </div>
         </div>
     </div>
@@ -255,26 +360,34 @@
         <div class="flex flex-col md:flex-row gap-6 justify-center items-center" data-aos="zoom-in" data-aos-delay="200">
             <!-- Image 1 -->
             <div class="w-full md:w-1/2 relative overflow-hidden group">
-                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Large Conference" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="{{ asset('img/TEDx-Logo.jpg') }}" alt="Large Conference" class="w-full  object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span class="text-white font-bold text-xl tracking-wider uppercase">Pan-African Summits</span>
+                    <span class="text-white font-bold text-xl tracking-wider uppercase">TEDxEvergreen School</span>
                 </div>
             </div>
             <!-- Image 2 -->
             <div class="w-full md:w-1/2 relative overflow-hidden group">
-                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Boardroom Meeting" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="{{ asset('img/ominiverse logo.png') }}" alt="Boardroom Meeting" class="w-full  object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span class="text-white font-bold text-xl tracking-wider uppercase">Leadership Forums</span>
+                    <span class="text-white font-bold text-xl tracking-wider uppercase">Omniverse African Summit</span>
+                </div>
+            </div>
+            <!-- Image 2 -->
+            <div class="w-full md:w-1/2 relative overflow-hidden group">
+                <img src="{{ asset('img/FinTribe-Logo-2.png') }}" alt="Boardroom Meeting" class="w-full  object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-white font-bold text-xl tracking-wider uppercase">FinTribe Summit African</span>
+                </div>
+            </div>
+            <!-- Image 2 -->
+            <div class="w-full md:w-1/2 relative overflow-hidden group">
+                <img src="{{ asset('img/NOTAP-logo.png') }}" alt="Boardroom Meeting" class="w-full  object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-white font-bold text-xl tracking-wider uppercase">NOTAP</span>
                 </div>
             </div>
         </div>
 
-        <!-- Slider Dots -->
-        <div class="flex justify-center gap-2 mt-8">
-            <div class="w-2 h-2 rounded-full bg-slate-900 cursor-pointer"></div>
-            <div class="w-2 h-2 rounded-full bg-slate-300 cursor-pointer"></div>
-            <div class="w-2 h-2 rounded-full bg-slate-300 cursor-pointer"></div>
-        </div>
     </div>
 </section>
 
