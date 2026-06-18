@@ -1,7 +1,6 @@
 *.log
 .env
 /public/hot
-
 /storage/*.key
 /storage/*.log
 /storage/*.sqlite

@@ -9,7 +9,7 @@
     <!-- Video Background -->
     <div class="absolute inset-0 z-0">
 
-        <img src="{{ asset('img/Nana TEDxNzaStreet.jpg') }}" class="absolute inset-0 w-full h-full object-contain opacity-50">
+        <img src="{{ asset('img/TEDxNzaStreet.jpg') }}" class="absolute inset-0 w-full  object-contain opacity-90">
         <div class="absolute inset-0 bg-gradient-to-b from-darker/90 via-dark/80 to-darker/90"></div>
     </div>
 
@@ -156,31 +156,31 @@
             <!-- Team Member 1 -->
             <div data-aos="fade-up" data-aos-delay="100" class="group bg-slate-50 border border-slate-200 overflow-hidden hover:shadow-xl hover:border-gold/30 transition-all duration-300 flex flex-col">
                 <div class="relative aspect-[4/5] overflow-hidden bg-slate-100">
-                    <img src="{{ asset('img/team_member_1.png') }}" alt="Kelechi Okoro" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('img/nana_profile.jpg') }}" alt="Chiwendu Nwan" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-darker/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
-                        <h3 class="text-lg font-heading font-bold text-dark group-hover:text-accent transition-colors duration-300">Kelechi Okoro</h3>
-                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-3">Head of Speaker Relations</p>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            Kelechi oversees our curated speaker roster and coordinates booking contracts, ensuring a seamless experience for both our speakers and our global event clients.
-                        </p>
+                        <h3 class="text-lg font-heading font-bold text-dark group-hover:text-accent transition-colors duration-300">Chimfumnanya "Nana" Nwandu</h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-3">Founder</p>
+                        <!-- <p class="text-slate-600 text-sm leading-relaxed mb-6">
+
+                        </p> -->
                     </div>
                     <div class="flex items-center gap-3 border-t border-slate-200/60 pt-4">
                         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="LinkedIn">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                             </svg>
                         </a>
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Twitter">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                             </svg>
                         </a>
                         <a href="mailto:kelechi@heardinafrica.com" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Email">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
                         </a>
                     </div>
@@ -190,31 +190,31 @@
             <!-- Team Member 2 -->
             <div data-aos="fade-up" data-aos-delay="200" class="group bg-slate-50 border border-slate-200 overflow-hidden hover:shadow-xl hover:border-gold/30 transition-all duration-300 flex flex-col">
                 <div class="relative aspect-[4/5] overflow-hidden bg-slate-100">
-                    <img src="{{ asset('img/team_member_2.png') }}" alt="Amara Eke" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('img/precious.jpeg') }}" alt="Amara Eke" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-darker/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
-                        <h3 class="text-lg font-heading font-bold text-dark group-hover:text-accent transition-colors duration-300">Amara Eke</h3>
-                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-3">Director of Conference Programming</p>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        <h3 class="text-lg font-heading font-bold text-dark group-hover:text-accent transition-colors duration-300">Precious Octavia Esiri </h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-3">(PMP), Project Manager</p>
+                        <!-- <p class="text-slate-600 text-sm leading-relaxed mb-6">
                             Amara is a veteran curator who designs high-impact conference agendas, ensuring intellectual coherence, thematic alignment, and engaging session flows.
-                        </p>
+                        </p> -->
                     </div>
                     <div class="flex items-center gap-3 border-t border-slate-200/60 pt-4">
                         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="LinkedIn">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                             </svg>
                         </a>
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Twitter">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                             </svg>
                         </a>
                         <a href="mailto:amara@heardinafrica.com" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Email">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
                         </a>
                     </div>
@@ -224,31 +224,31 @@
             <!-- Team Member 3 -->
             <div data-aos="fade-up" data-aos-delay="300" class="group bg-slate-50 border border-slate-200 overflow-hidden hover:shadow-xl hover:border-gold/30 transition-all duration-300 flex flex-col">
                 <div class="relative aspect-[4/5] overflow-hidden bg-slate-100">
-                    <img src="{{ asset('img/team_member_3.png') }}" alt="Tunde Balogun" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('img/modupe.jpeg') }}" alt="Tunde Balogun" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-darker/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
-                        <h3 class="text-lg font-heading font-bold text-dark group-hover:text-accent transition-colors duration-300">Tunde Balogun</h3>
-                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-3">Head of Operations & Logistics</p>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        <h3 class="text-lg font-heading font-bold text-dark group-hover:text-accent transition-colors duration-300">Rachael Adeyemi </h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-3">Operations Admin</p>
+                        <!-- <p class="text-slate-600 text-sm leading-relaxed mb-6">
                             Tunde manages the complex logistics of speaker schedules, travel coordination, and on-site event execution across pan-African summits.
-                        </p>
+                        </p> -->
                     </div>
                     <div class="flex items-center gap-3 border-t border-slate-200/60 pt-4">
                         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="LinkedIn">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                             </svg>
                         </a>
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Twitter">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                             </svg>
                         </a>
                         <a href="mailto:tunde@heardinafrica.com" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Email">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
                         </a>
                     </div>

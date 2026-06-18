@@ -11,7 +11,7 @@
   <!-- Video Background -->
   <div class="absolute inset-0 z-0">
 
-    <img src="{{ asset('img/Nana TEDxNzaStreet.jpg') }}" class="absolute inset-0 w-full h-full object-contain opacity-50">
+    <img src="{{ asset('img/TEDxNzaStreet.jpg') }}" class="absolute inset-0 w-full  object-contain opacity-90">
     <div class="absolute inset-0 bg-gradient-to-b from-darker/90 via-dark/80 to-darker/90"></div>
   </div>
 
@@ -210,7 +210,7 @@
 </section>
 
 <?php
-if ($testimonials->isEmpty()) {
+if (!isset($testimonials) || $testimonials->isEmpty()) {
   $testimonials = collect([
     (object)[
       'quote' => "What truly stood out was their unwavering commitment to aligning speaker satisfaction with Omniverse Africa's broader goals. Their ability to anticipate speaker needs, address concerns promptly, and create a seamless engagement process has not only strengthened our relationships with partners but also inspired confidence and enthusiasm for future collaborations with Omniverse Africa. We look forward to continued opportunities to work with Heard in Africa, confident that their expertise will consistently enhance our events and elevate our partnerships.",
@@ -223,7 +223,7 @@ if ($testimonials->isEmpty()) {
 ?>
 
 <?php
-if ($faqs->isEmpty()) {
+if (!isset($faqs) || $faqs->isEmpty()) {
   $faqs = collect([
     (object)[
       'question' => "What is the process for booking a speaker?",
