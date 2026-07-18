@@ -330,7 +330,7 @@ if ($faqs->isEmpty()) {
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row gap-12 items-center">
             <div class="w-full md:w-1/2 text-center md:text-left" data-aos="fade-right">
-                <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-2">Africa&apos;s Finest Voices.</h2>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-2">Building the Infrastructure of the African Speaker Economy.</h2>
                 <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-8">Your Most Powerful Stage.</h2>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

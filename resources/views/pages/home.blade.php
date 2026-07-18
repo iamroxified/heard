@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Heard In Africa | Africa\'s Finest Voices. Your Most Powerful Stage.')
+@section('title', 'Heard In Africa | Building the Infrastructure of the African Speaker Economy.')
 
 @section('content')
 @php($clientLogos = $siteSettings['homepage_client_logos'] ?? [])
@@ -11,24 +11,24 @@
   <!-- Video Background -->
   <div class="absolute inset-0 z-0">
 
-    <img src="{{ asset('img/TEDxNzaStreet.jpg') }}" class="absolute inset-0 w-full  object-contain opacity-90">
+    <img src="{{ asset('img/homepage.jpg') }}" class="absolute inset-0 w-full  object-contain opacity-90">
     <div class="absolute inset-0 bg-gradient-to-b from-darker/90 via-dark/80 to-darker/90"></div>
   </div>
 
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center w-full">
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-7xl mx-auto">
       <span data-aos="fade-down" data-aos-duration="1000" class="inline-block text-gold text-sm font-bold tracking-wider mb-4">Heard In Africa</span>
       <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" class="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white tracking-tight leading-tight mb-6">
-        Africa&apos;s Finest Voices.<br>Your Most Powerful Stage.
+        Building the Infrastructure of the African Speaker Economy<br>Your Most Powerful Stage.
       </h1>
-      <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400" class="text-base md:text-lg text-gray-300 font-light max-w-3xl mx-auto mb-10 leading-relaxed">
-        We connect global organisations with Africa&apos;s leading speakers and design conference programmes that move audiences and shape conversations.
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400" class="text-base md:text-lg text-gray-300 font-light max-w-7xl mx-auto mb-10 leading-relaxed">
+        Heard In Africa connects conference producers with the African speakers their programmes need — and connects African speakers with the global stages their expertise deserves. We manage everything in between.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
         <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center rounded-none bg-gold text-dark px-8 py-3 text-sm font-bold tracking-wider hover:bg-white hover:text-dark transition-all duration-300">
           Book a Discovery Call
         </a>
-        <a href="{{ route('about') }}" class="inline-flex justify-center items-center rounded-none border border-white text-white px-8 py-3 text-sm font-medium tracking-wider hover:bg-white hover:text-dark transition-all duration-300">
+        <a href="{{ route('services') }}" class="inline-flex justify-center items-center rounded-none border border-white text-white px-8 py-3 text-sm font-medium tracking-wider hover:bg-white hover:text-dark transition-all duration-300">
           Learn More
         </a>
       </div>
@@ -42,6 +42,34 @@
       </div>
       @endif
     </div>
+  </div>
+</section>
+<!-- Events We Provide Speakers For -->
+<section class="py-24 bg-white overflow-hidden">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
+    <div class="flex flex-col md:flex-row gap-6 justify-center items-center" data-aos="zoom-in" data-aos-delay="200">
+      <!-- Image 1 -->
+      <div class="w-full md:w-1/2 relative overflow-hidden group">
+        <img src="{{ asset('img/gTEDx-Logo.jpg') }}" alt="Large Conference" class="w-full  object-cover group-hover:scale-105 transition-transform duration-500">
+
+      </div>
+      <!-- Image 2 -->
+      <div class="w-full md:w-1/2 relative overflow-hidden group">
+        <img src="{{ asset('img/gominiverse logo.png') }}" alt="Boardroom Meeting" class="w-full  object-cover group-hover:scale-105 transition-transform duration-500">
+
+      </div>
+      <!-- Image 2 -->
+      <div class="w-full md:w-1/2 relative overflow-hidden group">
+        <img src="{{ asset('img/gFinTribe-Logo-2.png') }}" alt="Boardroom Meeting" class="w-full  object-cover group-hover:scale-105 transition-transform duration-500">
+
+      </div>
+      <!-- Image 2 -->
+      <div class="w-full md:w-1/2 relative overflow-hidden group">
+        <img src="{{ asset('img/gNOTAP-logo.png') }}" alt="Boardroom Meeting" class="w-full  object-cover group-hover:scale-105 transition-transform duration-500">
+
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -106,7 +134,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
               </svg>
             </div>
-            <h3 class="text-white font-bold text-sm">Speaker Agency</h3>
+            <h3 class="text-white font-bold text-sm">Speaker Roster and Representation</h3>
             <p class="text-gray-300 text-xs leading-relaxed mt-3">We represent and manage Africa&apos;s most compelling voices.</p>
             <a href="https://forms.gle/niSFqGLFYn8g27Ev8" class="mt-4 text-gold text-xs font-bold uppercase tracking-wider">Join Our Speaker Roster</a>
           </div>
@@ -154,7 +182,7 @@
           Curious About What We Do
         </h2>
         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-          Heard In Africa is where African excellence meets global stages. We are a speaker management and conference programming agency built on a simple belief: Africa&apos;s finest voices deserve to be heard, and the world&apos;s best conferences deserve Africa&apos;s finest voices.
+          Heard In Africa is where African excellence meets global stages. We are a speaker management company building the infrastructure of the African Speaker Economy built on a simple belief: Africa&apos;s finest voices deserve to be heard, and the world&apos;s best conferences deserve Africa&apos;s finest voices.
         </p>
         <p class="text-slate-600 text-sm leading-relaxed">
           Whether you are looking for a speaker, building a programme, or ready to take your expertise to a global audience — we are your partner from first conversation to final applause.
@@ -199,7 +227,7 @@
   <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative">
     <div data-aos="flip-up" class="bg-white p-12 md:p-16 shadow-xl relative z-10 max-w-2xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-4">
-        Africa&apos;s Finest Voices. Your Most Powerful Stage.
+        Building the Infrastructure of the African Speaker Economy
       </h2>
       <p class="text-slate-600 mb-8 text-sm">We connect speakers, shape programmes, and support the stages that matter.</p>
       <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold tracking-wider hover:bg-dark hover:text-white transition-colors">
