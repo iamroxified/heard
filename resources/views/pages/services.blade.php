@@ -15,11 +15,11 @@
         <div class="max-w-3xl">
             <h2 class="text-sm font-bold text-gold uppercase tracking-widest mb-3">Our Services</h2>
             <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white tracking-tight mb-6">
-                Speaker management and conference programming, built for serious stages.
+                Speaker management and conference programming, built for stages that matter
             </h1>
-            <p class="text-xl text-gray-300 font-light mb-10 leading-relaxed">
+            <!-- <p class="text-xl text-gray-300 font-light mb-10 leading-relaxed">
                 We keep the structure familiar, but the brand, copy, and service offerings now match the new Heard In Africa positioning.
-            </p>
+            </p> -->
         </div>
     </div>
 </section>
@@ -30,23 +30,28 @@
 
         <!-- Service 1 -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div class="order-2 lg:order-1">
-                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Speaker Management</h3>
+            <div class="col-md-8 col-lg-8 ">
+                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Event Speaker Management</h3>
                 <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                    End-to-end management of your speakers from sourcing through to the stage. We handle everything so you can focus on your event.
+                    End-to-end management of your speaker programme, from sourcing through to post-event close-out.
                 </p>
-                <p class="text-slate-600 mb-8">
-                    Finding the right speaker is only the beginning. Heard In Africa manages every step of the speaker journey — sourcing and vetting candidates, handling contracts and negotiations, coordinating travel and logistics, delivering pre-event preparation, and providing on-site support on the day.
-                </p>
+                <p class="text-slate-600 mb-8"> Finding the right speaker is only the beginning. Heard In Africa manages every step of the speaker journey — sourcing and vetting candidates, handling contracts and logistics, delivering personalised speaker briefings, and providing on-site coordination on the day.Every speaker who works with us receives a briefing document tailored to their specific session, their co-panellists, the audience profile, and the thematic objectives of that moment in your programme. Not a generic template. A document that prepares them to deliver something your audience will remember. </p>
+                <div class="bg-slate-50 p-6 border-l-4 border-gold mb-8">
+                    <h4 class="font-bold text-slate-900 mb-2">WHAT THIS COVERS</h4>
+                    <ul>
+                        <li>- Speaker sourcing and vetting against your brief</li>
+                        <li>- Contracts, fee negotiations, and logistics coordination</li>
+                        <li>- Personalised pre-event speaker briefing documents</li>
+                        <li>- Moderator preparation and alignment calls</li>
+                        <li>- On-site speaker handling from arrival to stage</li>
+                        <li>- Post-event close-out, thank-you communications, and feedback collection</li>
+                    </ul>
+                </div>
+                <p class="text-slate-600 mb-8">At Omniverse Africa Summit — a four-day, multi-stage convening with 100+ speakers — we achieved 95% on-time session delivery and zero major stage disruptions.</p>
 
-                <!-- <div class="bg-slate-50 p-6 border-l-4 border-gold mb-8">
-                    <h4 class="font-bold text-slate-900 mb-2">CTA</h4>
-                    <p class="text-sm text-slate-600">Book a Consultation</p>
-                </div> -->
-
-                <a href="{{ route('contact') }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3  font-bold uppercase tracking-wider hover:bg-white transition-colors">
+                <!-- <a href="{{ route('contact') }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3  font-bold uppercase tracking-wider hover:bg-white transition-colors">
                     Book a Consultation <span class="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
-                </a>
+                </a> -->
             </div>
             <div class="order-1 lg:order-2 bg-slate-100 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden">
                 <img src="{{ asset('img/DSC_5167.jpg') }}" alt="Event Speaker" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
@@ -61,34 +66,37 @@
                 <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
             </div>
             <div>
-                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Speaker Agency</h3>
+                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Speaker Matching</h3>
                 <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                    We represent and manage Africa&apos;s most compelling voices — positioning them for the global stages their expertise deserves.
+                    Share your brief. We return a curated shortlist of African speakers matched to your event — with topic angles ready to pitch internally.
                 </p>
                 <p class="text-slate-600 mb-8">
-                    Africa produces world-class thinkers, leaders, and innovators. Heard In Africa is the agency that represents them properly. We work with African speakers to develop their positioning, refine their narrative, and connect them with the right events, globally.
+                    You tell us what you need — your event theme, audience, the specific sessions you are programming, and your budget range. We research, assess, and return a curated shortlist of African speakers matched to your brief, usually within 48 hours.Each recommendation comes with a speaker profile, a proposed session angle tailored to your event, and our reasoning for why this speaker fits your brief. We do not send you a long list and leave you to figure it out. We do the curation work so you do not have to.
                 </p>
+                <p>Submit a speaker brief → info@heardinafrica.com</p>
 
                 <!-- <div class="bg-slate-50 p-6 border-l-4 border-gold mb-8">
                     <h4 class="font-bold text-slate-900 mb-2">CTA</h4>
                     <p class="text-sm text-slate-600">Join Our Speaker Roster</p>
                 </div> -->
 
-                <a href="https://forms.gle/niSFqGLFYn8g27Ev8" class="inline-flex justify-center items-center bg-gold text-dark px-6 py-1  font-bold uppercase tracking-wider hover:bg-white transition-colors">
-                    Join Our Speaker Roster <span class="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
-                </a>
             </div>
         </div>
 
         <!-- Service 3 -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div class="order-2 lg:order-1">
-                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Conference Programming &amp; Agenda Design</h3>
+                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Conference Programme Design</h3>
                 <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                    We design keynotes, panels, fireside chats, and session formats that create experiences audiences remember — and organisers are proud of.
+                    A great conference is not a list of speakers. It is a carefully designed argument. We build that argument.
                 </p>
                 <p class="text-slate-600 mb-8">
-                    A great conference is not a list of speakers — it is a carefully designed argument. Heard In Africa works with event producers, institutions, and organisations to build programmes with intellectual coherence, deliberate flow, and the right balance of energy, depth, and tension.
+                    Heard In Africa works with event producers, institutions, and organisations to build conference programmes with intellectual coherence, deliberate flow, and the right balance of energy, depth, and tension.We design the architecture of your programme — the themes, session formats, keynote sequencing, and panel structures — so every hour earns its place and your audience leaves having experienced something genuinely worth attending.
+
+                </p>
+                <p><b>Step 1:</b> Programme Strategy — working backwards from the audience outcome to design the architecture, themes, and session formats.<br>
+                    <b>Step 2:</b> Session Design and Speaker Matching — designing each session individually and matching the right speaker to the right moment.<br>
+                    <b>Step 3:</b> Execution and On-Site Delivery — managing briefs, rehearsals, and on-site coordination.
                 </p>
 
                 <!-- <div class="bg-slate-50 p-6 border-l-4 border-gold mb-8">
@@ -96,9 +104,7 @@
                     <p class="text-sm text-slate-600">Plan Your Programme</p>
                 </div> -->
 
-                <a href="{{ route('contact') }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3  font-bold uppercase tracking-wider hover:bg-white transition-colors">
-                    Plan Your Programme <span class="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
-                </a>
+
             </div>
             <div class="order-1 lg:order-2 bg-slate-100 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden">
                 <img src="{{ asset('img/agenda.jpg') }}" alt="Conference Programming" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
@@ -107,31 +113,55 @@
         </div>
 
         <!-- Service 4 -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div class="bg-slate-100 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div class="bg-slate-50 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden">
                 <img src="{{ asset('img/DSC_9994.jpg') }}" alt="Speaker Visibility" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
                 <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
             </div>
             <div>
-                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Speaker Visibility &amp; Positioning</h3>
+                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Speaker Visibility and Positioning
+                </h3>
                 <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                    Helping African experts build the profile, narrative, and stage presence that global audiences respond to.
+                    Your expertise is not the problem. Your visibility is.
                 </p>
                 <p class="text-slate-600 mb-8">
-                    Great expertise does not always come with great visibility. Our Speaker Visibility &amp; Positioning service helps African thought leaders translate their depth of knowledge into compelling speaker profiles, clear messaging, and a consistent public presence.
+                    African speakers are being searched for. Conference producers are actively looking. The question is whether they can find you — and whether what they find makes them stop scrolling and say yes.Heard In Africa's Speaker Visibility and Positioning service manages your LinkedIn and Instagram as active speaker career platforms. Every post, every update, every piece of content is in service of one goal: making sure the right producers, organisations, and audiences find you, understand what you stand for, and want to hear you speak.
+
                 </p>
 
-                <!-- <div class="bg-slate-50 p-6 border-l-4 border-gold mb-8">
-                    <h4 class="font-bold text-slate-900 mb-2">CTA</h4>
-                    <p class="text-sm text-slate-600">Apply for the Programme</p>
-                </div> -->
+                <div class="bg-slate-20 p-2 border-l-4 border-gold mb-8">
+                    <h4 class="font-bold text-slate-900 mb-2">WHAT THIS COVERS</h4>
+                    <p class="text-sm text-slate-600">— LinkedIn profile optimisation: — headline, about section, featured posts, and banner updated to communicate your speaking expertise immediately <br>— Weekly LinkedIn content strategy and posting — thought leadership content that builds your authority in your specific field<br>— Instagram management — content strategy, caption writing, posting, and monthly analytics<br>— Speaker messaging and positioning session — defining your topic, your audience, your message, and your differentiator<br>— Speaker messaging document — your positioning, key messages, and bio language in one reference document</p>
+                </div>
+                <h4>WHO THIS IS FOR</h4>
+                <p>African speakers and thought leaders who know their expertise but are not showing up online in a way that attracts the right opportunities. If conference producers cannot find you, your expertise is invisible to the market — regardless of how brilliant you are on stage.
+                </p>
 
-                <a href="{{ route('contact') }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3  font-bold uppercase tracking-wider hover:bg-white transition-colors">
+                <!-- <a href="{{ route('contact') }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3  font-bold uppercase tracking-wider hover:bg-white transition-colors">
                     Apply for the Programme <span class="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
-                </a>
+                </a> -->
             </div>
         </div>
 
+    </div>
+</section>
+
+<!-- Consult CTA Section -->
+<section class="py-24 bg-slate-50 relative text-center">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <!-- <h2 class="text-xs font-bold text-gold uppercase tracking-widest mb-4">Ready To Get Started</h2> -->
+        <h3 class="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6">Ready to get started?</h3>
+        <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
+            Share your goals and we&apos;ll schedule a consultation call to explore how we can design the right experience for your team.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors">
+                Book a Discovery Call <span class="ml-2">&rarr;</span>
+            </a>
+            <a href="mailto:info@heardinafrica.com" class="inline-flex justify-center items-center border border-slate-300 text-slate-900 px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors">
+                Send us your event brief
+            </a>
+        </div>
     </div>
 </section>
 
@@ -223,9 +253,21 @@
             </div>
         </div>
 
+        <!-- Consult CTA Section -->
+        <section class="py-24 bg-slate-50 relative text-center">
+            <div class="mx-auto max-w-6xl px-4 sm:px-8 lg:px-12">
+                <h2 class="text-xs font-bold text-gold uppercase tracking-widest mb-4">Ready To Get Started</h2>
+                <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-6">Looking for an African speaker?</h3>
+                <p class="text-lg text-slate-600 mb-10 max-w-5xl mx-auto">
+                    We represent a curated selection of African speakers across leadership, governance, technology, and social impact. Every speaker we represent has been personally assessed by our team. Share your brief at info@heardinafrica.com and we will match you with the right voice for your stage.
+                </p>
+
+            </div>
+        </section>
+
         <!-- Programs Tags Preview -->
-        <div class="mt-24 pt-16 border-t border-slate-200">
-            <p class="text-sm text-slate-500 mb-6 font-medium">Conference Programme Design is built in 3 steps:</p>
+        <div class="mt-24 pt-16 border-t border-slate-200  relative text-center">
+            <h3 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-6">Conference Programme Design is built in 3 steps:</h3>
             <div class="grid gap-6 md:grid-cols-3 mb-10">
                 <div class="border border-slate-200 bg-slate-50 p-6">
                     <h4 class="font-bold text-dark mb-2">Step 1: Programme Strategy</h4>
@@ -240,7 +282,7 @@
                     <p class="text-sm text-slate-600 leading-relaxed">We manage briefs, rehearsals, AV coordination, and on-site delivery so the event runs with precision.</p>
                 </div>
             </div>
-
+            <!-- 
             <div class="flex gap-4">
                 <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors">
                     Book a Discovery Call
@@ -249,7 +291,7 @@
                     About the Company
                 </a>
             </div>
-            <p class="text-xs text-slate-400 mt-4 italic">Speaker categories include business leadership, technology, finance, sustainability, governance, culture, health, and global affairs.</p>
+            <p class="text-xs text-slate-400 mt-4 italic">Speaker categories include business leadership, technology, finance, sustainability, governance, culture, health, and global affairs.</p> -->
         </div>
     </div>
 </section>
@@ -273,7 +315,7 @@
     </div>
 </section>
 <!-- Final CTA Section -->
-<section class="py-24 bg-slate-100 relative text-center border-t border-slate-200">
+<!-- <section class="py-24 bg-slate-100 relative text-center border-t border-slate-200">
     <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-6">Ready to elevate your event?</h2>
         <p class="text-lg text-slate-600 mb-10">
@@ -283,5 +325,5 @@
             Book a Discovery Call
         </a>
     </div>
-</section>
+</section> -->
 @endsection
