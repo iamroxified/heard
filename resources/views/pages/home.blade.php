@@ -107,7 +107,7 @@
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       <div class="lg:col-span-4" data-aos="fade-right">
-        <h2 class="text-gold text-xl font-bold font-heading mb-4">Services</h2>
+        <h2 class="text-gold text-xl font-bold font-heading mb-4">How we Work</h2>
         <p class="text-white text-sm leading-relaxed opacity-80">
           End-to-end support for speakers, organisers, and programmes.
         </p>
@@ -122,8 +122,10 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
-            <h3 class="text-white font-bold text-sm">Speaker Management</h3>
-            <p class="text-gray-300 text-xs leading-relaxed mt-3">End-to-end management of your speakers from sourcing through to the stage.</p>
+            <h3 class="text-white font-bold text-sm"> Event Speaker Management
+            </h3>
+            <p class="text-gray-300 text-xs leading-relaxed mt-3">End-to-end management of your speaker programme — from sourcing and vetting through briefing, logistics, on-site handling, and post-event close-out.
+              .</p>
             <a href="{{ route('contact') }}" class="mt-4 text-gold text-xs font-bold uppercase tracking-wider">Book a Consultation</a>
           </div>
 
@@ -134,9 +136,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
               </svg>
             </div>
-            <h3 class="text-white font-bold text-sm">Speaker Roster and Representation</h3>
-            <p class="text-gray-300 text-xs leading-relaxed mt-3">We represent and manage Africa&apos;s most compelling voices.</p>
-            <a href="https://forms.gle/niSFqGLFYn8g27Ev8" class="mt-4 text-gold text-xs font-bold uppercase tracking-wider">Join Our Speaker Roster</a>
+            <h3 class="text-white font-bold text-sm">Speaker Matching</h3>
+            <p class="text-gray-300 text-xs leading-relaxed mt-3">Share your brief. We return a curated shortlist of verified African speakers matched to your event streams and audience within 48 hours.</p>
+            <a href="mailto:info@heardinafrica.com" class="mt-4 text-gold text-xs font-bold uppercase tracking-wider">Submit a brief</a>
           </div>
 
           <!-- Service Card 3 -->
@@ -146,8 +148,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
               </svg>
             </div>
-            <h3 class="text-white font-bold text-sm">Conference Programming &amp;<br>Agenda Design</h3>
-            <p class="text-gray-300 text-xs leading-relaxed mt-3">We design keynotes, panels, fireside chats, and session formats that audiences remember.</p>
+            <h3 class="text-white font-bold text-sm">Conference Programme Design</h3>
+            <p class="text-gray-300 text-xs leading-relaxed mt-3">A great conference is not a list of speakers. It is a carefully designed argument. We build the intellectual architecture of your programme.</p>
             <a href="{{ route('contact') }}" class="mt-4 text-gold text-xs font-bold uppercase tracking-wider">Plan Your Programme</a>
           </div>
 
@@ -158,9 +160,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
               </svg>
             </div>
-            <h3 class="text-white font-bold text-sm">Speaker Visibility &amp;<br>Positioning</h3>
-            <p class="text-gray-300 text-xs leading-relaxed mt-3">Helping African experts build the profile, narrative, and stage presence global audiences respond to.</p>
-            <a href="{{ route('contact') }}" class="mt-4 text-gold text-xs font-bold uppercase tracking-wider">Apply for the Programme</a>
+            <h3 class="text-white font-bold text-sm">Speaker Visibility and Positioning</h3>
+            <p class="text-gray-300 text-xs leading-relaxed mt-3">Your expertise deserves to be found. We manage your LinkedIn and Instagram as active speaker platforms — building the visibility that gets you in front of the right stages.</p>
+            <a href="{{ $bookingUrl }}" class="mt-4 text-gold text-xs font-bold uppercase tracking-wider"> Book a discovery call</a>
           </div>
         </div>
       </div>
@@ -188,6 +190,113 @@
           Whether you are looking for a speaker, building a programme, or ready to take your expertise to a global audience — we are your partner from first conversation to final applause.
         </p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- What We Do Section -->
+<section class="py-24 bg-slate-50 overflow-hidden">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-6">
+        What we do
+      </h2>
+      <p class="text-lg text-slate-600 font-light leading-relaxed">
+        We sit at the centre of the African Speaker Economy — between the world's conference producers who need African voices, and Africa's most credible experts who deserve global stages.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div data-aos="fade-up" data-aos-delay="100" class="bg-white border border-slate-100 p-8 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-gold/10 text-gold flex items-center justify-center mb-6 font-bold text-lg">01</div>
+          <h3 class="text-dark font-heading font-bold text-lg mb-4">For conference producers</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            You need African speakers who are credible, prepared, and right for your audience. We find them, vet them, brief them, and manage them end-to-end so you can focus on running a great event.
+          </p>
+        </div>
+        <a href="{{ route('contact') }}" class="mt-6 inline-flex items-center text-gold text-xs font-bold uppercase tracking-wider hover:text-dark transition-colors">
+          Partner with us &rarr;
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div data-aos="fade-up" data-aos-delay="200" class="bg-white border border-slate-100 p-8 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-gold/10 text-gold flex items-center justify-center mb-6 font-bold text-lg">02</div>
+          <h3 class="text-dark font-heading font-bold text-lg mb-4">For African speakers</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            You have the expertise. We have the relationships and the infrastructure to get you on the stages that matter. We actively represent our verified speakers and pitch them to global conference producers.
+          </p>
+        </div>
+        <a href="{{ $bookingUrl }}" class="mt-6 inline-flex items-center text-gold text-xs font-bold uppercase tracking-wider hover:text-dark transition-colors">
+          Get Represented &rarr;
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div data-aos="fade-up" data-aos-delay="300" class="bg-white border border-slate-100 p-8 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-gold/10 text-gold flex items-center justify-center mb-6 font-bold text-lg">03</div>
+          <h3 class="text-dark font-heading font-bold text-lg mb-4">For events</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            A conference is only as good as the conversations it creates. We design conference programmes from the ground up — the agenda, the session formats, the speaker sequence, and the intellectual thread that ties it all together.
+          </p>
+        </div>
+        <a href="{{ route('services') }}" class="mt-6 inline-flex items-center text-gold text-xs font-bold uppercase tracking-wider hover:text-dark transition-colors">
+          View Program Design &rarr;
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why HIA Exists Section -->
+<section class="py-24 bg-dark text-white relative overflow-hidden">
+  <div class="absolute inset-0 z-0 opacity-20">
+    <img src="{{ asset('img/DSC_5074.jpg') }}" alt="Event Panel Background" class="w-full h-full object-cover mix-blend-overlay">
+  </div>
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-5" data-aos="fade-right">
+        <span class="text-gold text-xs font-bold tracking-wider mb-3 block uppercase">Our Mission</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight leading-tight">
+          African expertise is everywhere. We make it impossible to ignore.
+        </h2>
+      </div>
+      <div class="lg:col-span-7 space-y-6 text-gray-300 text-base font-light leading-relaxed" data-aos="fade-left" data-aos-delay="200">
+        <p>
+          Africa produces world-class thinkers, leaders, innovators, and experts in every field. The conversations happening in Lagos, Nairobi, Accra, and Johannesburg are shaping the future of technology, governance, finance, health, and climate — and the world's most important stages are starting to notice.
+        </p>
+        <p>
+          Heard In Africa sits at the centre of that conversation. We curate and represent Africa's most credible voices, match them to the global stages their expertise deserves, and manage every detail of the speaker experience so that when an African voice takes the stage, it lands with the weight it deserves.
+        </p>
+        <p class="text-white font-medium border-l-2 border-gold pl-4">
+          We are not filling a gap. We are building infrastructure for an economy that already exists and is ready to scale.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Proof Point Section -->
+<section class="py-24 bg-white overflow-hidden">
+  <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+    <span class="text-gold text-xs font-bold tracking-wider mb-3 block uppercase" data-aos="fade-up">Proof of Execution</span>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-10" data-aos="fade-up" data-aos-delay="100">
+      What this looks like in practice
+    </h2>
+    <div class="bg-slate-50 border border-slate-100 p-8 md:p-12 shadow-sm rounded-none max-w-3xl mx-auto" data-aos="zoom-in" data-aos-delay="200">
+      <!-- Large pull quote icon -->
+      <span class="text-6xl text-gold/20 font-serif leading-none block -mt-4 mb-2">“</span>
+      <p class="text-lg md:text-xl text-slate-800 font-light leading-relaxed italic mb-8">
+        At the Omniverse Africa Summit — a four-day, multi-stage convening with over 100 speakers — Heard In Africa delivered 95% on-time session delivery, 90% speaker material submission before deadline, and zero major stage disruptions.
+      </p>
+      <div class="h-px bg-slate-200 w-16 mx-auto mb-6"></div>
+      <p class="text-sm font-bold tracking-wider uppercase text-slate-900">
+        That is what professional speaker management looks like. Not coordination. Infrastructure.
+      </p>
     </div>
   </div>
 </section>
@@ -222,20 +331,7 @@
   </div>
 </section>
 
-<!-- Take Your Event to the Next Level CTA -->
-<section class="py-24 bg-slate-200">
-  <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative">
-    <div data-aos="flip-up" class="bg-white p-12 md:p-16 shadow-xl relative z-10 max-w-2xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-4">
-        Building the Infrastructure of the African Speaker Economy
-      </h2>
-      <p class="text-slate-600 mb-8 text-sm">We connect speakers, shape programmes, and support the stages that matter.</p>
-      <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold tracking-wider hover:bg-dark hover:text-white transition-colors">
-        Book a Discovery Call
-      </a>
-    </div>
-  </div>
-</section>
+
 
 <?php
 if (!isset($testimonials) || $testimonials->isEmpty()) {
@@ -403,4 +499,21 @@ if (!isset($faqs) || $faqs->isEmpty()) {
   </div>
 </section>
 
+<!-- Take Your Event to the Next Level CTA -->
+<section class="py-24 bg-slate-200">
+  <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative">
+    <div data-aos="flip-up" class="bg-white p-12 md:p-16 shadow-xl relative z-10 max-w-2xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-4">
+        Ready to find the right African voice for your stage?
+      </h2>
+      <p class="text-slate-600 mb-8 text-sm">Or ready to take your expertise to the world's most important stages?</p>
+      <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold tracking-wider hover:bg-dark hover:text-white transition-colors">
+        Book a Discovery Call
+      </a>
+      <a href="https://speaker-readiness-assessment.lovable.app" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold tracking-wider hover:bg-dark hover:text-white transition-colors">
+        Take the speaker self-assessment
+      </a>
+    </div>
+  </div>
+</section>
 @endsection
