@@ -113,7 +113,7 @@
         </div>
 
         <!-- Service 4 -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div class="bg-slate-50 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden">
                 <img src="{{ asset('img/DSC_9994.jpg') }}" alt="Speaker Visibility" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
                 <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
