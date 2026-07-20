@@ -500,20 +500,22 @@ if (!isset($faqs) || $faqs->isEmpty()) {
 </section>
 
 <!-- Take Your Event to the Next Level CTA -->
-<section class="py-24 bg-slate-200">
-  <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative">
-    <div data-aos="flip-up" class="bg-white p-12 md:p-16 shadow-xl relative z-10 max-w-2xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-4">
-        Ready to find the right African voice for your stage?
-      </h2>
-      <p class="text-slate-600 mb-8 text-sm">Or ready to take your expertise to the world's most important stages?</p>
-      <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold tracking-wider hover:bg-dark hover:text-white transition-colors">
+<section class="py-24 bg-dark text-white relative text-center">
+  <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- <div data-aos="flip-up" class="bg-white p-12 md:p-16 shadow-xl relative z-10 max-w-5xl mx-auto"> -->
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+      Ready to find the right African voice for your stage?
+    </h2>
+    <p class="text-slate-600 mb-8 text-sm text-white">Or ready to take your expertise to the world's most important stages?</p>
+    <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-4 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors">
         Book a Discovery Call
       </a>
-      <a href="https://speaker-readiness-assessment.lovable.app" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-3 text-sm font-bold tracking-wider hover:bg-dark hover:text-white transition-colors">
+      <a href="https://speaker-readiness-assessment.lovable.app" class="inline-flex justify-center items-center border border-white/30 text-white px-8 py-4 text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-dark transition-colors">
         Take the speaker self-assessment
       </a>
     </div>
+    <!-- </div> -->
   </div>
 </section>
 @endsection

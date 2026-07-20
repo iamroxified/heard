@@ -54,7 +54,10 @@
                 </a> -->
             </div>
             <div class="order-1 lg:order-2 bg-slate-100 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden">
-                <img src="{{ asset('img/DSC_5167.jpg') }}" alt="Event Speaker" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
+                <video autoplay loop muted playsinline>
+                    <source src="{{ asset('img/event_speaker_management.MOV') }}" type="video/mp4">
+                </video>
+                <!-- <img src="{{ asset('img/DSC_5167.jpg') }}" alt="Event Speaker" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply"> -->
                 <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
             </div>
         </div>
@@ -128,7 +131,6 @@
                     African speakers are being searched for. Conference producers are actively looking. The question is whether they can find you — and whether what they find makes them stop scrolling and say yes.Heard In Africa's Speaker Visibility and Positioning service manages your LinkedIn and Instagram as active speaker career platforms. Every post, every update, every piece of content is in service of one goal: making sure the right producers, organisations, and audiences find you, understand what you stand for, and want to hear you speak.
 
                 </p>
-
                 <div class="bg-slate-20 p-2 border-l-4 border-gold mb-8">
                     <h4 class="font-bold text-slate-900 mb-2">WHAT THIS COVERS</h4>
                     <p class="text-sm text-slate-600">— LinkedIn profile optimisation: — headline, about section, featured posts, and banner updated to communicate your speaking expertise immediately <br>— Weekly LinkedIn content strategy and posting — thought leadership content that builds your authority in your specific field<br>— Instagram management — content strategy, caption writing, posting, and monthly analytics<br>— Speaker messaging and positioning session — defining your topic, your audience, your message, and your differentiator<br>— Speaker messaging document — your positioning, key messages, and bio language in one reference document</p>
