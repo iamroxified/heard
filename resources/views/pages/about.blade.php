@@ -26,7 +26,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <!-- Left Image -->
             <div data-aos="fade-right" data-aos-duration="1000">
-                <img src="{{ asset('img/nana.jpg') }}" alt="Speaker on stage" class="w-full h-auto object-cover shadow-lg border border-slate-100">
+                <img src="{{ asset('img/group.jpeg') }}" alt="Speaker on stage" class="w-full h-auto object-cover shadow-lg border border-slate-100">
             </div>
             <!-- Right Text -->
             <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" class="pl-0 md:pl-4">
@@ -114,7 +114,7 @@
 
             <!-- Right Image -->
             <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                <img src="{{ asset('img/DSC_5074.jpg') }}" alt="Core Values" class="w-full h-auto object-cover shadow-lg border border-slate-100">
+                <img src="{{ asset('img/replace1.jpeg') }}" alt="Core Values" class="w-full h-auto object-cover shadow-lg border border-slate-100">
             </div>
         </div>
     </div>
@@ -168,21 +168,17 @@
                         </p> -->
                     </div>
                     <div class="flex items-center gap-3 border-t border-slate-200/60 pt-4">
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/nananwandu" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="LinkedIn">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                             </svg>
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Twitter">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                            </svg>
-                        </a>
-                        <a href="mailto:kelechi@heardinafrica.com" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Email">
+                        <a href="mailto:nana@heardinafrica.com" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Email">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
                         </a>
+
                     </div>
                 </div>
             </div>
@@ -202,17 +198,12 @@
                         </p> -->
                     </div>
                     <div class="flex items-center gap-3 border-t border-slate-200/60 pt-4">
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/precious-esiri-pmp-919111241/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="LinkedIn">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                             </svg>
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Twitter">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                            </svg>
-                        </a>
-                        <a href="mailto:amara@heardinafrica.com" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Email">
+                        <a href="mailto:precious@heardinafrica.com" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Email">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
@@ -236,22 +227,18 @@
                         </p> -->
                     </div>
                     <div class="flex items-center gap-3 border-t border-slate-200/60 pt-4">
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/modupe-rachael-704161287" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="LinkedIn">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                             </svg>
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Twitter">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                            </svg>
-                        </a>
-                        <a href="mailto:tunde@heardinafrica.com" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Email">
+                        <a href="mailto:racheal@heardinafrica.com" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Email">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
                         </a>
                     </div>
+
                 </div>
             </div>
         </div>

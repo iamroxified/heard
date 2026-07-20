@@ -62,7 +62,7 @@
         <!-- Service 2 -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div class="bg-slate-100 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden">
-                <img src="{{ asset('img/agency.jpg') }}" alt="Speaker Agency" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
+                <img src="{{ asset('img/speaker_matching.jpeg') }}" alt="Speaker Agency" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
                 <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
             </div>
             <div>
@@ -107,7 +107,7 @@
 
             </div>
             <div class="order-1 lg:order-2 bg-slate-100 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden">
-                <img src="{{ asset('img/agenda.jpg') }}" alt="Conference Programming" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
+                <img src="{{ asset('img/event_programme.jpg') }}" alt="Conference Programming" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
                 <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
             </div>
         </div>
@@ -170,7 +170,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-heading font-bold text-dark mb-4">Framework for Managing Speakers</h2>
+            <h2 class="text-3xl font-heading font-bold text-dark mb-4">Framework for Managing Event Speakers</h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
