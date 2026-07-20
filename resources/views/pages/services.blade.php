@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Services - Heard In Africa')
 
@@ -53,27 +53,12 @@
                     Book a Consultation <span class="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
                 </a> -->
             </div>
-            <!-- Video Thumbnail — click to open modal -->
-            <button
-                id="video-trigger"
-                onclick="openVideoModal()"
-                class="order-1 lg:order-2 bg-slate-100 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden w-full cursor-pointer group focus:outline-none"
-                aria-label="Play video"
-            >
-                <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover" tabindex="-1">
-                    <source src="{{ asset('img/event_speaker_management.MOV') }}" type="video/mp4">
-                </video>
+            <div class="order-1 lg:order-2 bg-slate-100 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden">
+                <img src="{{ asset('img/event_speaker.jpeg') }}" alt="Conference Programming" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
                 <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
-                <!-- Play button overlay -->
-                <div class="relative z-10 flex flex-col items-center gap-3 transition-transform duration-300 group-hover:scale-110">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white flex items-center justify-center shadow-2xl">
-                        <svg class="w-7 h-7 sm:w-9 sm:h-9 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z"/>
-                        </svg>
-                    </div>
-                    <span class="text-white text-xs sm:text-sm font-semibold uppercase tracking-widest drop-shadow-lg">Watch Video</span>
-                </div>
-            </button>
+            </div>
+            <!-- Video Thumbnail — click to open modal -->
+
         </div>
 
         <!-- Service 2 -->
@@ -98,6 +83,7 @@
                 </div> -->
 
             </div>
+
         </div>
 
         <!-- Service 3 -->
@@ -350,24 +336,21 @@
     aria-label="Video player"
     class="fixed inset-0 z-[9999] flex items-center justify-center p-4 sm:p-6 lg:p-10"
     style="display:none;"
-    onclick="handleModalBackdropClick(event)"
->
+    onclick="handleModalBackdropClick(event)">
     <!-- Backdrop -->
     <div class="absolute inset-0 bg-black/85 backdrop-blur-sm"></div>
 
     <!-- Modal content -->
     <div
         id="video-modal-content"
-        class="relative w-full max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto"
-    >
+        class="relative w-full max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto">
         <!-- Close button -->
         <button
             onclick="closeVideoModal()"
             class="absolute -top-10 right-0 sm:-top-12 text-white/80 hover:text-white transition-colors focus:outline-none z-10"
-            aria-label="Close video"
-        >
+            aria-label="Close video">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
         </button>
 
@@ -379,9 +362,8 @@
                 playsinline
                 preload="metadata"
                 class="absolute inset-0 w-full h-full bg-black"
-                style="display:block;"
-            >
-                <source src="{{ asset('img/event_speaker_management.MOV') }}" type="video/mp4">
+                style="display:block;">
+                <source src="{{ asset('img/event_video.mp4') }}" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
         </div>
@@ -390,8 +372,8 @@
 
 @push('scripts')
 <script>
-    const videoModal   = document.getElementById('video-modal');
-    const modalVideo   = document.getElementById('modal-video');
+    const videoModal = document.getElementById('video-modal');
+    const modalVideo = document.getElementById('modal-video');
 
     function openVideoModal() {
         videoModal.style.display = 'flex';
