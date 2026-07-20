@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Services - Heard In Africa')
 
@@ -54,7 +54,7 @@
                 </a> -->
             </div>
             <div class="order-1 lg:order-2 bg-slate-100 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative overflow-hidden">
-                <video autoplay loop muted playsinline>
+                <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
                     <source src="{{ asset('img/event_speaker_management.MOV') }}" type="video/mp4">
                 </video>
                 <!-- <img src="{{ asset('img/DSC_5167.jpg') }}" alt="Event Speaker" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply"> -->
