@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Services - Heard In Africa')
 
@@ -417,5 +417,7 @@
     });
 </script>
 @endpush
+
+<x-assessment-popup />
 
 @endsection

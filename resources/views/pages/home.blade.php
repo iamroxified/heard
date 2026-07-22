@@ -518,4 +518,7 @@ if (!isset($faqs) || $faqs->isEmpty()) {
     <!-- </div> -->
   </div>
 </section>
+
+<x-assessment-popup />
+
 @endsection

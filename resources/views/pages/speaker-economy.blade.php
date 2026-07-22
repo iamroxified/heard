@@ -533,4 +533,7 @@
     </div>
 
 </div>
+
+<x-assessment-popup />
+
 @endsection
