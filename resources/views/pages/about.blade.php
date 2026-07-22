@@ -68,30 +68,39 @@
     </div>
 
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
-            <!-- Our Mission -->
-            <div data-aos="fade-up" data-aos-duration="1000">
-                <h3 class="text-3xl font-heading font-bold text-accent mb-4 flex items-center gap-3">
-                    Vision
-                </h3>
-                <p class="text-gray-300  leading-relaxed pl-1 max-w-md">
-                    To be the foremost globally recognised platform connecting African voices with world-class stages — making Africa&apos;s expertise impossible to ignore.
-                </p>
-            </div>
 
-            <!-- Our Vision -->
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="border border-gold p-8 md:p-10 relative">
-                <div class="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-accent"></div>
-                <div class="absolute -bottom-3 -right-3 w-6 h-6 border-b-2 border-r-2 border-accent"></div>
-
-                <h3 class="text-3xl font-heading font-bold text-accent mb-4">
-                    Mission
-                </h3>
-                <p class="text-gray-300  leading-relaxed">
-                    To connect and showcase Africa&apos;s leading speakers and thinkers to the world by providing end-to-end speaker management, strategic positioning, and conference programming that creates meaningful, lasting impact for events and audiences everywhere.
-                </p>
-            </div>
+        <!-- Our Mission -->
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h3 class="text-3xl font-heading font-bold text-accent mb-4 flex items-center gap-3">
+                Vision
+            </h3>
+            <p class="text-gray-300  leading-relaxed pl-1 max-w-md">
+                A world where African expertise shapes every global conversation that matters — and every stage that carries an African voice is worthy of it.
+            </p>
         </div>
+
+        <!-- Our Vision -->
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="border border-gold p-8 md:p-10 relative">
+            <div class="text-center mb-16">
+                <span class="text-gold text-sm font-bold tracking-wider mb-2 block uppercase" data-aos="fade-up">Passionate Experts</span>
+                <h2 data-aos="fade-up" data-aos-delay="100" class="text-3xl md:text-4xl font-heading font-bold text-dark">
+                    About Team
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="200" class="text-slate-500 text-sm mt-3 max-w-md mx-auto">
+                    The strategic curators and event operators behind Africa's premier speaker management partner.
+                </p>
+            </div>
+            <div class="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-accent"></div>
+            <div class="absolute -bottom-3 -right-3 w-6 h-6 border-b-2 border-r-2 border-accent"></div>
+
+            <h3 class="text-3xl font-heading font-bold text-accent mb-4">
+                Mission
+            </h3>
+            <p class="text-gray-300  leading-relaxed">
+                To connect Africa's finest voices with the stages they deserve.
+            </p>
+        </div>
+    </div>
     </div>
 </section>
 

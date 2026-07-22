@@ -3,12 +3,14 @@
 use App\Http\Controllers\Admin\AuthController as AdminAuthController;
 use App\Http\Controllers\Admin\BlogPostController as AdminBlogPostController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\EbookDownloadController as AdminEbookDownloadController;
 use App\Http\Controllers\Admin\EnquiryController;
 use App\Http\Controllers\Admin\EventController as AdminEventController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\SpeakerController as AdminSpeakerController;
 use App\Http\Controllers\Admin\FaqController as AdminFaqController;
 use App\Http\Controllers\Admin\TestimonialController as AdminTestimonialController;
+use App\Http\Controllers\EbookDownloadController as PublicEbookDownloadController;
 use App\Http\Controllers\EnquiryController as PublicEnquiryController;
 use App\Models\Faq;
 use App\Models\Testimonial;
@@ -28,6 +30,10 @@ Route::get('/about', function () {
 Route::get('/speaker-economy', function () {
     return view('pages.speaker-economy');
 })->name('speaker-economy');
+
+Route::get('/ebook-download/thank-you', function () {
+    return view('pages.ebook-thank-you');
+})->name('ebook-download.thank-you');
 
 Route::get('/services', function () {
     return view('pages.services');
@@ -53,6 +59,7 @@ Route::get('/discovery-call', function () {
 })->name('discovery-call');
 
 Route::post('/enquiries', [PublicEnquiryController::class, 'store'])->name('enquiries.store');
+Route::post('/ebook-downloads', [PublicEbookDownloadController::class, 'store'])->name('ebook-downloads.store');
 
 Route::get('/login', function () {
     return redirect()->route('admin.login');
@@ -98,6 +105,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::patch('/enquiries/{enquiry}', [EnquiryController::class, 'update'])->name('enquiries.update');
         Route::delete('/enquiries/{enquiry}', [EnquiryController::class, 'destroy'])->name('enquiries.destroy');
         Route::get('/enquiries/export', [EnquiryController::class, 'export'])->name('enquiries.export');
+
+        Route::get('/ebook-downloads', [AdminEbookDownloadController::class, 'index'])->name('ebook-downloads.index');
+        Route::get('/ebook-downloads/export', [AdminEbookDownloadController::class, 'export'])->name('ebook-downloads.export');
+        Route::patch('/ebook-downloads/{ebookDownload}', [AdminEbookDownloadController::class, 'update'])->name('ebook-downloads.update');
+        Route::delete('/ebook-downloads/{ebookDownload}', [AdminEbookDownloadController::class, 'destroy'])->name('ebook-downloads.destroy');
 
         Route::get('/settings', [SettingController::class, 'edit'])->name('settings.edit');
         Route::patch('/settings', [SettingController::class, 'update'])->name('settings.update');

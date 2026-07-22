@@ -25,6 +25,7 @@
                 <a href="{{ route('admin.testimonials.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.testimonials.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Testimonials</a>
                 <a href="{{ route('admin.faqs.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.faqs.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">FAQs</a>
                 <a href="{{ route('admin.enquiries.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.enquiries.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Enquiries</a>
+                <a href="{{ route('admin.ebook-downloads.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.ebook-downloads.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Ebook Downloads</a>
                 <a href="{{ route('admin.settings.edit') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.settings.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Settings</a>
                 <form method="POST" action="{{ route('admin.logout') }}" class="pt-4">
                     @csrf
