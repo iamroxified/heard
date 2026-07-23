@@ -20,6 +20,9 @@ $bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-
         <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center bg-gold text-dark px-8 py-4 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors">
             Book a Discovery Call
         </a>
+        <a href="wa.me/2347048445360" class="inline-flex justify-center items-center bg-green text-dark px-8 py-4 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors">
+            <i class="fa fa-whatsapp"></i> Message us on WhatsApp
+        </a>
     </div>
 </section>
 

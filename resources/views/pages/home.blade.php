@@ -68,6 +68,11 @@
         <img src="{{ asset('img/gNOTAP-logo.png') }}" alt="Boardroom Meeting" class="w-full  object-cover group-hover:scale-105 transition-transform duration-500">
 
       </div>
+      <!-- Image 2 -->
+      <div class="w-full md:w-1/2 relative overflow-hidden group">
+        <img src="{{ asset('img/gAccounTech.jpg') }}" alt="Boardroom Meeting" class="w-full  object-cover group-hover:scale-105 transition-transform duration-500">
+
+      </div>
     </div>
 
   </div>
