@@ -9,17 +9,20 @@ use App\Http\Controllers\Admin\EventController as AdminEventController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\SpeakerController as AdminSpeakerController;
 use App\Http\Controllers\Admin\FaqController as AdminFaqController;
+use App\Http\Controllers\Admin\FeaturedVideoController as AdminFeaturedVideoController;
 use App\Http\Controllers\Admin\TestimonialController as AdminTestimonialController;
 use App\Http\Controllers\EbookDownloadController as PublicEbookDownloadController;
 use App\Http\Controllers\EnquiryController as PublicEnquiryController;
 use App\Models\Faq;
+use App\Models\FeaturedVideo;
 use App\Models\Testimonial;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $testimonials = Testimonial::where('status', 'active')->orderBy('sort_order', 'asc')->get();
     $faqs = Faq::where('status', 'active')->orderBy('sort_order', 'asc')->get();
-    return view('pages.home', compact('testimonials', 'faqs'));
+    $featuredVideos = FeaturedVideo::where('status', 'active')->orderBy('sort_order', 'asc')->get();
+    return view('pages.home', compact('testimonials', 'faqs', 'featuredVideos'));
 })->name('home');
 
 Route::get('/about', function () {
@@ -110,6 +113,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/ebook-downloads/export', [AdminEbookDownloadController::class, 'export'])->name('ebook-downloads.export');
         Route::patch('/ebook-downloads/{ebookDownload}', [AdminEbookDownloadController::class, 'update'])->name('ebook-downloads.update');
         Route::delete('/ebook-downloads/{ebookDownload}', [AdminEbookDownloadController::class, 'destroy'])->name('ebook-downloads.destroy');
+
+        Route::get('/featured-videos', [AdminFeaturedVideoController::class, 'index'])->name('featured-videos.index');
+        Route::post('/featured-videos', [AdminFeaturedVideoController::class, 'store'])->name('featured-videos.store');
+        Route::put('/featured-videos/{featuredVideo}', [AdminFeaturedVideoController::class, 'update'])->name('featured-videos.update');
+        Route::delete('/featured-videos/{featuredVideo}', [AdminFeaturedVideoController::class, 'destroy'])->name('featured-videos.destroy');
 
         Route::get('/settings', [SettingController::class, 'edit'])->name('settings.edit');
         Route::patch('/settings', [SettingController::class, 'update'])->name('settings.update');
