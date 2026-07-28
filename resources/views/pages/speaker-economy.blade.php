@@ -213,7 +213,7 @@
             <!-- Featured Video Player Card -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white border border-slate-200 shadow-sm p-6 md:p-8 mb-12" data-aos="fade-up">
                 <!-- Video Thumbnail Left -->
-                <div class="lg:col-span-7 relative group cursor-pointer aspect-video bg-slate-900 border border-slate-200 overflow-hidden flex items-center justify-center" @click="openVideo('https://www.youtube.com/embed/kR8QG_CEUCQ')">
+                <a href="https://www.youtube.com/watch?v=kR8QG_CEUCQ" target="_blank" rel="noopener noreferrer" class="lg:col-span-7 relative group block aspect-video bg-slate-900 border border-slate-200 overflow-hidden flex items-center justify-center">
                     <img src="{{ asset('img/DSC_5074.jpg') }}" alt="YouTube Masterclass" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80">
                     <div class="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300"></div>
 
@@ -224,7 +224,7 @@
                         </svg>
                         <div class="absolute inset-0 rounded-full bg-gold/30 animate-ping"></div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Video Description Right -->
                 <div class="lg:col-span-5 flex flex-col justify-center lg:pl-6">
@@ -234,9 +234,9 @@
                         In this masterclass, Chimfumnanya "Nana" Nwandu breaks down the key vetting metrics, contract considerations, and speaker development programs required to connect African talent with world-class stages.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <button @click="openVideo('https://www.youtube.com/embed/kR8QG_CEUCQ')" class="inline-flex justify-center items-center bg-gold text-dark px-6 py-3 text-xs font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors">
+                        <a href="https://www.youtube.com/watch?v=kR8QG_CEUCQ" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center bg-gold text-dark px-6 py-3 text-xs font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors">
                             Play Video
-                        </button>
+                        </a>
                         <a href="https://www.youtube.com/@Heardinafrica" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center border border-slate-300 text-slate-700 px-6 py-3 text-xs font-bold uppercase tracking-wider hover:bg-slate-100 transition-colors">
                             Subscribe on YouTube
                         </a>
@@ -248,9 +248,8 @@
             @if (!empty($featuredVideos) && $featuredVideos->isNotEmpty())
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 @foreach ($featuredVideos as $fv)
-                <div data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}"
-                    class="bg-white border border-slate-200 group cursor-pointer hover:shadow-md transition-shadow"
-                    @click="openVideo('{{ $fv->embed_url }}')">
+                <a href="{{ $fv->watch_url }}" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}"
+                    class="block bg-white border border-slate-200 group hover:shadow-md transition-shadow">
                     <div class="h-44 relative bg-slate-900 overflow-hidden flex items-center justify-center">
                         @if ($fv->youtube_id)
                             <img src="https://img.youtube.com/vi/{{ $fv->youtube_id }}/mqdefault.jpg"
@@ -271,7 +270,7 @@
                             <p class="text-slate-500 text-xs leading-relaxed mt-1.5 line-clamp-2">{{ $fv->description }}</p>
                         @endif
                     </div>
-                </div>
+                </a>
                 @endforeach
             </div>
             @else
@@ -497,21 +496,6 @@
                 </button>
             </div>
         </div>
-    </div>
-
-    <!-- YouTube Video Lightbox Modal -->
-    <div x-cloak x-show="videoModalOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark/95 backdrop-blur-sm" x-transition>
-        <div @click.away="videoModalOpen = false" class="relative w-full max-w-4xl aspect-video bg-black shadow-2xl">
-            <button @click="videoModalOpen = false" class="absolute -top-10 right-0 text-white hover:text-gold transition-colors text-sm font-bold flex items-center gap-1">
-                <span>Close Player</span>
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-            <iframe class="w-full h-full" :src="videoModalOpen ? selectedVideoUrl + '?autoplay=1' : ''" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-
 </div>
 
 <x-assessment-popup />
