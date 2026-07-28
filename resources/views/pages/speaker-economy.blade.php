@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Speaker Economy & Resources - Heard In Africa')
 
@@ -245,11 +245,19 @@
             </div>
 
             <!-- YouTube Video Grid -->
+            @if (!empty($featuredVideos) && $featuredVideos->isNotEmpty())
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Video 1 -->
-                <div data-aos="fade-up" data-aos-delay="100" class="bg-white border border-slate-200 group cursor-pointer hover:shadow-md transition-shadow" @click="openVideo('https://www.youtube.com/shorts/kR8QG_CEUCQ')">
+                @foreach ($featuredVideos as $fv)
+                <div data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}"
+                    class="bg-white border border-slate-200 group cursor-pointer hover:shadow-md transition-shadow"
+                    @click="openVideo('{{ $fv->watch_url }}')">
                     <div class="h-44 relative bg-slate-900 overflow-hidden flex items-center justify-center">
-                        <img src="{{ asset('img/DSC_0279.jpg') }}" alt="Video 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80">
+                        @if ($fv->youtube_id)
+                            <img src="https://img.youtube.com/vi/{{ $fv->youtube_id }}/mqdefault.jpg"
+                                alt="{{ $fv->title }}"
+                                class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
+                                onerror="this.src='https://img.youtube.com/vi/{{ $fv->youtube_id }}/hqdefault.jpg'">
+                        @endif
                         <div class="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300"></div>
                         <div class="relative z-10 w-12 h-12 rounded-full bg-white/95 flex items-center justify-center text-dark shadow-md group-hover:bg-gold group-hover:text-dark transition-colors">
                             <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24">
@@ -258,45 +266,17 @@
                         </div>
                     </div>
                     <div class="p-5">
-                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 block">Curation</span>
-                        <h4 class="font-heading font-bold text-dark text-sm group-hover:text-accent transition-colors duration-300 line-clamp-2">Designing Panels That Don't Bore: The Secrets of Program Strategy</h4>
+                        <h4 class="font-heading font-bold text-dark text-sm group-hover:text-accent transition-colors duration-300 line-clamp-2">{{ $fv->title }}</h4>
+                        @if ($fv->description)
+                            <p class="text-slate-500 text-xs leading-relaxed mt-1.5 line-clamp-2">{{ $fv->description }}</p>
+                        @endif
                     </div>
                 </div>
-
-                <!-- Video 2 -->
-                <div data-aos="fade-up" data-aos-delay="200" class="bg-white border border-slate-200 group cursor-pointer hover:shadow-md transition-shadow" @click="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
-                    <div class="h-44 relative bg-slate-900 overflow-hidden flex items-center justify-center">
-                        <img src="{{ asset('img/nana.jpg') }}" alt="Video 2" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80">
-                        <div class="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300"></div>
-                        <div class="relative z-10 w-12 h-12 rounded-full bg-white/95 flex items-center justify-center text-dark shadow-md group-hover:bg-gold group-hover:text-dark transition-colors">
-                            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 block">Coaching</span>
-                        <h4 class="font-heading font-bold text-dark text-sm group-hover:text-accent transition-colors duration-300 line-clamp-2">Overcoming Stage Anxiety: Public Speaking Mastery for Leaders</h4>
-                    </div>
-                </div>
-
-                <!-- Video 3 -->
-                <div data-aos="fade-up" data-aos-delay="300" class="bg-white border border-slate-200 group cursor-pointer hover:shadow-md transition-shadow" @click="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
-                    <div class="h-44 relative bg-slate-900 overflow-hidden flex items-center justify-center">
-                        <img src="{{ asset('img/AccounTech.jpg') }}" alt="Video 3" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80">
-                        <div class="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300"></div>
-                        <div class="relative z-10 w-12 h-12 rounded-full bg-white/95 flex items-center justify-center text-dark shadow-md group-hover:bg-gold group-hover:text-dark transition-colors">
-                            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 block">Logistics</span>
-                        <h4 class="font-heading font-bold text-dark text-sm group-hover:text-accent transition-colors duration-300 line-clamp-2">On-Site Speaker Management: Minimizing Event Day Operations Chaos</h4>
-                    </div>
-                </div>
+                @endforeach
             </div>
+            @else
+            <p class="text-center text-slate-400 text-sm py-8">No featured videos yet — check back soon.</p>
+            @endif
         </div>
     </section>
 

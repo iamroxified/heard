@@ -21,8 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $testimonials = Testimonial::where('status', 'active')->orderBy('sort_order', 'asc')->get();
     $faqs = Faq::where('status', 'active')->orderBy('sort_order', 'asc')->get();
-    $featuredVideos = FeaturedVideo::where('status', 'active')->orderBy('sort_order', 'asc')->get();
-    return view('pages.home', compact('testimonials', 'faqs', 'featuredVideos'));
+    return view('pages.home', compact('testimonials', 'faqs'));
 })->name('home');
 
 Route::get('/about', function () {
@@ -31,7 +30,8 @@ Route::get('/about', function () {
 })->name('about');
 
 Route::get('/speaker-economy', function () {
-    return view('pages.speaker-economy');
+    $featuredVideos = FeaturedVideo::where('status', 'active')->orderBy('sort_order', 'asc')->get();
+    return view('pages.speaker-economy', compact('featuredVideos'));
 })->name('speaker-economy');
 
 Route::get('/ebook-download/thank-you', function () {
