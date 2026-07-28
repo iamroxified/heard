@@ -57,4 +57,14 @@ class FeaturedVideo extends Model
 
         return $id ? "https://www.youtube.com/watch?v={$id}" : $this->youtube_url;
     }
+
+    /**
+     * Return a clean YouTube embed URL for use in iframes.
+     */
+    public function getEmbedUrlAttribute(): string
+    {
+        $id = $this->youtube_id;
+
+        return $id ? "https://www.youtube.com/embed/{$id}" : $this->youtube_url;
+    }
 }
