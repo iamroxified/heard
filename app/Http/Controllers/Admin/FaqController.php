@@ -12,7 +12,6 @@ class FaqController extends Controller
 {
     public function index(Request $request): View
     {
-        dd($request->all());
         return view('admin.faqs.index', [
             'faqs' => Faq::orderBy('sort_order', 'asc')->get(),
             'editingFaq' => $request->integer('edit') ? Faq::find($request->integer('edit')) : null,

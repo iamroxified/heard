@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Speaker Economy & Resources - Heard In Africa')
 
@@ -213,7 +213,7 @@
             <!-- Featured Video Player Card -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white border border-slate-200 shadow-sm p-6 md:p-8 mb-12" data-aos="fade-up">
                 <!-- Video Thumbnail Left -->
-                <div class="lg:col-span-7 relative group cursor-pointer aspect-video bg-slate-900 border border-slate-200 overflow-hidden flex items-center justify-center" @click="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                <div class="lg:col-span-7 relative group cursor-pointer aspect-video bg-slate-900 border border-slate-200 overflow-hidden flex items-center justify-center" @click="openVideo('https://www.youtube.com/shorts/kR8QG_CEUCQ')">
                     <img src="{{ asset('img/DSC_5074.jpg') }}" alt="YouTube Masterclass" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80">
                     <div class="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300"></div>
 
@@ -234,10 +234,10 @@
                         In this masterclass, Chimfumnanya "Nana" Nwandu breaks down the key vetting metrics, contract considerations, and speaker development programs required to connect African talent with world-class stages.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <button @click="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')" class="inline-flex justify-center items-center bg-gold text-dark px-6 py-3 text-xs font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors">
+                        <button @click="openVideo('https://www.youtube.com/shorts/kR8QG_CEUCQ')" class="inline-flex justify-center items-center bg-gold text-dark px-6 py-3 text-xs font-bold uppercase tracking-wider hover:bg-dark hover:text-white transition-colors">
                             Play Video
                         </button>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center border border-slate-300 text-slate-700 px-6 py-3 text-xs font-bold uppercase tracking-wider hover:bg-slate-100 transition-colors">
+                        <a href="https://www.youtube.com/@Heardinafrica" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center border border-slate-300 text-slate-700 px-6 py-3 text-xs font-bold uppercase tracking-wider hover:bg-slate-100 transition-colors">
                             Subscribe on YouTube
                         </a>
                     </div>
@@ -247,7 +247,7 @@
             <!-- YouTube Video Grid -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Video 1 -->
-                <div data-aos="fade-up" data-aos-delay="100" class="bg-white border border-slate-200 group cursor-pointer hover:shadow-md transition-shadow" @click="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-white border border-slate-200 group cursor-pointer hover:shadow-md transition-shadow" @click="openVideo('https://www.youtube.com/shorts/kR8QG_CEUCQ')">
                     <div class="h-44 relative bg-slate-900 overflow-hidden flex items-center justify-center">
                         <img src="{{ asset('img/DSC_0279.jpg') }}" alt="Video 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80">
                         <div class="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300"></div>
