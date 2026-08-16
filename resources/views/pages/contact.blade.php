@@ -22,7 +22,7 @@ $bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-
         </a>
         <a href="https://wa.me/2347048445360" class="inline-flex justify-center items-center gap-2 bg-green text-dark px-8 py-4 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 shrink-0" fill="currentColor" aria-hidden="true">
-                <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.471 2.027 7.774L0 32l8.467-2.001A15.934 15.934 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.28 13.28 0 0 1-6.773-1.853l-.486-.289-5.027 1.188 1.234-4.892-.317-.502A13.249 13.249 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.273-9.874c-.398-.199-2.355-1.162-2.72-1.294-.365-.133-.631-.199-.897.199-.266.398-1.03 1.294-1.263 1.56-.232.266-.465.299-.863.1-.398-.199-1.682-.62-3.203-1.977-1.184-1.056-1.983-2.361-2.215-2.759-.232-.398-.025-.613.175-.811.179-.178.398-.465.597-.698.199-.232.266-.398.398-.664.133-.266.066-.498-.033-.697-.1-.199-.897-2.162-1.229-2.96-.324-.776-.653-.671-.897-.683l-.764-.013c-.266 0-.698.1-1.063.498-.365.398-1.396 1.363-1.396 3.326s1.43 3.859 1.629 4.125c.199.266 2.814 4.297 6.82 6.027.953.412 1.696.658 2.275.842.956.305 1.827.262 2.515.159.767-.114 2.355-.963 2.687-1.893.332-.93.332-1.728.232-1.893-.1-.166-.365-.266-.763-.465z"/>
+                <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.471 2.027 7.774L0 32l8.467-2.001A15.934 15.934 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.28 13.28 0 0 1-6.773-1.853l-.486-.289-5.027 1.188 1.234-4.892-.317-.502A13.249 13.249 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.273-9.874c-.398-.199-2.355-1.162-2.72-1.294-.365-.133-.631-.199-.897.199-.266.398-1.03 1.294-1.263 1.56-.232.266-.465.299-.863.1-.398-.199-1.682-.62-3.203-1.977-1.184-1.056-1.983-2.361-2.215-2.759-.232-.398-.025-.613.175-.811.179-.178.398-.465.597-.698.199-.232.266-.398.398-.664.133-.266.066-.498-.033-.697-.1-.199-.897-2.162-1.229-2.96-.324-.776-.653-.671-.897-.683l-.764-.013c-.266 0-.698.1-1.063.498-.365.398-1.396 1.363-1.396 3.326s1.43 3.859 1.629 4.125c.199.266 2.814 4.297 6.82 6.027.953.412 1.696.658 2.275.842.956.305 1.827.262 2.515.159.767-.114 2.355-.963 2.687-1.893.332-.93.332-1.728.232-1.893-.1-.166-.365-.266-.763-.465z" />
             </svg>
             Message us on WhatsApp
         </a>
@@ -34,25 +34,31 @@ $bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <div class="lg:col-span-7">
                 @if(session('success'))
-                <div x-data="{ show: true }" x-show="show" x-transition class="mb-8 p-5 bg-emerald-50 border border-emerald-200 text-emerald-900 flex items-start gap-4 relative" role="alert">
-                    <div class="shrink-0 text-emerald-600 mt-0.5">
-                        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <div id="contact-success-alert" x-data="{ show: true }" x-show="show" x-transition class="mb-8 p-5 bg-emerald-50 border-l-4 border-emerald-500 text-emerald-900 flex items-start gap-4 relative shadow-sm" role="alert" aria-live="polite">
+                    <div class="shrink-0 text-emerald-500 mt-0.5">
+                        <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <div class="pr-8">
-                        <h4 class="font-heading font-bold text-sm mb-1 text-emerald-950">Thank you!</h4>
-                        <p class="text-xs text-emerald-800/80 leading-relaxed font-medium">You have successfully submitted your enquiry and you will be contacted shortly.</p>
+                    <div class="pr-8 flex-1">
+                        <h4 class="font-heading font-bold text-base mb-1 text-emerald-900">Enquiry received — thank you!</h4>
+                        <p class="text-sm text-emerald-800/80 leading-relaxed">We've saved your enquiry and will get back to you within two business days. Keep an eye on your inbox.</p>
                     </div>
-                    <button @click="show = false" class="absolute top-4 right-4 text-emerald-400 hover:text-emerald-700 transition-colors" aria-label="Close Alert">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <button @click="show = false" class="absolute top-4 right-4 text-emerald-400 hover:text-emerald-700 transition-colors" aria-label="Close alert">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
                 </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var el = document.getElementById('contact-success-alert');
+                        if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+                    });
+                </script>
                 @endif
 
-                <div x-data="{ tab: 'agenda' }">
+                <div x-data="{ tab: '{{ session('submitted_tab', 'agenda') }}' }">
                     <div class="flex border-b border-slate-200 mb-8">
                         <button @click="tab = 'agenda'" :class="{ 'border-gold text-gold': tab === 'agenda', 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300': tab !== 'agenda' }" class="pb-4 px-1 border-b-2 font-medium text-sm mr-8 uppercase tracking-wider transition-colors">
                             Request Agenda / Programme Enquiry
@@ -235,7 +241,7 @@ $bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-
 
                 <div id="clarifying-call" class="bg-dark p-8 text-white">
                     <h3 class="text-xl font-heading font-bold mb-4">Book a Discovery Call</h3>
-                    <p class="text-gray-400 text-sm mb-6">Use the calendar link to schedule a 30-minute Discovery Call and tell us what you need.</p>
+                    <p class="text-gray-400 text-sm mb-6">Use the calendar link to schedule a 15-minute Discovery Call and tell us what you need.</p>
                     <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center w-full bg-gold text-dark px-6 py-4 font-bold uppercase tracking-wider hover:bg-white transition-colors">
                         Book a Discovery Call
                     </a>

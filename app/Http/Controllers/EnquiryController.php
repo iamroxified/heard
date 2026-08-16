@@ -31,6 +31,8 @@ class EnquiryController extends Controller
 
         Enquiry::create($data);
 
-        return back()->with('success', 'Thanks — your enquiry has been sent.');
+        return back()
+            ->with('success', 'Thanks — your enquiry has been sent.')
+            ->with('submitted_tab', $data['form_type'] === 'programme' ? 'agenda' : 'general');
     }
 }

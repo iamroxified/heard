@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Speaker Economy & Resources - Heard In Africa')
 
@@ -156,7 +156,7 @@
                         <div class="aspect-[4/5] bg-slate-200 mb-6 overflow-hidden shadow-md relative group-hover:scale-[1.02] transition-transform duration-500">
                             <img src="{{ asset('img/report_cover.png') }}" alt="African Speaker Economy Impact Report" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-dark/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <span class="bg-gold text-dark px-4 py-2 text-xs font-bold uppercase tracking-wider">Preview Report</span>
+                                <span class="bg-gold text-dark px-4 py-2 text-xs font-bold uppercase tracking-wider">Coming Soon</span>
                             </div>
                         </div>
                         <span class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Impact Report</span>
@@ -211,13 +211,13 @@
             </div>
 
             <!-- Featured Video Player Card -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white border border-slate-200 shadow-sm p-6 md:p-8 mb-12" data-aos="fade-up">
-                <!-- Video Thumbnail Left -->
+            <!-- <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white border border-slate-200 shadow-sm p-6 md:p-8 mb-12" data-aos="fade-up">
+             
                 <a href="https://www.youtube.com/watch?v=kR8QG_CEUCQ" target="_blank" rel="noopener noreferrer" class="lg:col-span-7 relative group block aspect-video bg-slate-900 border border-slate-200 overflow-hidden flex items-center justify-center">
                     <img src="{{ asset('img/DSC_5074.jpg') }}" alt="YouTube Masterclass" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80">
                     <div class="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300"></div>
 
-                    <!-- Pulse Play Button -->
+                   
                     <div class="relative z-10 w-20 h-20 rounded-full bg-gold/90 flex items-center justify-center text-dark shadow-xl hover:scale-110 transition-transform duration-300">
                         <svg class="w-8 h-8 fill-current ml-1" viewBox="0 0 24 24">
                             <path d="M8 5v14l11-7z"></path>
@@ -226,7 +226,7 @@
                     </div>
                 </a>
 
-                <!-- Video Description Right -->
+           
                 <div class="lg:col-span-5 flex flex-col justify-center lg:pl-6">
                     <span class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Featured Video</span>
                     <h3 class="text-2xl font-heading font-bold text-dark mb-4">How to Pitch and Build a World-Class African Speaker Roster</h3>
@@ -242,7 +242,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- YouTube Video Grid -->
             @if (!empty($featuredVideos) && $featuredVideos->isNotEmpty())
@@ -252,10 +252,10 @@
                     class="block bg-white border border-slate-200 group hover:shadow-md transition-shadow">
                     <div class="h-44 relative bg-slate-900 overflow-hidden flex items-center justify-center">
                         @if ($fv->youtube_id)
-                            <img src="https://img.youtube.com/vi/{{ $fv->youtube_id }}/mqdefault.jpg"
-                                alt="{{ $fv->title }}"
-                                class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
-                                onerror="this.src='https://img.youtube.com/vi/{{ $fv->youtube_id }}/hqdefault.jpg'">
+                        <img src="https://img.youtube.com/vi/{{ $fv->youtube_id }}/mqdefault.jpg"
+                            alt="{{ $fv->title }}"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
+                            onerror="this.src='https://img.youtube.com/vi/{{ $fv->youtube_id }}/hqdefault.jpg'">
                         @endif
                         <div class="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300"></div>
                         <div class="relative z-10 w-12 h-12 rounded-full bg-white/95 flex items-center justify-center text-dark shadow-md group-hover:bg-gold group-hover:text-dark transition-colors">
@@ -267,7 +267,7 @@
                     <div class="p-5">
                         <h4 class="font-heading font-bold text-dark text-sm group-hover:text-accent transition-colors duration-300 line-clamp-2">{{ $fv->title }}</h4>
                         @if ($fv->description)
-                            <p class="text-slate-500 text-xs leading-relaxed mt-1.5 line-clamp-2">{{ $fv->description }}</p>
+                        <p class="text-slate-500 text-xs leading-relaxed mt-1.5 line-clamp-2">{{ $fv->description }}</p>
                         @endif
                     </div>
                 </a>
@@ -496,8 +496,8 @@
                 </button>
             </div>
         </div>
-</div>
+    </div>
 
-<x-assessment-popup />
+    <x-assessment-popup />
 
-@endsection
+    @endsection
