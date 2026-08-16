@@ -329,7 +329,7 @@
                 <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-50 border border-slate-200 group cursor-pointer hover:shadow-lg transition-shadow flex flex-col justify-between" @click="window.location.href='{{ route('blog') }}'">
                     <div>
                         <div class="h-48 relative overflow-hidden bg-slate-200">
-                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Blog 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="{{ asset('img/DSC_0279.jpg') }}" alt="Blog 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-6">
                             <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 block">Thought Leadership</span>
@@ -346,7 +346,7 @@
                 <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-50 border border-slate-200 group cursor-pointer hover:shadow-lg transition-shadow flex flex-col justify-between" @click="window.location.href='{{ route('blog') }}'">
                     <div>
                         <div class="h-48 relative overflow-hidden bg-slate-200">
-                            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog 2" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="{{ asset('img/DSC_5167.jpg') }}" alt="Blog 2" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-6">
                             <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 block">Event Production</span>
@@ -363,7 +363,7 @@
                 <div data-aos="fade-up" data-aos-delay="300" class="bg-slate-50 border border-slate-200 group cursor-pointer hover:shadow-lg transition-shadow flex flex-col justify-between" @click="window.location.href='{{ route('blog') }}'">
                     <div>
                         <div class="h-48 relative overflow-hidden bg-slate-200">
-                            <img src="https://images.unsplash.com/photo-1475721025871-8848135cb17c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog 3" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="{{ asset('img/DSC_4666.jpg') }}" alt="Blog 3" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-6">
                             <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 block">Speaker Spotlight</span>
