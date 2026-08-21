@@ -36,7 +36,7 @@
         <div class="relative bg-white border border-slate-200 overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer">
             <div class="grid grid-cols-1 lg:grid-cols-2">
                 <div class="h-64 lg:h-auto relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Featured Post" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <img src="{{ asset('img/TEDxNzaStreet.jpg') }}" alt="Featured Post" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute top-4 left-4 bg-gold text-dark text-xs font-bold px-3 py-1 uppercase tracking-wider">Featured</div>
                 </div>
                 <div class="p-10 lg:p-16 flex flex-col justify-center">
@@ -47,7 +47,7 @@
                     </p>
                     <div class="flex items-center justify-between mt-auto">
                         <div class="flex items-center gap-3">
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Author" class="w-10 h-10 rounded-full object-cover">
+                            <img src="{{ asset('img/TEDxNzaStreet.jpg') }}" alt="Author" class="w-10 h-10 rounded-full object-cover">
                             <span class="text-sm font-bold text-slate-900">Chimfumnanya Nwandu</span>
                         </div>
                         <span class="text-sm font-bold text-gold uppercase tracking-wider">Read Article &rarr;</span>
@@ -62,11 +62,11 @@
 <section class="py-12 bg-slate-50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
+
             <!-- Article 1 -->
             <div class="bg-white border border-slate-200 group cursor-pointer hover:shadow-lg transition-shadow">
                 <div class="h-48 relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Post" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('img/DSC_0279.jpg') }}" alt="Post" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-6">
                     <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3 block">Event Production</span>
@@ -79,7 +79,7 @@
             <!-- Article 2 -->
             <div class="bg-white border border-slate-200 group cursor-pointer hover:shadow-lg transition-shadow">
                 <div class="h-48 relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1475721025871-8848135cb17c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Post" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('img/DSC_4433.jpg') }}" alt="Post" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-6">
                     <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3 block">Speaker Spotlight</span>
@@ -92,7 +92,7 @@
             <!-- Article 3 -->
             <div class="bg-white border border-slate-200 group cursor-pointer hover:shadow-lg transition-shadow">
                 <div class="h-48 relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Post" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('img/DSC_4661.jpg') }}" alt="Post" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-6">
                     <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3 block">Industry Insight</span>
