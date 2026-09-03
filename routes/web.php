@@ -13,6 +13,7 @@ use App\Http\Controllers\Admin\FeaturedVideoController as AdminFeaturedVideoCont
 use App\Http\Controllers\Admin\TestimonialController as AdminTestimonialController;
 use App\Http\Controllers\EbookDownloadController as PublicEbookDownloadController;
 use App\Http\Controllers\EnquiryController as PublicEnquiryController;
+use App\Models\BlogPost;
 use App\Models\Faq;
 use App\Models\FeaturedVideo;
 use App\Models\Testimonial;
@@ -50,8 +51,22 @@ Route::get('/events', function () {
 })->name('events');
 
 Route::get('/blog', function () {
-    return view('pages.blog');
+    $published = BlogPost::where('status', 'published')
+        ->orderByDesc('published_at')
+        ->get();
+
+    $featuredPost = $published->first();
+    $posts = $published->skip(1)->values();
+
+    $categories = $published->pluck('category')->unique()->sort()->values();
+
+    return view('pages.blog', compact('featuredPost', 'posts', 'categories'));
 })->name('blog');
+
+Route::get('/blog/{slug}', function (string $slug) {
+    $post = BlogPost::where('slug', $slug)->where('status', 'published')->firstOrFail();
+    return view('pages.blog-single', compact('post'));
+})->name('blog.show');
 
 Route::get('/contact', function () {
     return view('pages.contact');
