@@ -32,7 +32,7 @@
 @if($post->featured_image_path)
 <div class="bg-slate-900">
     <div class="mx-auto max-w-5xl">
-        <img src="{{ Storage::url($post->featured_image_path) }}"
+        <img src="{{ asset('storage/' . $post->featured_image_path) }}"
              alt="{{ $post->title }}"
              class="w-full max-h-[520px] object-cover">
     </div>

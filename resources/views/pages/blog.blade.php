@@ -39,7 +39,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2">
                 <div class="h-64 lg:h-auto relative overflow-hidden">
                     @if($featuredPost->featured_image_path)
-                        <img src="{{ Storage::url($featuredPost->featured_image_path) }}" alt="{{ $featuredPost->title }}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <img src="{{ asset('storage/' . $featuredPost->featured_image_path) }}" alt="{{ $featuredPost->title }}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                     @else
                         <div class="absolute inset-0 bg-slate-200 flex items-center justify-center">
                             <span class="text-slate-400 text-4xl">✦</span>
@@ -102,7 +102,7 @@
                     <a href="{{ route('blog.show', $post->slug) }}" class="bg-white border border-slate-200 group cursor-pointer hover:shadow-lg transition-shadow block">
                         <div class="h-48 relative overflow-hidden">
                             @if($post->featured_image_path)
-                                <img src="{{ Storage::url($post->featured_image_path) }}" alt="{{ $post->title }}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="{{ asset('storage/' . $post->featured_image_path) }}" alt="{{ $post->title }}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             @else
                                 <div class="absolute inset-0 bg-slate-100 flex items-center justify-center">
                                     <span class="text-slate-300 text-3xl">✦</span>
@@ -131,7 +131,7 @@
                     <a href="{{ route('blog.show', $post->slug) }}" class="bg-white border border-slate-200 group cursor-pointer hover:shadow-lg transition-shadow block">
                         <div class="h-48 relative overflow-hidden">
                             @if($post->featured_image_path)
-                                <img src="{{ Storage::url($post->featured_image_path) }}" alt="{{ $post->title }}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="{{ asset('storage/' . $post->featured_image_path) }}" alt="{{ $post->title }}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             @else
                                 <div class="absolute inset-0 bg-slate-100 flex items-center justify-center">
                                     <span class="text-slate-300 text-3xl">✦</span>
