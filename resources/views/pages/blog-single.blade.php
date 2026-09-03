@@ -51,7 +51,7 @@
                     prose-strong:text-slate-900
                     prose-ul:list-disc prose-ol:list-decimal
                     prose-li:text-slate-700">
-            {!! nl2br(e($post->content)) !!}
+            {!! $post->content !!}
         </div>
 
         <!-- Post Footer -->
