@@ -22,6 +22,7 @@
                 <a href="{{ route('admin.speakers.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.speakers.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Speakers</a>
                 <a href="{{ route('admin.events.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.events.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Events</a>
                 <a href="{{ route('admin.blog.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.blog.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Blog Posts</a>
+                <a href="{{ route('admin.team.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.team.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Team Members</a>
                 <a href="{{ route('admin.testimonials.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.testimonials.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Testimonials</a>
                 <a href="{{ route('admin.featured-videos.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.featured-videos.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">Featured Videos</a>
                 <a href="{{ route('admin.faqs.index') }}" class="block rounded-md px-4 py-3 hover:bg-white/5 {{ request()->routeIs('admin.faqs.*') ? 'bg-white/10 text-gold' : 'text-gray-300' }}">FAQs</a>
@@ -81,4 +82,3 @@
     @stack('scripts')
 </body>
 </html>
-

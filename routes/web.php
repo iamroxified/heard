@@ -11,13 +11,30 @@ use App\Http\Controllers\Admin\SpeakerController as AdminSpeakerController;
 use App\Http\Controllers\Admin\FaqController as AdminFaqController;
 use App\Http\Controllers\Admin\FeaturedVideoController as AdminFeaturedVideoController;
 use App\Http\Controllers\Admin\TestimonialController as AdminTestimonialController;
+use App\Http\Controllers\Admin\TeamMemberController as AdminTeamMemberController;
 use App\Http\Controllers\EbookDownloadController as PublicEbookDownloadController;
 use App\Http\Controllers\EnquiryController as PublicEnquiryController;
 use App\Models\BlogPost;
 use App\Models\Faq;
 use App\Models\FeaturedVideo;
 use App\Models\Testimonial;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
+
+Route::get('/media/{path}', function (string $path) {
+    abort_if(
+        str_contains($path, '..')
+        || str_contains($path, '\\')
+        || ! Str::startsWith($path, ['blog/', 'events/', 'speakers/', 'team/']),
+        404
+    );
+
+    $disk = Storage::disk('public');
+    abort_unless($disk->exists($path), 404);
+
+    return $disk->response($path);
+})->where('path', '.*')->name('media.show');
 
 Route::get('/', function () {
     $testimonials = Testimonial::where('status', 'active')->orderBy('sort_order', 'asc')->get();
@@ -136,5 +153,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
         Route::get('/settings', [SettingController::class, 'edit'])->name('settings.edit');
         Route::patch('/settings', [SettingController::class, 'update'])->name('settings.update');
+
+        Route::get('/team', [AdminTeamMemberController::class, 'index'])->name('team.index');
+        Route::put('/team', [AdminTeamMemberController::class, 'update'])->name('team.update');
     });
 });

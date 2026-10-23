@@ -31,7 +31,7 @@
             <div>
                 <label class="mb-2 block text-sm font-medium text-slate-700">Featured Image</label>
                 <input id="post_image" type="file" name="featured_image" accept="image/*" class="w-full rounded-lg border border-slate-300 px-4 py-3">
-                <img id="post_image_preview" src="{{ $post?->featured_image_path ? asset('storage/'.$post->featured_image_path) : '' }}" class="mt-3 {{ $post?->featured_image_path ? '' : 'hidden' }} h-40 w-full rounded-lg object-cover">
+                <img id="post_image_preview" src="{{ $post?->featured_image_path ? (str_starts_with($post->featured_image_path, 'http') ? $post->featured_image_path : route('media.show', ['path' => $post->featured_image_path])) : '' }}" class="mt-3 {{ $post?->featured_image_path ? '' : 'hidden' }} h-40 w-full rounded-lg object-cover">
             </div>
             <div>
                 <label class="mb-2 block text-sm font-medium text-slate-700">Excerpt</label>
@@ -72,7 +72,7 @@
             @foreach ($posts as $item)
                 <div class="rounded-xl border border-slate-200 p-4">
                     <div class="flex items-start gap-4">
-                        <img src="{{ $item->featured_image_path ? asset('storage/'.$item->featured_image_path) : 'https://via.placeholder.com/80' }}" alt="{{ $item->title }}" class="h-16 w-16 rounded-lg object-cover">
+                        <img src="{{ $item->featured_image_path ? (str_starts_with($item->featured_image_path, 'http') ? $item->featured_image_path : route('media.show', ['path' => $item->featured_image_path])) : 'https://via.placeholder.com/80' }}" alt="{{ $item->title }}" class="h-16 w-16 rounded-lg object-cover">
                         <div class="flex-1">
                             <div class="flex items-start justify-between gap-4">
                                 <div>

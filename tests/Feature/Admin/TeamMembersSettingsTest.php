@@ -5,6 +5,7 @@ namespace Tests\Feature\Admin;
 use App\Models\Setting;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\View;
 use Tests\TestCase;
 
 class TeamMembersSettingsTest extends TestCase
@@ -26,14 +27,27 @@ class TeamMembersSettingsTest extends TestCase
         $admin = User::factory()->create(['is_admin' => true]);
 
         $this->actingAs($admin)
-            ->patch(route('admin.settings.update'), ['team_members' => $teamMembers])
-            ->assertRedirect(route('admin.settings.edit'));
+            ->put(route('admin.team.update'), ['team_members' => $teamMembers])
+            ->assertRedirect(route('admin.team.index'));
 
         $this->assertSame($teamMembers, json_decode(Setting::where('key', 'team_members')->value('value'), true));
 
-        $this->get(route('admin.settings.edit'))
+        $this->get(route('admin.team.index'))
             ->assertOk()
             ->assertSee('Amina Example')
             ->assertSee('Programme Director');
+
+        View::share('siteSettings', ['team_members' => $teamMembers]);
+
+        $this->get(route('about'))
+            ->assertOk()
+            ->assertSee('Amina Example')
+            ->assertSee('Programme Director');
+    }
+
+    public function test_team_management_requires_admin_authentication(): void
+    {
+        $this->get(route('admin.team.index'))
+            ->assertRedirect(route('login'));
     }
 }

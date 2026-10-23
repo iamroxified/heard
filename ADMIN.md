@@ -49,7 +49,9 @@ Return the full code structure (pages, components, API routes, schema, etc.)ADMI
 ## Production blog image uploads
 
 Blog images are stored on Laravel's `public` filesystem disk and served through
-the `public/storage` symbolic link. After deploying, create the link once:
+a public media route, so displaying them does not depend on the web server
+following a storage symbolic link. For direct `/storage` access elsewhere in
+the application, create the link once after deploying:
 
 ```sh
 php artisan storage:link
@@ -63,10 +65,10 @@ image URLs use the correct host.
 
 ## Managing the About page team
 
-Admins can manage the About page team from **Admin → Settings**. Add or remove
+Admins can manage the About page team from **Admin → Team Members**. Add or remove
 team members, edit their name and role, update image paths and social links, or
 upload a new photo. Uploaded team photos use the public storage disk and are
-served through the `public/storage` link.
+served through the public media route.
 
 ## cPanel deployment
 

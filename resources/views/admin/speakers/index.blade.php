@@ -30,7 +30,7 @@
             <div>
                 <label class="mb-2 block text-sm font-medium text-slate-700">Headshot</label>
                 <input id="speaker_headshot" type="file" name="headshot" accept="image/*" class="w-full rounded-lg border border-slate-300 px-4 py-3">
-                <img id="speaker_headshot_preview" src="{{ $speaker?->headshot_path ? asset('storage/'.$speaker->headshot_path) : '' }}" class="mt-3 {{ $speaker?->headshot_path ? '' : 'hidden' }} h-40 w-full rounded-lg object-cover">
+                <img id="speaker_headshot_preview" src="{{ $speaker?->headshot_path ? route('media.show', ['path' => $speaker->headshot_path]) : '' }}" class="mt-3 {{ $speaker?->headshot_path ? '' : 'hidden' }} h-40 w-full rounded-lg object-cover">
             </div>
 
             <div>
@@ -89,7 +89,7 @@
             @foreach ($speakers as $item)
                 <div class="rounded-xl border border-slate-200 p-4">
                     <div class="flex items-start gap-4">
-                        <img src="{{ $item->headshot_path ? asset('storage/'.$item->headshot_path) : 'https://via.placeholder.com/80' }}" alt="{{ $item->full_name }}" class="h-16 w-16 rounded-lg object-cover">
+                        <img src="{{ $item->headshot_path ? route('media.show', ['path' => $item->headshot_path]) : 'https://via.placeholder.com/80' }}" alt="{{ $item->full_name }}" class="h-16 w-16 rounded-lg object-cover">
                         <div class="flex-1">
                             <div class="flex items-center justify-between gap-4">
                                 <div>

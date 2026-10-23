@@ -48,7 +48,7 @@
             <div>
                 <label class="mb-2 block text-sm font-medium text-slate-700">Featured Image</label>
                 <input id="event_image" type="file" name="featured_image" accept="image/*" class="w-full rounded-lg border border-slate-300 px-4 py-3">
-                <img id="event_image_preview" src="{{ $event?->featured_image_path ? asset('storage/'.$event->featured_image_path) : '' }}" class="mt-3 {{ $event?->featured_image_path ? '' : 'hidden' }} h-40 w-full rounded-lg object-cover">
+                <img id="event_image_preview" src="{{ $event?->featured_image_path ? (str_starts_with($event->featured_image_path, 'http') ? $event->featured_image_path : route('media.show', ['path' => $event->featured_image_path])) : '' }}" class="mt-3 {{ $event?->featured_image_path ? '' : 'hidden' }} h-40 w-full rounded-lg object-cover">
             </div>
             <div>
                 <label class="mb-2 block text-sm font-medium text-slate-700">Speaker Highlights</label>
@@ -75,7 +75,7 @@
             @foreach ($events as $item)
                 <div class="rounded-xl border border-slate-200 p-4">
                     <div class="flex items-start gap-4">
-                        <img src="{{ $item->featured_image_path ? asset('storage/'.$item->featured_image_path) : 'https://via.placeholder.com/80' }}" alt="{{ $item->name }}" class="h-16 w-16 rounded-lg object-cover">
+                        <img src="{{ $item->featured_image_path ? (str_starts_with($item->featured_image_path, 'http') ? $item->featured_image_path : route('media.show', ['path' => $item->featured_image_path])) : 'https://via.placeholder.com/80' }}" alt="{{ $item->name }}" class="h-16 w-16 rounded-lg object-cover">
                         <div class="flex-1">
                             <div class="flex items-start justify-between gap-4">
                                 <div>

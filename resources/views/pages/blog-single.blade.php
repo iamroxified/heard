@@ -32,7 +32,7 @@
 @if($post->featured_image_path)
 <div class="bg-slate-900">
     <div class="mx-auto max-w-5xl">
-        <img src="{{ asset('storage/' . $post->featured_image_path) }}"
+        <img src="{{ str_starts_with($post->featured_image_path, 'http') ? $post->featured_image_path : route('media.show', ['path' => $post->featured_image_path]) }}"
              alt="{{ $post->title }}"
              class="w-full max-h-[520px] object-cover">
     </div>

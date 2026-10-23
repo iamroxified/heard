@@ -196,7 +196,7 @@
                         <div data-aos="fade-up" data-aos-delay="{{ ($index + 1) * 100 }}" class="group bg-slate-50 border border-slate-200 overflow-hidden hover:shadow-xl hover:border-gold/30 transition-all duration-300 flex flex-col">
                             <div class="relative aspect-[4/5] overflow-hidden bg-slate-100">
                                 @if (!empty($member['image']))
-                                    <img src="{{ str_starts_with($member['image'], 'team/') ? asset('storage/'.$member['image']) : asset($member['image']) }}" alt="{{ $member['name'] }}" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                                    <img src="{{ str_starts_with($member['image'], 'team/') ? route('media.show', ['path' => $member['image']]) : (str_starts_with($member['image'], 'http') ? $member['image'] : asset($member['image'])) }}" alt="{{ $member['name'] }}" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                                 @endif
                                 <div class="absolute inset-0 bg-gradient-to-t from-darker/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             </div>

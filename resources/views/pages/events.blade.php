@@ -31,7 +31,7 @@
         <div class="relative bg-white border border-slate-200 overflow-hidden hover:shadow-xl transition-shadow group">
             <div class="grid grid-cols-1 lg:grid-cols-12">
                 <div class="lg:col-span-7 h-72 lg:h-auto relative overflow-hidden min-h-[300px]">
-                    <img src="{{ $featuredEvent->featured_image_path ? (str_starts_with($featuredEvent->featured_image_path, 'http') ? $featuredEvent->featured_image_path : asset('storage/' . $featuredEvent->featured_image_path)) : 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80' }}" alt="{{ $featuredEvent->name }}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700">
+                    <img src="{{ $featuredEvent->featured_image_path ? (str_starts_with($featuredEvent->featured_image_path, 'http') ? $featuredEvent->featured_image_path : route('media.show', ['path' => $featuredEvent->featured_image_path])) : 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80' }}" alt="{{ $featuredEvent->name }}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700">
                     <div class="absolute top-4 left-4 bg-gold text-dark text-xs font-bold px-3 py-1.5 uppercase tracking-wider">Featured</div>
                 </div>
 
@@ -114,7 +114,7 @@
                     <!-- Image -->
                     @if($event->featured_image_path)
                     <div class="aspect-video bg-slate-200 overflow-hidden mb-6 shadow-sm border border-slate-200/40">
-                        <img src="{{ str_starts_with($event->featured_image_path, 'http') ? $event->featured_image_path : asset('storage/' . $event->featured_image_path) }}" alt="{{ $event->name }}" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500">
+                        <img src="{{ str_starts_with($event->featured_image_path, 'http') ? $event->featured_image_path : route('media.show', ['path' => $event->featured_image_path]) }}" alt="{{ $event->name }}" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500">
                     </div>
                     @endif
                     
