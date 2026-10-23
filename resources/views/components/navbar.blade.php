@@ -7,7 +7,7 @@
         <div class="flex w-full items-center justify-between py-5 lg:py-6">
             <div class="flex items-center">
                 <a href="{{ route('home') }}" class="text-2xl font-heading font-bold tracking-tight text-white flex items-center gap-2">
-                    <img src="{{ asset('img/logo.png') }}" alt="Heard In Africa Logo" class="h-8 w-auto"> Heard In Africa
+                    <img src="{{ asset('img/logo.png') }}" alt="Heard in Africa Logo" class="h-8 w-auto"> Heard in Africa
                 </a>
             </div>
 

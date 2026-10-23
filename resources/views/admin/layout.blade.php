@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title', 'Admin | Heard In Africa')</title>
+    <title>@yield('title', 'Admin | Heard in Africa')</title>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=sora:300,400,500,600,700,800|montserrat:300,400,500,600,700,800" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -13,7 +13,7 @@
         <div class="fixed inset-y-0 z-50 flex w-72 flex-col bg-dark text-white transition-transform duration-300 lg:translate-x-0" :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'">
             <div class="flex h-20 items-center justify-between border-b border-white/10 px-6">
                 <a href="{{ route('admin.dashboard') }}" class="text-lg font-bold tracking-tight text-white">
-                    Heard In Africa
+                    Heard in Africa
                 </a>
                 <button class="lg:hidden text-gray-300" @click="sidebarOpen = false">×</button>
             </div>

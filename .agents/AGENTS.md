@@ -1,4 +1,4 @@
-# Heard In Africa — Agent Rules
+# Heard in Africa — Agent Rules
 
 ## Git & GitHub
 

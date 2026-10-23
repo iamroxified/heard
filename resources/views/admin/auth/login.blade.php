@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin Login | Heard In Africa</title>
+    <title>Admin Login | Heard in Africa</title>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700,800" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -12,7 +12,7 @@
     <div class="min-h-screen flex items-center justify-center px-4">
         <div class="w-full max-w-md rounded-2xl border border-white/10 bg-white/5 p-8 shadow-2xl">
             <p class="text-xs uppercase tracking-[0.35em] text-gold">Admin Access</p>
-            <h1 class="mt-3 text-3xl font-bold">Heard In Africa</h1>
+            <h1 class="mt-3 text-3xl font-bold">Heard in Africa</h1>
             <p class="mt-2 text-sm text-gray-300">Sign in to manage speakers, events, blog posts, enquiries, and settings.</p>
 
             <form method="POST" action="{{ route('admin.login.store') }}" class="mt-8 space-y-5">

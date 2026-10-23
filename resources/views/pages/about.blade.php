@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'About Heard In Africa')
+@section('title', 'About Heard in Africa')
 
 @section('content')
 @php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-call'))
@@ -15,7 +15,7 @@
 
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center w-full">
         <h1 data-aos="fade-up" data-aos-duration="1000" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white tracking-tight">
-            About Heard In Africa
+            About Heard in Africa
         </h1>
     </div>
 </section>
@@ -37,21 +37,21 @@
                     Africa has always produced world-class thinkers, leaders, innovators, and storytellers. The gap was never the talent. The gap was the infrastructure to connect that talent with the audiences that needed to hear it.
                 </p>
                 <p class="text-slate-600  leading-relaxed mb-4" style="text-align: justify;">
-                    Heard In Africa was founded to close that gap.
+                    Heard in Africa was founded to close that gap.
                 </p>
                 <p class="text-slate-600  leading-relaxed mb-4" style="text-align: justify;">
                     Growing up witnessing the remarkable achievements of Africans across the globe — founding companies, pioneering ideas, setting records — our founder Chimfumnanya Nwandu saw something missing: a dedicated, professional home for African speakers on the world stage. After five years managing corporate events and watching organisations struggle to find, vet, and prepare the right voices, she built the platform she wished had existed.
                 </p>
                 <p class="text-slate-600  leading-relaxed mb-4" style="text-align: justify;">
 
-                    Heard In Africa is now Africa's speaker management and conference programming partner of choice — working with pan-African summits, global institutions, and forward-looking organisations who understand that the right voice at the right moment can change what a room believes is possible.
+                    Heard in Africa is now Africa's speaker management and conference programming partner of choice — working with pan-African summits, global institutions, and forward-looking organisations who understand that the right voice at the right moment can change what a room believes is possible.
                 </p>
                 <p class="text-slate-600  leading-relaxed mb-6" style="text-align: justify;">
                     We manage speakers end-to-end. We design conference programmes from the ground up. We position African experts to be heard at the level their expertise deserves. And we do all of it with the rigour, relationships, and care that Africa's excellence warrants.
                 </p>
                 <div class="text-right">
                     <p class="text-xs font-bold text-slate-900 uppercase tracking-wider">Chimfumnanya "Nana" Nwandu</p>
-                    <p class="text-xs text-slate-500">Founder, Heard In Africa</p>
+                    <p class="text-xs text-slate-500">Founder, Heard in Africa</p>
                 </div>
             </div>
         </div>
@@ -111,13 +111,13 @@
             <!-- Values List -->
             <div data-aos="fade-right" data-aos-duration="1000">
                 <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-10">
-                    Why Heard In Africa Exists
+                    Why Heard in Africa Exists
                 </h2>
 
                 <div class="space-y-6  leading-8 text-slate-600">
                     <p>African expertise is consistently underrepresented on global stages — not because of a shortage of knowledge, but because of a shortage of professional infrastructure.</p>
                     <p>There has been no dedicated agency doing for African speakers what the world&apos;s best speaker management firms do for their rosters.</p>
-                    <p>Heard In Africa exists to change that. We are not a marketplace. We are a management company, and there is a meaningful difference.</p>
+                    <p>Heard in Africa exists to change that. We are not a marketplace. We are a management company, and there is a meaningful difference.</p>
                 </div>
             </div>
 
@@ -139,9 +139,9 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <!-- Box 1 -->
             <div data-aos="zoom-in" data-aos-delay="100" class="bg-white border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow md:col-span-3">
-                <h3 class="text-lg font-heading font-bold text-dark mb-3">Chimfumnanya "Nana" Nwandu — Founder, Heard In Africa</h3>
+                <h3 class="text-lg font-heading font-bold text-dark mb-3">Chimfumnanya "Nana" Nwandu — Founder, Heard in Africa</h3>
                 <p class=" text-slate-600 leading-relaxed">
-                    Nana Nwandu is a lawyer, TEDx licensee, and development sector programme manager who has spent over seven years at the intersection of events, speakers, and the African stage. Her path into speaker management was not accidental — it was shaped by years of watching exceptional African voices go under-resourced, under-briefed, and under-placed, across corporate events, development programming, and the live stage. As the licensee of TEDxNzaStreet since 2018, she has not only managed speakers from the outside but curated and produced the kind of platform where ideas earn their moment. She founded Heard In Africa out of a conviction that African expertise deserves the same infrastructure, rigour, and strategic investment that the global speaking industry has long extended elsewhere — and she built it with the precision of someone who knows what that gap costs
+                    Nana Nwandu is a lawyer, TEDx licensee, and development sector programme manager who has spent over seven years at the intersection of events, speakers, and the African stage. Her path into speaker management was not accidental — it was shaped by years of watching exceptional African voices go under-resourced, under-briefed, and under-placed, across corporate events, development programming, and the live stage. As the licensee of TEDxNzaStreet since 2018, she has not only managed speakers from the outside but curated and produced the kind of platform where ideas earn their moment. She founded Heard in Africa out of a conviction that African expertise deserves the same infrastructure, rigour, and strategic investment that the global speaking industry has long extended elsewhere — and she built it with the precision of someone who knows what that gap costs
                 </p>
             </div>
         </div>

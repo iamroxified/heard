@@ -2,7 +2,7 @@ You are a senior Laravel developer and UI/UX engineer.
 
 I have already created a Laravel project folder named: heard
 
-Your task is to design and develop a professional, premium, world-class event speaker management website for Heard In Africa.
+Your task is to design and develop a professional, premium, world-class event speaker management website for Heard in Africa.
 
 This should be built as a Laravel project, page by page, using clean Blade templates, reusable components, organized assets, and responsive layouts.
 
@@ -14,10 +14,10 @@ Use the design style, layout patterns, spacing, typography, content flow, premiu
 
 I will also attach screenshots from different pages of these inspiration websites. Study the screenshots carefully and use them as visual references for layout, section arrangement, spacing, typography hierarchy, image usage, CTA placement, and overall premium design direction.
 
-Do not copy their exact content, branding, or copyrighted assets. Instead, create an original Heard In Africa website that follows a similar premium design pattern and professional feel.
+Do not copy their exact content, branding, or copyrighted assets. Instead, create an original Heard in Africa website that follows a similar premium design pattern and professional feel.
 
 PROJECT GOAL:
-Build a modern event speaker management website for Heard In Africa that positions the company as a leading African speaker management and event programming agency capable of serving corporate, institutional, and global clients.
+Build a modern event speaker management website for Heard in Africa that positions the company as a leading African speaker management and event programming agency capable of serving corporate, institutional, and global clients.
 
 The website must feel:
 
@@ -134,7 +134,7 @@ Sections:
     - Speaker Readiness Programme
 - Each service must have a clear next-step CTA
 - Who each service is for
-- Why Heard In Africa section
+- Why Heard in Africa section
 - Final CTA
 
 5. Events Page
@@ -195,7 +195,7 @@ The website must work perfectly on:
 Mobile menu must be clean and easy to use.
 
 CONTENT REQUIREMENTS:
-Use professional placeholder copy for now based on Heard In Africa’s positioning as a speaker management and event programming company.
+Use professional placeholder copy for now based on Heard in Africa’s positioning as a speaker management and event programming company.
 
 Tone:
 
@@ -247,7 +247,7 @@ Do not build admin dashboards yet.
 Do not build authentication yet.
 Do not build payment functionality yet.
 Do not build the speaker management platform yet.
-This task is only for the public-facing Heard In Africa website.
+This task is only for the public-facing Heard in Africa website.
 
 QUALITY STANDARD:
 Build this as if it is going to be reviewed by a premium corporate client. The final design should be strong enough to compete visually with international speaker agency and event management websites.

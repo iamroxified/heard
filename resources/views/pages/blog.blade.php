@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Insights & Blog - Heard In Africa')
+@section('title', 'Insights & Blog - Heard in Africa')
 
 @section('content')
 <!-- Hero Section -->
@@ -59,7 +59,7 @@
                                 {{ strtoupper(substr($featuredPost->author ?? 'A', 0, 1)) }}
                             </div>
                             <div>
-                                <span class="text-sm font-bold text-slate-900 block">{{ $featuredPost->author ?? 'Heard In Africa' }}</span>
+                                <span class="text-sm font-bold text-slate-900 block">{{ $featuredPost->author ?? 'Heard in Africa' }}</span>
                                 @if($featuredPost->published_at)
                                     <span class="text-xs text-slate-400">{{ $featuredPost->published_at->format('M d, Y') }}</span>
                                 @endif

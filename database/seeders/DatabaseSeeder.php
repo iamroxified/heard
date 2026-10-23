@@ -44,7 +44,7 @@ class DatabaseSeeder extends Seeder
                 'event_date' => '2026-11-12',
                 'location' => 'Lagos, Nigeria',
                 'short_description' => 'One of Africa\'s most ambitious pan-continental summits, bringing together technology leaders, policy makers, investors, creative economy innovators, and global partners across four days of programming.',
-                'full_description' => 'Heard In Africa is the official program design partner for Omniverse Africa Summit 3.0. We manage end-to-end speaker placement, curate specific agenda tracks (Monetisation Day, Narrative Day), and ensure flawless execution.',
+                'full_description' => 'Heard in Africa is the official program design partner for Omniverse Africa Summit 3.0. We manage end-to-end speaker placement, curate specific agenda tracks (Monetisation Day, Narrative Day), and ensure flawless execution.',
                 'featured_image_path' => 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
                 'speaker_highlights' => 'Chimfumnanya Nwandu, Ndidi Nwuneli, Bosun Tijani',
                 'registration_link' => 'https://theomniverse.africa',

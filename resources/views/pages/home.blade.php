@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Heard In Africa | Building the Infrastructure of the African Speaker Economy.')
+@section('title', 'Heard in Africa | Building the Infrastructure of the African Speaker Economy.')
 
 @section('content')
 @php($clientLogos = $siteSettings['homepage_client_logos'] ?? [])
@@ -17,12 +17,12 @@
 
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center w-full">
     <div class="max-w-7xl mx-auto">
-      <span data-aos="fade-down" data-aos-duration="1000" class="inline-block text-gold text-sm font-bold tracking-wider mb-4">Heard In Africa</span>
+      <span data-aos="fade-down" data-aos-duration="1000" class="inline-block text-gold text-sm font-bold tracking-wider mb-4">Heard in Africa</span>
       <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" class="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white tracking-tight leading-tight mb-6">
         Building the Infrastructure of the African Speaker Economy<br>Your Most Powerful Stage.
       </h1>
       <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400" class="text-base md:text-lg text-gray-300 font-light max-w-7xl mx-auto mb-10 leading-relaxed">
-        Heard In Africa connects conference producers with the African speakers their programmes need — and connects African speakers with the global stages their expertise deserves. We manage everything in between.
+        Heard in Africa connects conference producers with the African speakers their programmes need — and connects African speakers with the global stages their expertise deserves. We manage everything in between.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
         <a href="{{ $bookingUrl }}" class="inline-flex justify-center items-center rounded-none bg-gold text-dark px-8 py-3 text-sm font-bold tracking-wider hover:bg-white hover:text-dark transition-all duration-300">
@@ -189,7 +189,7 @@
           Curious About What We Do
         </h2>
         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-          Heard In Africa is where African excellence meets global stages. We are a speaker management company building the infrastructure of the African Speaker Economy built on a simple belief: Africa&apos;s finest voices deserve to be heard, and the world&apos;s best conferences deserve Africa&apos;s finest voices.
+          Heard in Africa is where African excellence meets global stages. We are a speaker management company building the infrastructure of the African Speaker Economy built on a simple belief: Africa&apos;s finest voices deserve to be heard, and the world&apos;s best conferences deserve Africa&apos;s finest voices.
         </p>
         <p class="text-slate-600 text-sm leading-relaxed">
           Whether you are looking for a speaker, building a programme, or ready to take your expertise to a global audience — we are your partner from first conversation to final applause.
@@ -275,7 +275,7 @@
           Africa produces world-class thinkers, leaders, innovators, and experts in every field. The conversations happening in Lagos, Nairobi, Accra, and Johannesburg are shaping the future of technology, governance, finance, health, and climate — and the world's most important stages are starting to notice.
         </p>
         <p>
-          Heard In Africa sits at the centre of that conversation. We curate and represent Africa's most credible voices, match them to the global stages their expertise deserves, and manage every detail of the speaker experience so that when an African voice takes the stage, it lands with the weight it deserves.
+          Heard in Africa sits at the centre of that conversation. We curate and represent Africa's most credible voices, match them to the global stages their expertise deserves, and manage every detail of the speaker experience so that when an African voice takes the stage, it lands with the weight it deserves.
         </p>
         <p class="text-white font-medium border-l-2 border-gold pl-4">
           We are not filling a gap. We are building infrastructure for an economy that already exists and is ready to scale.
@@ -296,7 +296,7 @@
       <!-- Large pull quote icon -->
       <span class="text-6xl text-gold/20 font-serif leading-none block -mt-4 mb-2">“</span>
       <p class="text-lg md:text-xl text-slate-800 font-light leading-relaxed italic mb-8">
-        At the Omniverse Africa Summit — a four-day, multi-stage convening with over 100 speakers — Heard In Africa delivered 95% on-time session delivery, 90% speaker material submission before deadline, and zero major stage disruptions.
+        At the Omniverse Africa Summit — a four-day, multi-stage convening with over 100 speakers — Heard in Africa delivered 95% on-time session delivery, 90% speaker material submission before deadline, and zero major stage disruptions.
       </p>
       <div class="h-px bg-slate-200 w-16 mx-auto mb-6"></div>
       <p class="text-sm font-bold tracking-wider uppercase text-slate-900">

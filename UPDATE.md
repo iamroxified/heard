@@ -40,7 +40,7 @@ Please go through my existing code and make the following **specific replacement
      - CTA: "Apply for the Programme"
 
 - **"Curious About What We Do" Section**: Add or replace with the exact text:
-  "Heard In Africa is where African excellence meets global stages. We are a speaker management and conference programming agency built on a simple belief: Africa's finest voices deserve to be heard, and the world's best conferences deserve Africa's finest voices."
+  "Heard in Africa is where African excellence meets global stages. We are a speaker management and conference programming agency built on a simple belief: Africa's finest voices deserve to be heard, and the world's best conferences deserve Africa's finest voices."
 
 ### 3. About Page Updates
 - Replace company story with the full "About the Company" text from the document (starting with "Africa has always produced world-class thinkers...").
@@ -63,7 +63,7 @@ Please go through my existing code and make the following **specific replacement
 **Client Document (Use exact copy from here):**
 
 WEBSITE COPY DOCUMENT
-Heard In Africa
+Heard in Africa
 Africa's Speaker Management & Conference Programming Partner
 heardinafrica.com  ·  Prepared for web developer handoff  ·  Lagos, Nigeria
 
@@ -76,7 +76,7 @@ Brand & Visual Identity
 
 
 Logo files
-[PLACEHOLDER — supply SVG + PNG versions of the Heard In Africa wordmark and icon]
+[PLACEHOLDER — supply SVG + PNG versions of the Heard in Africa wordmark and icon]
 
 
 Brand colours
@@ -117,7 +117,7 @@ Background video
 
 
 Clients / Partners Section
-This section should display logos of organisations Heard In Africa has worked with or aligned to. Below is the copy framing for the section heading and subheading:
+This section should display logos of organisations Heard in Africa has worked with or aligned to. Below is the copy framing for the section heading and subheading:
 
 Section heading: Trusted by Organisations That Take Their Stages SeriouslySection subheading: From flagship pan-African summits to corporate leadership forums, we've helped organisations find the right voice for the right moment.
 
@@ -133,7 +133,7 @@ End-to-end management of your speakers from sourcing through to the stage. We ha
 
 
 Full description
-Finding the right speaker is only the beginning. Heard In Africa manages every step of the speaker journey — sourcing and vetting candidates, handling contracts and negotiations, coordinating travel and logistics, delivering pre-event preparation, and providing on-site support on the day. We don't just book speakers. We make sure they're ready, prepared, and set up to deliver the best version of their talk.
+Finding the right speaker is only the beginning. Heard in Africa manages every step of the speaker journey — sourcing and vetting candidates, handling contracts and negotiations, coordinating travel and logistics, delivering pre-event preparation, and providing on-site support on the day. We don't just book speakers. We make sure they're ready, prepared, and set up to deliver the best version of their talk.
 
 
 CTA
@@ -146,7 +146,7 @@ We represent and manage Africa's most compelling voices — positioning them for
 
 
 Full description
-Africa produces world-class thinkers, leaders, and innovators. Heard In Africa is the agency that represents them properly. We work with African speakers to develop their positioning, refine their narrative, and connect them with the right events, globally. This is not a directory listing. We actively manage speaker careers, source opportunities, and ensure every speaking engagement advances our speakers' profile and impact.
+Africa produces world-class thinkers, leaders, and innovators. Heard in Africa is the agency that represents them properly. We work with African speakers to develop their positioning, refine their narrative, and connect them with the right events, globally. This is not a directory listing. We actively manage speaker careers, source opportunities, and ensure every speaking engagement advances our speakers' profile and impact.
 
 
 CTA
@@ -159,7 +159,7 @@ We design keynotes, panels, fireside chats, and session formats that create expe
 
 
 Full description
-A great conference is not a list of speakers — it is a carefully designed argument. Heard In Africa works with event producers, institutions, and organisations to build programmes with intellectual coherence, deliberate flow, and the right balance of energy, depth, and tension. From the opening keynote to the final panel, we ensure every session has a purpose, every speaker has a brief, and every audience leaves with something they did not have before.
+A great conference is not a list of speakers — it is a carefully designed argument. Heard in Africa works with event producers, institutions, and organisations to build programmes with intellectual coherence, deliberate flow, and the right balance of energy, depth, and tension. From the opening keynote to the final panel, we ensure every session has a purpose, every speaker has a brief, and every audience leaves with something they did not have before.
 
 
 CTA
@@ -181,7 +181,7 @@ Apply for the Programme
 
 "Curious About What We Do" Section
 Short explainer text
-Heard In Africa is where African excellence meets global stages. We are a speaker management and conference programming agency built on a simple belief: Africa's finest voices deserve to be heard, and the world's best conferences deserve Africa's finest voices. Whether you are looking for a speaker, building a programme, or ready to take your expertise to a global audience — we are your partner from first conversation to final applause.
+Heard in Africa is where African excellence meets global stages. We are a speaker management and conference programming agency built on a simple belief: Africa's finest voices deserve to be heard, and the world's best conferences deserve Africa's finest voices. Whether you are looking for a speaker, building a programme, or ready to take your expertise to a global audience — we are your partner from first conversation to final applause.
 
 
 Link destination
@@ -198,7 +198,7 @@ Primary: Event producers, conference organisers, institutions, and corporations 
 
 
 What makes us different
-We are not a database. We are not a booking engine. Heard In Africa is a full-service agency that manages both sides of the speaker relationship — the events that need speakers and the speakers who need the right events. Our founder has over five years of direct corporate event management experience in Africa, and we design conference programmes with the intellectual rigour of experienced producers, not the mechanical efficiency of a marketplace.
+We are not a database. We are not a booking engine. Heard in Africa is a full-service agency that manages both sides of the speaker relationship — the events that need speakers and the speakers who need the right events. Our founder has over five years of direct corporate event management experience in Africa, and we design conference programmes with the intellectual rigour of experienced producers, not the mechanical efficiency of a marketplace.
 
 
 Newsletter Popup
@@ -230,17 +230,17 @@ About the Company
 Use the following as the polished, final version of the company story for the About page:
 
 Africa has always produced world-class thinkers, leaders, innovators, and storytellers. The gap was never the talent. The gap was the infrastructure to connect that talent with the audiences that needed to hear it.
-Heard In Africa was founded to close that gap.
+Heard in Africa was founded to close that gap.
 Growing up witnessing the remarkable achievements of Africans across the globe — founding companies, pioneering ideas, setting records — our founder Chimfumnanya Nwandu saw something missing: a dedicated, professional home for African speakers on the world stage. After five years managing corporate events and watching organisations struggle to find, vet, and prepare the right voices, she built the platform she wished had existed.
-Heard In Africa is now Africa's speaker management and conference programming partner of choice — working with pan-African summits, global institutions, and forward-looking organisations who understand that the right voice at the right moment can change what a room believes is possible.
+Heard in Africa is now Africa's speaker management and conference programming partner of choice — working with pan-African summits, global institutions, and forward-looking organisations who understand that the right voice at the right moment can change what a room believes is possible.
 We manage speakers end-to-end. We design conference programmes from the ground up. We position African experts to be heard at the level their expertise deserves. And we do all of it with the rigour, relationships, and care that Africa's excellence warrants.
 
-Why Heard In Africa Exists
-African expertise is consistently underrepresented on global stages — not because of a shortage of knowledge, but because of a shortage of professional infrastructure. There has been no dedicated agency doing for African speakers what the world's best speaker management firms do for their rosters. Heard In Africa exists to change that. We are not a marketplace. We are a management company, and there is a meaningful difference.
+Why Heard in Africa Exists
+African expertise is consistently underrepresented on global stages — not because of a shortage of knowledge, but because of a shortage of professional infrastructure. There has been no dedicated agency doing for African speakers what the world's best speaker management firms do for their rosters. Heard in Africa exists to change that. We are not a marketplace. We are a management company, and there is a meaningful difference.
 
 Team Section
 Chimfumnanya Nwandu — Executive Director
-Chimfumnanya Nwandu is the founder and Executive Director of Heard In Africa. With over five years of experience managing corporate events across Nigeria and beyond, she has sat on both sides of the stage — as the person responsible for finding the right speaker, and as the person who understands what it takes to prepare them. She founded Heard In Africa from a conviction that Africa's most compelling voices deserved a professional home that matched their calibre. She holds the relationships, the programme design expertise, and the speaker management infrastructure that makes Heard In Africa the agency it is.
+Chimfumnanya Nwandu is the founder and Executive Director of Heard in Africa. With over five years of experience managing corporate events across Nigeria and beyond, she has sat on both sides of the stage — as the person responsible for finding the right speaker, and as the person who understands what it takes to prepare them. She founded Heard in Africa from a conviction that Africa's most compelling voices deserved a professional home that matched their calibre. She holds the relationships, the programme design expertise, and the speaker management infrastructure that makes Heard in Africa the agency it is.
 [Developer note: Photo: [PLACEHOLDER — supply high-resolution professional headshot of Chimfumnanya Nwandu]]
 
 [Developer note: Additional team members: [PLACEHOLDER — supply name, role, short bio (3–5 sentences), and photo for each additional team member. If team section is not ready for launch, the developer can use a single founder card initially.]]
@@ -277,7 +277,7 @@ Client selects preferred speaker(s) and we proceed to confirmation, contracting,
 Speaker preparation and on-site management begins, with a dedicated point of contact throughout.
 
 Speaker Roster / Facilitators
-[Developer note: [PLACEHOLDER — supply the following for each speaker on the Heard In Africa roster: Full name · Headshot (high-resolution) · Areas of expertise (3–5 tags) · Short bio (100–150 words) · Speaking topics · Any notable past stages or credentials. The developer should build individual speaker profile pages or modal cards from this data.]]
+[Developer note: [PLACEHOLDER — supply the following for each speaker on the Heard in Africa roster: Full name · Headshot (high-resolution) · Areas of expertise (3–5 tags) · Short bio (100–150 words) · Speaking topics · Any notable past stages or credentials. The developer should build individual speaker profile pages or modal cards from this data.]]
 
 Speaker categories to feature on the roster page:
 Business Leadership & Strategy
@@ -324,7 +324,7 @@ Events Page
 
 
 Events Page Intro Copy
-Heard In Africa has been trusted to source speakers, design programmes, and deliver on-site management for events that matter — from flagship pan-African summits to intimate leadership forums. Below is a selection of the events we are proud to have been part of.
+Heard in Africa has been trusted to source speakers, design programmes, and deliver on-site management for events that matter — from flagship pan-African summits to intimate leadership forums. Below is a selection of the events we are proud to have been part of.
 
 Featured Event: Omniverse Africa Summit 3.0
 Event name
@@ -340,7 +340,7 @@ Location
 
 
 Description
-One of Africa's most ambitious pan-continental summits, bringing together technology leaders, policy makers, investors, creative economy innovators, and global partners across four days of programming. Heard In Africa contributed to conference programming, session design, and speaker management across multiple tracks including Narrative Day, Collaboration Day, and Monetisation Day.
+One of Africa's most ambitious pan-continental summits, bringing together technology leaders, policy makers, investors, creative economy innovators, and global partners across four days of programming. Heard in Africa contributed to conference programming, session design, and speaker management across multiple tracks including Narrative Day, Collaboration Day, and Monetisation Day.
 
 
 [Developer note: Supply event logo, event photos (minimum 5 high-res), and any other confirmed upcoming events for the events page. If upcoming events are TBC, the page can launch with past events only and be updated when dates are confirmed.]
@@ -366,12 +366,12 @@ Speaker Readiness — advice for African experts building their speaking profile
 Industry Insight — trends, data, and opinion on Africa's conference and speaker economy
 
 Suggested Launch Articles (if no blog content yet)
-If Heard In Africa does not yet have published blog articles, recommend launching with 3 foundational pieces:
+If Heard in Africa does not yet have published blog articles, recommend launching with 3 foundational pieces:
 Why Africa's Speaker Economy Is the Most Underserved Opportunity in Global Events — a thought leadership piece establishing HIA's authority and point of view
 How to Brief a Speaker Properly: The 7 Things Most Event Producers Forget — a practical, shareable guide for the target audience
 What Makes a Conference Programme Great? The Difference Between a Schedule and a Conversation — a programme design piece that speaks directly to conference organisers
 
-[Developer note: Author name for all blog articles: Chimfumnanya Nwandu, Executive Director, Heard In Africa — unless additional authors are specified.]
+[Developer note: Author name for all blog articles: Chimfumnanya Nwandu, Executive Director, Heard in Africa — unless additional authors are specified.]
 
 HEARD IN AFRICA
 All copy in this document is approved for developer use.

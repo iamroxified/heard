@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $post->title . ' - Heard In Africa')
+@section('title', $post->title . ' - Heard in Africa')
 
 @section('content')
 <!-- Post Hero -->
@@ -19,7 +19,7 @@
                 {{ strtoupper(substr($post->author ?? 'A', 0, 1)) }}
             </div>
             <div>
-                <span class="text-sm font-bold text-white block">{{ $post->author ?? 'Heard In Africa' }}</span>
+                <span class="text-sm font-bold text-white block">{{ $post->author ?? 'Heard in Africa' }}</span>
                 @if($post->published_at)
                     <span class="text-xs text-gray-400">{{ $post->published_at->format('F d, Y') }}</span>
                 @endif
@@ -61,7 +61,7 @@
                     {{ strtoupper(substr($post->author ?? 'A', 0, 1)) }}
                 </div>
                 <div>
-                    <span class="text-sm font-bold text-slate-900 block">{{ $post->author ?? 'Heard In Africa' }}</span>
+                    <span class="text-sm font-bold text-slate-900 block">{{ $post->author ?? 'Heard in Africa' }}</span>
                     <span class="text-xs text-slate-400">{{ $post->published_at?->format('F d, Y') }}</span>
                 </div>
             </div>

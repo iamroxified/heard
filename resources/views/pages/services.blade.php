@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Services - Heard In Africa')
+@section('title', 'Services - Heard in Africa')
 
 @section('content')
 @php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-call'))
@@ -18,7 +18,7 @@
                 Speaker management and conference programming, built for stages that matter
             </h1>
             <!-- <p class="text-xl text-gray-300 font-light mb-10 leading-relaxed">
-                We keep the structure familiar, but the brand, copy, and service offerings now match the new Heard In Africa positioning.
+                We keep the structure familiar, but the brand, copy, and service offerings now match the new Heard in Africa positioning.
             </p> -->
         </div>
     </div>
@@ -35,7 +35,7 @@
                 <p class="text-lg text-slate-600 mb-6 leading-relaxed">
                     End-to-end management of your speaker programme, from sourcing through to post-event close-out.
                 </p>
-                <p class="text-slate-600 mb-8"> Finding the right speaker is only the beginning. Heard In Africa manages every step of the speaker journey — sourcing and vetting candidates, handling contracts and logistics, delivering personalised speaker briefings, and providing on-site coordination on the day.Every speaker who works with us receives a briefing document tailored to their specific session, their co-panellists, the audience profile, and the thematic objectives of that moment in your programme. Not a generic template. A document that prepares them to deliver something your audience will remember. </p>
+                <p class="text-slate-600 mb-8"> Finding the right speaker is only the beginning. Heard in Africa manages every step of the speaker journey — sourcing and vetting candidates, handling contracts and logistics, delivering personalised speaker briefings, and providing on-site coordination on the day.Every speaker who works with us receives a briefing document tailored to their specific session, their co-panellists, the audience profile, and the thematic objectives of that moment in your programme. Not a generic template. A document that prepares them to deliver something your audience will remember. </p>
                 <div class="bg-slate-50 p-6 border-l-4 border-gold mb-8">
                     <h4 class="font-bold text-slate-900 mb-2">WHAT THIS COVERS</h4>
                     <ul>
@@ -94,7 +94,7 @@
                     A great conference is not a list of speakers. It is a carefully designed argument. We build that argument.
                 </p>
                 <p class="text-slate-600 mb-8">
-                    Heard In Africa works with event producers, institutions, and organisations to build conference programmes with intellectual coherence, deliberate flow, and the right balance of energy, depth, and tension.We design the architecture of your programme — the themes, session formats, keynote sequencing, and panel structures — so every hour earns its place and your audience leaves having experienced something genuinely worth attending.
+                    Heard in Africa works with event producers, institutions, and organisations to build conference programmes with intellectual coherence, deliberate flow, and the right balance of energy, depth, and tension.We design the architecture of your programme — the themes, session formats, keynote sequencing, and panel structures — so every hour earns its place and your audience leaves having experienced something genuinely worth attending.
 
                 </p>
                 <p><b>Step 1:</b> Programme Strategy — working backwards from the audience outcome to design the architecture, themes, and session formats.<br>
@@ -128,7 +128,7 @@
                     Your expertise is not the problem. Your visibility is.
                 </p>
                 <p class="text-slate-600 mb-8">
-                    African speakers are being searched for. Conference producers are actively looking. The question is whether they can find you — and whether what they find makes them stop scrolling and say yes.Heard In Africa's Speaker Visibility and Positioning service manages your LinkedIn and Instagram as active speaker career platforms. Every post, every update, every piece of content is in service of one goal: making sure the right producers, organisations, and audiences find you, understand what you stand for, and want to hear you speak.
+                    African speakers are being searched for. Conference producers are actively looking. The question is whether they can find you — and whether what they find makes them stop scrolling and say yes.Heard in Africa's Speaker Visibility and Positioning service manages your LinkedIn and Instagram as active speaker career platforms. Every post, every update, every piece of content is in service of one goal: making sure the right producers, organisations, and audiences find you, understand what you stand for, and want to hear you speak.
 
                 </p>
                 <div class="bg-slate-20 p-2 border-l-4 border-gold mb-8">

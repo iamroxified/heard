@@ -1,6 +1,6 @@
 ﻿@extends('layouts.app')
 
-@section('title', 'Speaker Economy & Resources - Heard In Africa')
+@section('title', 'Speaker Economy & Resources - Heard in Africa')
 
 @section('content')
 @php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-call'))
@@ -203,7 +203,7 @@
             <div class="text-center mb-16">
                 <span class="text-gold text-sm font-bold tracking-wider mb-2 block uppercase" data-aos="fade-up">Video Resources</span>
                 <h2 data-aos="fade-up" data-aos-delay="100" class="text-3xl md:text-4xl font-heading font-bold text-dark">
-                    Heard In Africa Masterclasses
+                    Heard in Africa Masterclasses
                 </h2>
                 <p data-aos="fade-up" data-aos-delay="200" class="text-slate-500 text-sm mt-3 max-w-md mx-auto">
                     Watch our latest video discussions, staging guides, and expert interviews on our YouTube channel.
@@ -334,7 +334,7 @@
                         <div class="p-6">
                             <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 block">Thought Leadership</span>
                             <h3 class="text-lg font-heading font-bold text-slate-900 mb-3 group-hover:text-gold transition-colors line-clamp-2">Why Africa's Speaker Economy Is the Most Underserved Opportunity</h3>
-                            <p class="text-slate-600 text-sm mb-4 line-clamp-3">A foundational piece establishing Heard In Africa's point of view on why speaker management infrastructure matters for the continent.</p>
+                            <p class="text-slate-600 text-sm mb-4 line-clamp-3">A foundational piece establishing Heard in Africa's point of view on why speaker management infrastructure matters for the continent.</p>
                         </div>
                     </div>
                     <div class="p-6 pt-0">
@@ -412,7 +412,7 @@
                         </div>
                         <div class="mb-6">
                             <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Organization (Optional)</label>
-                            <input type="text" x-model="ebookOrg" placeholder="Heard In Africa" class="w-full bg-slate-50 border border-slate-200 px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-gold transition-colors">
+                            <input type="text" x-model="ebookOrg" placeholder="Heard in Africa" class="w-full bg-slate-50 border border-slate-200 px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-gold transition-colors">
                         </div>
 
                         <button type="submit" :disabled="ebookLoading" class="w-full bg-dark text-white hover:bg-gold hover:text-dark px-6 py-3.5 text-sm font-bold uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed">
@@ -489,7 +489,7 @@
                 </div>
                 <h3 class="text-2xl font-heading font-bold text-dark mb-2">Welcome to the Conversation!</h3>
                 <p class="text-sm text-slate-600 mb-8 max-w-xs mx-auto">
-                    You have successfully subscribed to the Heard In Africa newsletter. We'll send our latest resources straight to your inbox.
+                    You have successfully subscribed to the Heard in Africa newsletter. We'll send our latest resources straight to your inbox.
                 </p>
                 <button @click="newsletterModalOpen = false" class="bg-dark text-white hover:bg-gold hover:text-dark px-6 py-2.5 text-xs font-bold uppercase tracking-wider transition-all duration-300">
                     Close Window

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Events - Heard In Africa')
+@section('title', 'Events - Heard in Africa')
 
 @section('content')
 @php($bookingUrl = ($siteSettings['calendar_booking_url'] ?? '') ?: route('discovery-call'))
@@ -14,7 +14,7 @@
             Events that matter deserve the right voices.
         </h1>
         <p class="text-lg text-gray-300 font-light max-w-2xl mb-10">
-            Heard In Africa has been trusted to source speakers, design programmes, and deliver on-site management for events that matter — from flagship pan-African summits to intimate leadership forums.
+            Heard in Africa has been trusted to source speakers, design programmes, and deliver on-site management for events that matter — from flagship pan-African summits to intimate leadership forums.
         </p>
     </div>
 </section>

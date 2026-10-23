@@ -8,7 +8,7 @@
             <!-- Brand -->
             <div class="space-y-6">
                 <a href="{{ route('home') }}" class="text-2xl font-heading font-bold tracking-tight text-white flex items-center gap-2">
-                    <img src="{{ asset('img/logo.png') }}" alt="Heard In Africa Logo" class="h-8 w-auto"> Heard In Africa
+                    <img src="{{ asset('img/logo.png') }}" alt="Heard in Africa Logo" class="h-8 w-auto"> Heard in Africa
                 </a>
                 <p class="text-gray-400 text-sm leading-relaxed pr-4">
                     Building the Infrastructure of the African Speaker Economy.
@@ -85,7 +85,7 @@
         </div>
         <div class="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
             <p class="text-xs text-gray-500">
-                &copy; {{ date('Y') }} Heard In Africa. All rights reserved.
+                &copy; {{ date('Y') }} Heard in Africa. All rights reserved.
             </p>
             <div class="flex space-x-6 text-xs text-gray-500">
                 <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
