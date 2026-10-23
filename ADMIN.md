@@ -67,3 +67,18 @@ Admins can manage the About page team from **Admin → Settings**. Add or remove
 team members, edit their name and role, update image paths and social links, or
 upload a new photo. Uploaded team photos use the public storage disk and are
 served through the `public/storage` link.
+
+## cPanel deployment
+
+The top-level `.cpanel.yml` deploys the Laravel application to
+`/home/heardina/test.heardinafrica.com` and publishes its `public/` files to
+`/home/heardina/public_html`. The web root's `index.php` boots Laravel from the
+application directory. The deploy task preserves the server's `.env`, `vendor/`,
+and `storage/` directories, installs locked production Composer dependencies,
+and refuses to overwrite an existing non-symlink `storage` path in the web root.
+
+In cPanel Git Version Control, configure the repository's deployment branch and
+deploy its HEAD commit. The hosting account must provide PHP 8.2+, Composer,
+rsync, and permission to write to both configured paths. Database migrations
+are intentionally not run automatically; run `php artisan migrate --force`
+from the application directory when a release includes migrations.
