@@ -11,8 +11,18 @@ if [ "$APP_PATH" = "$WEB_ROOT" ]; then
     exit 1
 fi
 
+if [ ! -f "$APP_PATH/artisan" ] || [ ! -f "$APP_PATH/composer.json" ]; then
+    echo "Missing Laravel application files in $APP_PATH; refusing deployment." >&2
+    exit 1
+fi
+
 if [ ! -f "$APP_PATH/.env" ]; then
     echo "Missing production environment file at $APP_PATH/.env; refusing deployment." >&2
+    exit 1
+fi
+
+if [ ! -f "$REPO_ROOT/deploy/cpanel-index.php" ]; then
+    echo "Missing public front-controller template in the checked-out repository." >&2
     exit 1
 fi
 
@@ -37,7 +47,15 @@ elif [ -e "$WEB_ROOT/storage" ]; then
     exit 1
 fi
 
-mkdir -p "$APP_PATH" "$WEB_ROOT" "$APP_PATH/storage/app/public"
+mkdir -p \
+    "$APP_PATH/bootstrap/cache" \
+    "$APP_PATH/storage/app/private" \
+    "$APP_PATH/storage/app/public" \
+    "$APP_PATH/storage/framework/cache/data" \
+    "$APP_PATH/storage/framework/sessions" \
+    "$APP_PATH/storage/framework/views" \
+    "$APP_PATH/storage/logs" \
+    "$WEB_ROOT"
 
 if [ "$REPO_ROOT" != "$APP_PATH" ]; then
     rsync -a \

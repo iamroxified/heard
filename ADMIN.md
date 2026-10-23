@@ -76,6 +76,7 @@ The top-level `.cpanel.yml` deploys the Laravel application to
 application directory. The deploy task preserves the server's `.env`, `vendor/`,
 and `storage/` directories, installs locked production Composer dependencies,
 and refuses to overwrite an existing non-symlink `storage` path in the web root.
+It creates missing Laravel runtime directories before Composer runs.
 
 In cPanel Git Version Control, configure the repository's deployment branch and
 deploy its HEAD commit. The hosting account must provide PHP 8.2+, Composer,
