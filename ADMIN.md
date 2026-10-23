@@ -60,3 +60,10 @@ previous deployment created it as a directory, inspect it and preserve any
 uploaded files before removing the empty directory and running `storage:link`
 again. Also ensure `APP_URL` is set to the live site's HTTPS URL so generated
 image URLs use the correct host.
+
+## Managing the About page team
+
+Admins can manage the About page team from **Admin → Settings**. Add or remove
+team members, edit their name and role, update image paths and social links, or
+upload a new photo. Uploaded team photos use the public storage disk and are
+served through the `public/storage` link.

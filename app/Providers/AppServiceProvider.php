@@ -28,6 +28,7 @@ class AppServiceProvider extends ServiceProvider
             'calendar_booking_url' => $this->settingValue('calendar_booking_url', 'https://calendly.com/heardinafrica/discovery-call'),
             'contact_phone' => $this->settingValue('contact_phone', '+234-815-851-2911'),
             'contact_email' => $this->settingValue('contact_email', 'Info@heardinafrica.com'),
+            'team_members' => $this->settingValue('team_members', config('site.team_members', [])),
         ]);
     }
 

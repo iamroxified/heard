@@ -162,6 +162,7 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            @if (!array_key_exists('team_members', $siteSettings))
             <!-- Team Member 1 -->
             <div data-aos="fade-up" data-aos-delay="100" class="group bg-slate-50 border border-slate-200 overflow-hidden hover:shadow-xl hover:border-gold/30 transition-all duration-300 flex flex-col">
                 <div class="relative aspect-[4/5] overflow-hidden bg-slate-100">
@@ -190,8 +191,44 @@
 
                     </div>
                 </div>
-            </div>
+                @else
+                    @foreach (($siteSettings['team_members'] ?? []) as $index => $member)
+                        <div data-aos="fade-up" data-aos-delay="{{ ($index + 1) * 100 }}" class="group bg-slate-50 border border-slate-200 overflow-hidden hover:shadow-xl hover:border-gold/30 transition-all duration-300 flex flex-col">
+                            <div class="relative aspect-[4/5] overflow-hidden bg-slate-100">
+                                @if (!empty($member['image']))
+                                    <img src="{{ str_starts_with($member['image'], 'team/') ? asset('storage/'.$member['image']) : asset($member['image']) }}" alt="{{ $member['name'] }}" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                                @endif
+                                <div class="absolute inset-0 bg-gradient-to-t from-darker/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col justify-between">
+                                <div>
+                                    <h3 class="text-lg font-heading font-bold text-dark group-hover:text-accent transition-colors duration-300">{{ $member['name'] }}</h3>
+                                    <p class="text-gold text-xs font-bold uppercase tracking-wider mb-3">{{ $member['role'] }}</p>
+                                </div>
+                                @if (!empty($member['linkedin']) || !empty($member['email']))
+                                    <div class="flex items-center gap-3 border-t border-slate-200/60 pt-4">
+                                        @if (!empty($member['linkedin']))
+                                            <a href="{{ $member['linkedin'] }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="{{ $member['name'] }} on LinkedIn">
+                                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                                </svg>
+                                            </a>
+                                        @endif
+                                        @if (!empty($member['email']))
+                                            <a href="mailto:{{ $member['email'] }}" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-dark hover:border-dark transition-all duration-300" aria-label="Email {{ $member['name'] }}">
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                                </svg>
+                                            </a>
+                                        @endif
+                                    </div>
+                                @endif
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
 
+                @if (!array_key_exists('team_members', $siteSettings))
             <!-- Team Member 2 -->
             <div data-aos="fade-up" data-aos-delay="200" class="group bg-slate-50 border border-slate-200 overflow-hidden hover:shadow-xl hover:border-gold/30 transition-all duration-300 flex flex-col">
                 <div class="relative aspect-[4/5] overflow-hidden bg-slate-100">
@@ -250,6 +287,8 @@
 
                 </div>
             </div>
+        </div>
+        @endif
         </div>
     </div>
 </section>
