@@ -45,3 +45,18 @@ Keep it secure (use proper authentication)
 Use my existing design system / components where possible
 Make API endpoints for frontend to fetch Speakers, Events, and Blog posts dynamically
 Return the full code structure (pages, components, API routes, schema, etc.)ADMIN
+
+## Production blog image uploads
+
+Blog images are stored on Laravel's `public` filesystem disk and served through
+the `public/storage` symbolic link. After deploying, create the link once:
+
+```sh
+php artisan storage:link
+```
+
+The deployed `public/storage` path must not be an ordinary directory. If a
+previous deployment created it as a directory, inspect it and preserve any
+uploaded files before removing the empty directory and running `storage:link`
+again. Also ensure `APP_URL` is set to the live site's HTTPS URL so generated
+image URLs use the correct host.
